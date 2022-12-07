@@ -1424,6 +1424,7 @@ nav {
   color: #fff;
   cursor: pointer;
   margin-top: -10px;
+  position: relative;
 }
 
 .pricing .box2 .most-popular {

@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+
+}
+
+.home{
+    background-image: var(--bg-home-primary--);
+}
+
+:root{
+    --primary-color: #cdcdcd;
+    --secondary-color: #000000;
+    --border-color:linear-gradient(90deg, #76EA90 -0.07%, #FDFD55 100.07%) ;
+    --bg-home-primary--: url("img/bg-home.png");
+    --bg-home-secondary--: url("img/bg-dark.png");
+    overflow-x: hidden ;
+ }
+ .dark-theme{
+    --primary-color: rgba(0, 0, 0, 1);
+    --secondary-color: white;
+ }
+
+@font-face {
+    font-family: 'futura';
+    src: url(futur.ttf);
+}
+@font-face {
+    font-family: 'futura-bold';
+    src: url(Futura-bold.ttf);
+}
+
+
+
+
+@import "scss/navbar";
+@import "scss/home-section";
+@import "scss/count";
+@import "scss/top-creator";
+@import "scss/features-section";
+@import "scss/pricing-section";
+@import "scss/faq-section";
+@import "scss/community";
+@import "scss/team-section";
+@import "scss/convert-box";
+@import "scss/faqs-question";
+@import "scss/footer";

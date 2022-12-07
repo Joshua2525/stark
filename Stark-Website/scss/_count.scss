@@ -1,0 +1,119 @@
+.count{
+    background: linear-gradient(90.57deg, #76EA90 0%, #FDFD55 100%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .count-container{
+        display: flex;
+        flex-direction: row;
+
+        .count-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            width: 250px;
+            height: 91px;
+
+            h2{
+                margin-bottom: 5px;
+                font-size: 30px;
+                color: rgb(0, 0, 0);
+            }
+            p{
+                color: rgb(0, 0, 0);
+            }
+
+        }
+    }
+}
+
+@media (max-width: 805px){
+    .count-container{
+
+        .count-box{
+            width: 200px !important;
+            height: 91px;
+
+            h2{
+                margin-bottom: 5px;
+                font-size: 25px !important;
+                color: rgb(0, 0, 0);
+            }
+            p{
+                color: rgb(0, 0, 0);
+                font-size: 14px !important;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 565px){
+    .count-container{
+
+        .count-box{
+            width: 160px !important;
+            height: 91px;
+
+            h2{
+                margin-bottom: 5px;
+                font-size: 20px !important;
+                color: rgb(0, 0, 0);
+            }
+            p{
+                color: rgb(0, 0, 0);
+                font-size: 14px !important;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 565px){
+    .count-container{
+        padding: 0px 50px;
+
+        .count-box{
+            width: 130px !important;
+            height: 91px;
+
+            h2{
+                margin-bottom: 5px;
+                font-size: 20px !important;
+                color: rgb(0, 0, 0);
+            }
+            p{
+                color: rgb(0, 0, 0);
+                font-size: 12px !important;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 400px){
+    .count-container{
+        padding: 0px 50px;
+
+        .count-box{
+            width: 120px !important;
+            height: 91px;
+
+            h2{
+                margin-bottom: 5px;
+                font-size: 20px !important;
+                color: rgb(0, 0, 0);
+            }
+            p{
+                color: rgb(0, 0, 0);
+                font-size: 10px !important;
+            }
+
+        }
+    }
+}
+

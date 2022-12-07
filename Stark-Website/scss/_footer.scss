@@ -1,0 +1,238 @@
+footer{
+    color: rgba(255, 255, 255, 1);
+    background: rgba(4, 4, 4, 1);
+    padding: 50px;
+
+}
+.footer2{
+    border-top: 2px solid rgba(49, 47, 47, 1);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+
+
+    .left-footer {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+            img{
+                width: 80px !important;
+            }
+        .reserved{
+            width: 200% !important;
+            font-size: 14px;
+            margin-top: 10px ;
+        }
+    }
+    .middle-footer{
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        max-width: 576px;
+        width: 100%;
+        height: auto;
+        color: rgba(153, 151, 151, 1);
+
+        .dis{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .insta{
+            margin-right: 10px;
+        }
+        .fb{
+            margin-right: 10px;
+        }
+
+    }
+    .img_footer {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .right-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .first-line{
+            display: flex;
+            flex-direction: column;
+            margin-right: 50px !important;
+        }
+        .second-line{
+            margin-top: -25px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+
+
+    .email{
+        margin-top: 5px;
+    }
+
+    .middle-footer-mobile{
+        display: none;
+    }
+
+
+}
+
+
+@media(max-width:1350px){
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 50px;
+
+
+
+        .left-footer {
+            margin-bottom: 50px;
+            margin-top: 20px;
+
+            img{
+                width: 70px !important;
+            }
+
+        }
+        .right-footer{
+            display: flex;
+            flex-direction: column !important;
+            margin-top: 20px;
+            
+            .first-line{
+                display: flex;
+                flex-direction: row !important;
+                margin-right: 0px !important;
+
+                .pricing-footer{
+                    margin-right: 20px;
+                    margin-left: 20px;
+                }
+                .home-footer{
+                    margin-right: 20px;
+                }
+            }
+            .second-line{
+                display: flex;
+                flex-direction: row;
+                margin-top: 20px;
+                .team-footer{
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            }
+
+        }
+
+    }
+}
+
+@media(max-width:750px){
+    footer{
+        padding: 20px;
+    }
+    .footer-container{
+        padding: 0px !important;
+
+    .middle-footer-mobile{
+        width: 500px;
+        font-size: 14px;
+        text-align: center;
+    }
+  }
+}
+
+@media(max-width:750px){
+    .footer-container{
+    .middle-footer-mobile{
+        width: 100%;
+    }
+  }
+}
+
+
+@media(max-width:550px){
+    .right-footer{
+        font-size:14px !important;
+        margin-top: 30px !important;
+    }
+}
+
+
+@media(max-width:400px){
+    .footer-container{
+    .middle-footer-mobile{
+        width: 100%;
+        font-size: 12px;
+    }
+  }
+}
+
+
+
+
+
+
+
+.slick-slider {
+    width: 100%;
+    background-color: transparent;
+    .slick-track {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      height: 100px;
+      justify-content: center;
+    }
+    .slick-slide{
+      float: none;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 10px 0px;
+      margin: 10px;
+      background-color: white;
+      transition: all 0.3s ease;
+      height: auto;
+      text-align: center;
+      &.slick-current,
+      &.slick-center {
+          background:linear-gradient(45deg, rgb(246, 146, 89), rgb(241, 105, 117));
+        padding: 30px 0px;
+        border-radius: 20px;
+        //margin: 50px 0px;
+      }
+    }
+  }
+  
+  .slick-prev,
+  .slick-next {
+    z-index:10;  
+    top: 0px;
+    background-color: transparent;
+  }
+  .slick-prev {
+    left: 10px;
+  }
+  .slick-next {
+    right: 10px;
+  }

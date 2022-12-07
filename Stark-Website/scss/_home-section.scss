@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=Red+Hat+Text:wght@700&display=swap');
+
+.hero-section{
+    width: 100%;
+    height: auto;
+    background-image: url("img/Mask group.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    padding-bottom: 195px;
+
+    .left-side{
+        margin: 0;
+        max-width: 565px;
+        margin-top: 200px;
+        margin-right: 400px;
+
+        h1{
+            font-family: 'futura-bold', sans-serif;
+            font-weight: 100;
+            width: 657.76px;
+            font-size: 106px;
+            color: var(--secondary-color);
+        }
+        span{
+            font-family: 'Red Hat Text';
+            font-weight: 700;
+            font-size: 106px;
+            color: transparent;     
+            background: url("img/letter-color.png");
+            background-repeat: repeat;
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+        }
+
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 70px;
+
+            button{
+                border: none;
+                font-family: 'Poppins', sans-serif;
+                font-size: 18px;
+                border-style: none;
+                width: 170px;
+                height: 59px;
+                cursor: pointer;
+                margin-right: 23px;
+                line-height: 27px;
+                
+            }
+            .button1{
+                background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
+                box-shadow: 0px 0px 15px #76EA90;
+                border-radius: 5.60983px;
+                font-weight: 600;
+            }
+            .button2{
+                background-color: transparent;
+                color: var(--secondary-color);
+                transition: all .15s ease-in-out;
+                border-radius: 5.60983px;
+                font-weight: 600;
+
+            }
+            .button1:hover {
+                box-shadow: 0px 0px 20px -8px #eaeaea;
+                color: rgba(229, 229, 229, 1);
+            }
+            .button2:hover {
+                background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
+                box-shadow: 0px 0px 15px #76EA90;
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+
+    .iphone-mockup{
+        width: 295.55px;
+        height: 592px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+
+        video{
+            position: absolute;
+            height: 548.56px;
+            width: 258.39px;
+            background-color: yellow;
+            border-radius: 30px;
+            object-fit: cover;
+         
+        }
+
+        img{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            
+            z-index: 1;
+        }
+     
+    }
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+@media(max-width: 1450px){
+    .left-side{
+        margin-right: 200px !important;
+    }
+}
+
+
+@media(max-width: 1250px){
+    .hero-section{
+        .left-side{
+            width: 100%;
+            h1,span{
+                font-size: 100px;
+            }
+
+            p{
+                font-size: 20px;
+            }
+
+            .hero-buttons{
+                margin-left: -10px;
+                a{
+                    button{
+                        transform: scale(0.9);
+                    }
+                    .discord-btn, .telegram-btn{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    
+        .right-side{
+            .hero-logo{
+                width: 100%;
+            }
+            
+            
+        }
+
+        
+    }
+}
+
+@media(max-width: 1040px){
+    .hero-section{
+        flex-direction: column;
+        padding-bottom: 130px;
+        
+        .background{
+            height: 100%;
+        }
+
+        .left-side{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0px!important;
+            margin-bottom: -100px !important;
+            h1{
+                text-align: center;
+            }
+            h1,span{
+                font-size: 70px !important;
+            }
+
+            p{
+                font-size: 18px;
+                line-height: 25px;
+                text-align: center;
+            }
+
+            .hero-buttons{
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+
+                a{
+                   .discord-btn, .telegram-btn{
+                    margin: 0;
+                   }
+                }
+                
+            }
+        }
+
+        .right-side{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            
+            margin-top: 60px;
+
+            .hero-logo{
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media (max-width:700px){
+    .hero-section{
+        padding-bottom: 60px;
+    }
+}
+
+@media(max-width:565px){
+    .hero-section{
+        padding-left: 50px !important; 
+        padding-right: 50px !important;
+        
+        .left-side{
+            h1,span{
+                font-size: 45px !important;
+                width: 100%;
+            }
+
+            p{
+                font-size: 12px;
+                line-height: 17px;
+                text-align: center;
+            }
+
+            .buttons{
+                margin-top: 40px;
+    
+                button{
+                    font-size: 15px;
+                    border-style: none;
+                    width: 120px;
+                    height: 50px;
+                    margin-right: 10px;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 350px){
+    .hero-section{
+        padding-left: 20px !important; 
+        padding-right: 20px !important;
+
+        .left-side{
+            h1,span{
+                font-size: 35px !important;
+            }
+        }
+        
+        .buttons{
+
+            button{
+                font-size: 14px !important;
+                border-style: none;
+                width: 105px !important;
+                height: 45px !important;                
+            }
+        }
+    }
+}

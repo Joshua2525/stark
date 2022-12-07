@@ -1,0 +1,174 @@
+
+.faq-section{
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    background: var(--primary-color);
+}
+
+
+// FAQS //
+
+
+$midnight: #52a9ff;
+$clouds: #ecf0f1;
+// General
+.faq-section {
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+}
+
+
+.tab-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+// Layout
+.row {
+  display:flex;
+  .col {
+    flex:1;
+    &:last-child {
+      margin-left: 1em;
+    }
+  }
+}
+/* Accordion styles */
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.tab {
+  width: 700px;
+  color: var(--secondary-color);
+  overflow: hidden;
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+
+    &::after {
+      content: "+";
+      font-size: 25px;
+      font-weight: 200;
+      width: 1em;
+      height: 1.2em;
+      text-align: center;
+      transition: all .35s;
+      color: #76EA90;
+    }
+  }
+  &-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: var(--secondary-color);
+    transition: all .35s;
+  }
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    color: #A2A9B0;
+    font-weight: 400;
+    cursor: pointer;
+    &:hover {
+        color: var(--secondary-color);
+    }
+  }
+}
+
+.question1{
+    border-bottom: 2px solid rgba(118, 234, 144, 1) !important;
+}
+
+// :checked
+input:checked {
+  + .tab-label {
+    background: rgba(118, 234, 144, 1);
+    color: black;
+    border-radius: 8px;
+    &::after {
+      transform: rotate(45deg);
+      color: black;
+    }
+  }
+  ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+  }
+}
+
+@media(max-width:1400px){
+
+.faq-section {
+  padding: 0;
+  margin-left: 0px;
+}
+.row{
+    margin-top: 50px !important;
+}
+
+
+}
+@media(max-width:800px){
+  .row {
+    .col {
+      flex:1;
+      &:last-child {
+        margin-left: 0em;
+      }
+    }
+  }
+
+  .tab{
+    width: 500px !important;
+  }
+  .tab-label{
+    padding: 10px 0px 10px 10px;
+  }
+  .tab-label::after {
+    width: 2em;
+}
+
+}
+
+
+@media(max-width:520px){
+    .tab{
+      width: 400px !important;
+      font-size: 14px !important;
+    }
+
+    .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+  @media(max-width:430px){
+    .tab{
+      width: 100% !important;
+      font-size: 12px !important;
+    }
+
+    .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }

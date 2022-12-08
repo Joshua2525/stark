@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=Red+Hat+Text:wght@700&display=swap');
 
-.hero-section{
+.home-section{
     width: 100%;
     height: auto;
     background-image: url("img/Mask group.png");
@@ -127,7 +127,7 @@
 
 
 @media(max-width: 1250px){
-    .hero-section{
+    .home-section{
         .left-side{
             width: 100%;
             h1,span{
@@ -138,33 +138,12 @@
                 font-size: 20px;
             }
 
-            .hero-buttons{
-                margin-left: -10px;
-                a{
-                    button{
-                        transform: scale(0.9);
-                    }
-                    .discord-btn, .telegram-btn{
-                        margin-right: 5px;
-                    }
-                }
-            }
-        }
-    
-        .right-side{
-            .hero-logo{
-                width: 100%;
-            }
-            
-            
-        }
-
-        
+        }        
     }
 }
 
 @media(max-width: 1040px){
-    .hero-section{
+    .home-section{
         flex-direction: column;
         padding-bottom: 130px;
         
@@ -191,19 +170,6 @@
                 line-height: 25px;
                 text-align: center;
             }
-
-            .hero-buttons{
-                justify-content: center;
-                align-items: center;
-                margin-top: 30px;
-
-                a{
-                   .discord-btn, .telegram-btn{
-                    margin: 0;
-                   }
-                }
-                
-            }
         }
 
         .right-side{
@@ -211,24 +177,20 @@
             align-items: center;
             justify-content: center;
             width: 100%;
-            
             margin-top: 60px;
 
-            .hero-logo{
-                width: 60%;
-            }
         }
     }
 }
 
 @media (max-width:700px){
-    .hero-section{
+    .home-section{
         padding-bottom: 60px;
     }
 }
 
 @media(max-width:565px){
-    .hero-section{
+    .home-section{
         padding-left: 50px !important; 
         padding-right: 50px !important;
         
@@ -265,7 +227,7 @@
 
 
 @media (max-width: 350px){
-    .hero-section{
+    .home-section{
         padding-left: 20px !important; 
         padding-right: 20px !important;
 

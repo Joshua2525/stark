@@ -129,3 +129,56 @@
   }
 }
   
+
+
+  
+.card{
+    backdrop-filter: blur(20px);    
+    border-radius: 10px;
+
+        img{
+            width: 100%;
+        }
+  }
+  
+
+  @media (max-width: 2600px) {
+    .creator-box-container2{
+      display: none !important;
+    }
+  }
+  
+  @media (max-width: 911px) {
+
+    .creator-box-container2{
+        display: block !important;
+        margin-top: 50px;
+      }
+    .creator-box-container{
+      display: none !important;
+    }
+    
+    .swiper{
+      width: 350px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 425px) {
+
+    .card{
+        backdrop-filter: blur(20px);    
+        border-radius: 10px;
+    
+            img{
+                width: 80%;
+            }
+      }
+
+  }
+  
+
+  
+
+
+

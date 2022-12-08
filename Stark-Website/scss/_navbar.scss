@@ -2,9 +2,12 @@
 .top{
    background: linear-gradient(90.04deg, #76EA90 0%, #FDFD55 100%);
    height: 45px;
+   width: 100% !important;
+   max-width: 2000px;
    display: flex;
    justify-content: center;
    align-items: center;
+
 
    p{
        font-size: 14px;
@@ -20,8 +23,13 @@
    }
 }
 
+
 nav{
    display: flex;  
+}
+
+.nowrap{
+   white-space: nowrap;
 }
 
 .about-nav{
@@ -55,12 +63,13 @@ nav{
    min-height: 72px;
    padding: 0 10%;
    z-index: 2;
+   position: fixed ;
    width: 100%;
 
 }
 
 .navlinks {
-  background: rgb(17, 1, 34);
+   background: rgba(118, 234, 144, 1);
    list-style-type: none;
    width: 50vw;
    position: absolute;
@@ -122,6 +131,13 @@ nav{
   margin-top: 5px;
 
 }
+header.black nav{
+   background: rgb(76, 76, 76);
+   backdrop-filter: blur(100px);    
+   min-height: 60px;
+   transition: all .30s ease-in-out;
+   margin-top: -47px ;
+}
 
 #burger {
    z-index: 99;
@@ -136,9 +152,12 @@ nav{
 }
 
 .navbar a:hover {
-   color: rgba(66, 218, 191, 1);
-   
+   color: rgba(118, 234, 144, 1);
 }
+
+.navitems:hover {
+   transform: scale(1.1);
+ }
 
 .active {
    transform: translateX(0%) !important;
@@ -167,12 +186,12 @@ nav{
    display: flex;
    justify-content: center;
    align-items: center;
-
 }
 
 .buy-button{
    background: linear-gradient(94.76deg, #76EA90 0%, #FDFD55 100%);
    width: 110px;
+   color: #000106 !important;
    display: flex;
    text-align: center;
    align-items: center;
@@ -193,15 +212,15 @@ nav{
 
 @media (max-width: 1450px){
   .center{
-       margin-left: 270px;
-       margin-right: 280px;
+       margin-left: 300px;
+       margin-right: 150px;
    }
   
 }
 @media (max-width: 1280px){
   .center{
-       margin-left: 170px;
-       margin-right: 180px;
+       margin-left: 250px;
+       margin-right: 100px;
    }
    .navbar {
       background: inherit;
@@ -214,6 +233,16 @@ nav{
        z-index: 2;
        width: 100%;
     }    
+}
+
+@media (max-width: 1148px){
+
+.right-nav{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column-reverse;
+}
 }
 
 @media (max-width: 600px){
@@ -235,11 +264,12 @@ nav{
    .nav-logo1{
      margin-top: 5px;
      width: 70px;
-     height: 30px;
+     height: 25px;
         
    }
    .navbar{
       justify-content: space-between !important;
+      position: fixed;
    }
    .center{
      margin: 0px !important;
@@ -308,7 +338,7 @@ nav{
        padding: 0;
 
        .itemlinks,h1{
-           color: #fff;
+           color: var(--secondary-color);
            font-style: normal;
            font-weight: 500;
            font-size: 15px;
@@ -349,5 +379,26 @@ nav{
      text-decoration: none;
   }
 
+}
+
+@media(max-width:500px){
+   .top{
+      p{
+         font-size: 12px !important;
+      }
+   }
+}
+
+@media(max-width:350px){
+   .top{
+      height: 30px;
+
+      p{
+         font-size: 10px !important;
+      }
+   }
+   header.black nav{
+      margin-top: -30px ;
+   }
 }
 

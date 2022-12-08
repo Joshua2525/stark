@@ -16,7 +16,6 @@ body{
     overflow-x: hidden;
     background: var(--primary-color);
     color: var(--secondary-color);
-
 }
 
 .home{
@@ -31,10 +30,10 @@ body{
     --bg-home-secondary--: url("img/bg-dark.png");
     overflow-x: hidden ;
  }
- .dark-theme{
+.dark-theme{
     --primary-color: rgba(0, 0, 0, 1);
     --secondary-color: white;
- }
+}
 
 @font-face {
     font-family: 'futura';
@@ -45,6 +44,29 @@ body{
     src: url(Futura-bold.ttf);
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    }
+    
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(7, 7, 7); 
+    border-radius: 10px;
+}
+    
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90.04deg, #76EA90 0%, #FDFD55 100%);
+    border-radius: 10px;
+}
+    
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90.04deg, #76EA90 0%, #FDFD55 100%);
+    filter: blur(10px);
+    transition: all .50s;
+}
 
 
 

@@ -25,7 +25,11 @@
         font-weight: 600;
         text-align: center;
         font-size: 57px;
-        color: var(--secondary-color);
+        color: transparent;     
+        background: url("img/mid-text-color.png");
+        background-repeat: repeat;
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;  
     }
     .subtitle-team{
         color: var(--secondary-color);
@@ -84,7 +88,11 @@
                 }
                 
                 p{
-                    color: rgb(89, 218, 117);
+                    color: transparent;     
+                    background: url("img/small-text-color.png");
+                    background-repeat: repeat;
+                    -webkit-background-clip: text; 
+                    -webkit-text-fill-color: transparent;  
                     margin-bottom: 2px;
                 }
                 .bxl-discord-alt{
@@ -114,7 +122,11 @@
                     margin-bottom: 2px;
                 }
                 p{
-                    color: rgb(89, 218, 117);
+                    color: transparent;     
+                    background: url("img/small-text-color.png");
+                    background-repeat: repeat;
+                    -webkit-background-clip: text; 
+                    -webkit-text-fill-color: transparent;  
                     margin-bottom: 2px;
                 }
                 .disc{
@@ -165,7 +177,11 @@
                   margin-bottom: 2px;
               }
               p{
-                  color: rgb(89, 218, 117);
+                  color: transparent;     
+                  background: url("img/small-text-color.png");
+                  background-repeat: repeat;
+                  -webkit-background-clip: text; 
+                  -webkit-text-fill-color: transparent;  
                   margin-bottom: 2px;
               }
               .disc{
@@ -217,7 +233,11 @@
               }
               
               p{
-                  color: rgb(89, 218, 117);
+                  color: transparent;     
+                  background: url("img/small-text-color.png");
+                  background-repeat: repeat;
+                  -webkit-background-clip: text; 
+                  -webkit-text-fill-color: transparent;  
                   margin-bottom: 2px;
               }
               .bxl-discord-alt{
@@ -266,8 +286,12 @@
                   margin-bottom: 2px;
               }
               p{
-                  color: rgb(89, 218, 117);
-                  margin-bottom: 2px;
+                color: transparent;     
+                background: url("img/small-text-color.png");
+                background-repeat: repeat;
+                -webkit-background-clip: text; 
+                -webkit-text-fill-color: transparent;                    
+                margin-bottom: 2px;
               }
               .disc{
                   color: var(--secondary-color);
@@ -318,8 +342,12 @@
               }
               
               p{
-                  color: rgb(89, 218, 117);
-                  margin-bottom: 2px;
+                color: transparent;     
+                background: url("img/small-text-color.png");
+                background-repeat: repeat;
+                -webkit-background-clip: text; 
+                -webkit-text-fill-color: transparent;                  
+                margin-bottom: 2px;
               }
               .bxl-discord-alt{
                   color: var(--secondary-color);
@@ -393,14 +421,12 @@
 
 
 @media(max-width:500px){
+
   .team {
     height: 1700px !important;
     padding-top: 200px !important;
 
-    .team-box-container{
-      padding-right: 60px;
 
-    }
     .box-team{
         width: 410px !important;
         height: 386px;
@@ -466,6 +492,7 @@
   }
   .team .box-team3{
     width: 260px;
+    margin-top: 50px;
   }
   .team .box-team3 .line-name .name-role h2{
     font-size: 17px !important;
@@ -506,6 +533,7 @@
   }
   .team .box-team5{
     width: 260px;
+    margin-top: 50px;
   }
   .team .box-team5 .line-name .name-role h2{
     font-size: 17px !important;
@@ -518,6 +546,20 @@
     margin-top: 50px !important;
   }
 
+}
+
+
+@media(max-width:460px){
+  .team .team-box-container{
+    padding-right: 50px;
+  }
+}
+
+
+@media(max-width:395px){
+  .team .team-box-container{
+    padding-right: 45px;
+  }
 }
 
 

@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     padding: 0px 50px;
+    background: transparent !important;
 
     .creator-container{
         display: flex;
@@ -66,6 +67,7 @@
 
         img{
             width: 250px;
+            pointer-events: none;
         }
 
         h2{
@@ -77,9 +79,6 @@
     }
 }
 
-.box-creator:hover{
-    background: linear-gradient(90.57deg, #76EA90 0%, #FDFD55 100%);
-}
 
 @media(max-width:1360px){
     .title-creator{
@@ -129,12 +128,13 @@
   }
 }
   
-
-
   
 .card{
-    backdrop-filter: blur(20px);    
     border-radius: 10px;
+    background-color: transparent !important;
+    background: transparent !important;
+    background-clip: none !important;
+    border: 0px;
 
         img{
             width: 100%;

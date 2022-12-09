@@ -52,7 +52,7 @@ input {
 }
 .tab {
   width: 700px;
-  color: var(--secondary-color);
+  color: rgb(255, 255, 255);
   overflow: hidden;
   &-label {
     display: flex;
@@ -117,12 +117,14 @@ input:checked {
     border-radius: 8px;
     &::after {
       transform: rotate(45deg);
-      color: black;
+      color: rgb(255, 255, 255);
     }
   }
   ~ .tab-content {
     max-height: 100vh;
     padding: 1em;
+    color: rgb(255, 255, 255);
+
   }
 }
 

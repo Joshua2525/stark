@@ -130,6 +130,7 @@
             border-radius: 35.9px;
             font-weight: 600;
             margin-top: 50px;
+            color: rgb(0, 0, 0) !important;
         }
 
         .line{
@@ -252,11 +253,11 @@
             width: 160px;
             height: 49px;
             cursor: pointer;
-            line-height: 27px;
-            
+            line-height: 27px;            
         }
         .join-btn{
             background: rgba(118, 234, 144, 1);
+            color: rgb(0, 0, 0) !important;
             border-radius: 35.9px;
             font-weight: 600;
             margin-top: 50px;

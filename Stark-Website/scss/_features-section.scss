@@ -106,6 +106,14 @@
         margin-top: 90px;
         padding: 0px !important;
     }
+    .box-feature:hover{
+        background-image: url('img/border-mobile.png') !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 350px !important;
+        height: 500px !important;
+    }
 }
 
 

@@ -94,7 +94,7 @@ nav{
 }
 
 .navitems {
-   padding: 1rem 1rem;
+   padding: 1rem 1.5rem;
    font-size: 16px;
    line-height: 121.5%; 
    
@@ -155,9 +155,7 @@ header.black nav{
    color: rgba(118, 234, 144, 1);
 }
 
-.navitems:hover {
-   transform: scale(1.1);
- }
+
 
 .active {
    transform: translateX(0%) !important;
@@ -176,8 +174,8 @@ header.black nav{
   }
 
 .center{
-  margin-left: 300px;
-  margin-right: 150px;
+  margin-left: 280px;
+  margin-right: 120px;
    display: flex;
 }
 
@@ -200,12 +198,16 @@ header.black nav{
    border-radius: 5px;
 }
 
+.icon1{
+   margin-right: 20px;
+   margin-top: -2px;
+}
 
 
 @media (max-width: 1860px){
    .center{
-        margin-left: 300px;
-        margin-right:150px;
+        margin-left: 270px;
+        margin-right:200px;
     }
    
 }
@@ -291,6 +293,11 @@ header.black nav{
         color: aqua;
      }
     }
+    .icon1{
+      margin-right: 0px;
+      margin-top: 0px;
+   }
+   
   
 }
 

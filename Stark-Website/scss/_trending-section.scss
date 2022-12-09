@@ -1,8 +1,8 @@
-.top-creator-section {
+.trending-section {
     display: flex;
     height: auto;
     width: 100%;
-    padding-top: 100px !important;
+    padding-top: 150px !important;
     align-items: center;
     justify-content: center;
     padding: 0px 50px;
@@ -16,35 +16,35 @@
         width: 100%;
     }
 
-    .top-creator{
+    .top-trending{
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-
-    .title-creator{
-        margin-bottom: 20px;
-        margin-right: 830px;
+    .title-trending{
+        margin-bottom: 150px;
+        margin-right: 920px;
         font-family: 'futura-bold', sans-serif;
         font-size: 50px;
         color: transparent;     
         background: url("img/letter-color.png");
         background-repeat: repeat;
         -webkit-background-clip: text; 
-        -webkit-text-fill-color: transparent;    
+        -webkit-text-fill-color: transparent;
     }
 
-      .creator-box-container{
-        margin-top: 20px;
+      .trending-box-container{
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         text-align: center;
         justify-content: center;
         width: 100%;
+        margin-bottom: 100px;
+
       }
 
-    .box-creator{
+    .box-trending{
         width: calc(33% - 20px);
         width: 320px;
         height: 280px;
@@ -73,7 +73,7 @@
 
 
 @media(max-width:1360px){
-    .title-creator{
+    .title-trending{
         margin-bottom: 20px;
         margin-right: 490px !important;
         font-size: 40px !important;
@@ -85,14 +85,14 @@
 
 @media(max-width:1060px){
 
-    .top-creator{
+    .top-trenidng{
         display: flex;
         justify-content: center !important;
         align-items: center !important;
         align-content: center;
         flex-direction: column;
         }
-        .title-creator{
+        .title-trending{
             margin-bottom: 0px !important;
             margin-right: 0px !important;
         }
@@ -114,7 +114,7 @@
 
 
 @media(max-width:600px){
-    .title-creator{
+    .title-trending{
       font-size: 30px !important;
       line-height: 40px;
   }
@@ -135,18 +135,18 @@
   
 
   @media (max-width: 2600px) {
-    .creator-box-container2{
+    .trending-box-container2{
       display: none !important;
     }
   }
   
   @media (max-width: 911px) {
 
-    .creator-box-container2{
+    .trending-box-container2{
         display: block !important;
         margin-top: 50px;
       }
-    .creator-box-container{
+    .trending-box-container{
       display: none !important;
     }
     

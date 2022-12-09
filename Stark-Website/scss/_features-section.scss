@@ -187,12 +187,17 @@
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    background: #1B1A1A;
     height: 900px;
     margin-top: 100px;
     width: 100%;
 }
 
+.container-features{
+    width: 1250px !important;
+    height: 600px;
+    background: linear-gradient(90.75deg, #76EA90 0%, #FDFD55 100%);            
+    border-radius: 20px;
+}
 
 .owl-theme .owl-dots .owl-dot.active span,
     .owl-theme .owl-dots .owl-dot:hover span {
@@ -217,7 +222,7 @@
         
             align-self   : center !important;
             transform    : scale(1) !important;
-            background-image: url('img/border.png') !important;
+            background-image: url('img/border-slider.png') !important;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -244,7 +249,7 @@
     }
 
     .box-features1{
-        box-shadow: 10px 32px 72px 0px rgba(15, 13, 35, 0.04);
+          box-shadow: 10px 32px 72px 0px rgba(15, 13, 35, 0.04);
           padding: 0 50px;
           width: calc(33% - 20px);
           background: transparent;
@@ -258,17 +263,18 @@
           text-align: left;
           color: rgb(0, 0, 0) !important;
           cursor: pointer;
-          margin-top: 20px;
+          margin-top: 60px;
 
           img{
             width: 150px !important;
+            margin-left: -25px;
           }
   
   
-          h2{
+          h1{
             color: rgb(0, 0, 0);
-            font-size: 25px !important;
-              margin-top: 40px;
+            font-size: 27px !important;
+              margin-top: 10px;
               margin-bottom: 20px;
           }
       }

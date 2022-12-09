@@ -3,7 +3,7 @@
 .home-section{
     width: 100%;
     height: auto;
-    background-image: url("img/Mask group.png");
+    background-image: url("img/bg-stark.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,14 +17,14 @@
     .left-side{
         margin: 0;
         max-width: 565px;
-        margin-top: 200px;
-        margin-right: 400px;
+        margin-top: -50px;
+        margin-right: 350px;
 
         h1{
             font-family: 'futura-bold', sans-serif;
             font-weight: 100;
-            width: 657.76px;
-            font-size: 106px;
+            width: 500.76px;
+            font-size: 90px;
             color: var(--secondary-color);
         }
         span{
@@ -42,7 +42,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            margin-top: 70px;
+            margin-top: 20px;
 
             button{
                 border: none;
@@ -84,8 +84,8 @@
     }
 
     .iphone-mockup{
-        width: 295.55px;
-        height: 592px;
+        width: 340.55px;
+        height: 700px;
         position: relative;
         display: flex;
         justify-content: center;
@@ -94,8 +94,8 @@
 
         video{
             position: absolute;
-            height: 548.56px;
-            width: 258.39px;
+            height: 650.56px;
+            width: 295.39px;
             background-color: yellow;
             border-radius: 30px;
             object-fit: cover;
@@ -121,8 +121,25 @@
 }
 
 @media(max-width: 1450px){
-    .left-side{
-        margin-right: 200px !important;
+    .home-section{
+    
+        .left-side{
+            margin: 0;
+            max-width: 565px;
+            margin-top: 200px;
+            margin-right: 200px !important;
+
+        }
+    
+        .iphone-mockup{
+            width: 295.55px !important;
+            height: 592px !important;
+    
+            video{
+                height: 548.56px !important;
+                width: 258.39px !important;
+            }
+        }
     }
 }
 
@@ -132,7 +149,7 @@
         .left-side{
             width: 100%;
             h1,span{
-                font-size: 100px;
+                font-size: 90px;
             }
 
             p{

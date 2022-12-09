@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -290px;
+    padding-right: 440px;
 
     .count-container{
         display: flex;
@@ -12,24 +14,67 @@
         .count-box{
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: left;
             flex-direction: column;
             text-align: center;
             width: 250px;
-            height: 91px;
+            height: 140px;
 
             h2{
                 margin-bottom: 5px;
                 font-size: 30px;
                 color: rgb(0, 0, 0);
+                text-align: left;
             }
             p{
                 color: rgb(0, 0, 0);
+                text-align: left;
             }
 
         }
     }
 }
+
+
+@media(max-width: 1450px){
+    .count{
+        background: linear-gradient(90.57deg, #76EA90 0%, #FDFD55 100%);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        padding-right: 0px;
+    
+        .count-container{
+            display: flex;
+            flex-direction: row;
+    
+            .count-box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                width: 250px;
+                height: 91px;
+    
+                h2{
+                    margin-bottom: 5px;
+                    font-size: 30px;
+                    color: rgb(0, 0, 0);
+                }
+                p{
+                    color: rgb(0, 0, 0);
+                }
+    
+            }
+        }
+    }
+    
+}
+
+
 
 @media (max-width: 805px){
     .count-container{
@@ -47,7 +92,6 @@
                 color: rgb(0, 0, 0);
                 font-size: 14px !important;
             }
-
         }
     }
 }

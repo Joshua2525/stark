@@ -1153,7 +1153,7 @@ header.black nav {
 @media (max-width: 1360px) {
   .title-creator {
     margin-bottom: 20px;
-    margin-right: 490px !important;
+    margin-right: 590px !important;
     font-size: 40px !important;
   }
   .top-creator-section .box-creator {
@@ -1182,21 +1182,6 @@ header.black nav {
   .title-creator {
     margin-bottom: 0px !important;
     margin-right: 0px !important;
-  }
-  .view {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 10px !important;
-  }
-  .view p {
-    text-align: center;
   }
   .top-creator-section .box-creator {
     width: 290px;
@@ -1365,11 +1350,19 @@ header.black nav {
 @media (max-width: 1360px) {
   .title-trending {
     margin-bottom: 20px;
-    margin-right: 490px !important;
+    margin-right: 640px !important;
     font-size: 40px !important;
   }
   .top-creator-section .box-creator {
     margin-bottom: 40px;
+  }
+  .box-trending {
+    margin-top: 50px;
+    margin-bottom: 190px !important;
+  }
+  .box-trending img {
+    width: 220px !important;
+    pointer-events: none;
   }
 }
 
@@ -1395,23 +1388,11 @@ header.black nav {
     margin-bottom: 0px !important;
     margin-right: 0px !important;
   }
-  .view {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 10px !important;
-  }
-  .view p {
-    text-align: center;
-  }
-  .top-creator-section .box-creator {
+  .trending-section .box-trending {
     width: 290px;
+  }
+  .title-trending {
+    margin-bottom: 150px !important;
   }
 }
 
@@ -1451,6 +1432,9 @@ header.black nav {
   .swiper {
     width: 350px;
     text-align: center;
+  }
+  .title-trending {
+    margin-bottom: 10px !important;
   }
 }
 
@@ -1587,10 +1571,14 @@ header.black nav {
 }
 
 .feature-section .feature-box-container .box-feature h1 {
-  color: white;
+  color: var(--secondary-color);
   font-size: 25px !important;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.feature-section .feature-box-container .box-feature p {
+  color: var(--secondary-color);
 }
 
 .feature-section .feature-box-container .box-feature:hover {
@@ -1606,50 +1594,15 @@ header.black nav {
   display: none !important;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1025px) {
   .feature-section {
     height: auto !important;
     margin-bottom: 50px;
     margin-top: 90px;
-    padding: 0px !important;
-  }
-  .box-feature:hover {
-    background-image: url("img/border-mobile.png") !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 350px !important;
-    height: 500px !important;
-  }
-}
-
-@media (max-width: 1200px) {
-  .title-feature {
-    font-size: 30px !important;
-    width: 100% !important;
-  }
-  .feature-container-slider {
-    display: none !important;
-  }
-  .feature-section {
-    display: block !important;
-    margin-bottom: 100px;
-  }
-  .feature-slider {
-    display: none !important;
-  }
-}
-
-@media (max-width: 450px) {
-  .title-feature {
-    font-size: 30px !important;
-    padding: 0px 50px;
-    text-align: center !important;
+    padding: 0px 120px !important;
   }
   .box-feature {
     padding: 0px 50px;
-    width: 370px !important;
-    height: 420px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1664,10 +1617,49 @@ header.black nav {
         -ms-flex-align: center;
             align-items: center;
     text-align: center !important;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 20px;
-    border-radius: 10px;
+  }
+  .box-feature p {
+    font-size: 15px !important;
+  }
+  .box-feature:hover {
+    background-image: url("img/border-mobile.png") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 380px !important;
+    height: 550px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .feature-container-slider {
+    display: none !important;
+  }
+  .feature-section {
+    display: block !important;
+    margin-bottom: 100px;
+  }
+  .feature-slider {
+    display: none !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .feature-section {
+    padding: 0px 0px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .title-feature {
+    font-size: 30px !important;
+    padding: 0px 50px;
+    text-align: center !important;
+  }
+  .box-feature {
+    padding: 0px 50px;
+    width: 370px !important;
+    height: 420px;
   }
   .box-feature h1 {
     font-size: 15px !important;
@@ -1697,7 +1689,6 @@ header.black nav {
       -ms-flex-align: center !important;
           align-items: center !important;
   height: 900px;
-  margin-top: 100px;
   width: 100%;
 }
 
@@ -1983,7 +1974,7 @@ header.black nav {
   color: #fff;
   cursor: pointer;
   margin-top: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   color: #fafafa;
   border-color: white;
   border: solid 7px white;
@@ -2444,18 +2435,6 @@ header.black nav {
 }
 
 @media (max-width: 500px) {
-  .achievements {
-    padding: 0px 20px;
-    height: 1700px !important;
-    padding-top: 200px !important;
-  }
-  .achievements .box1 {
-    width: 410px !important;
-    height: 386px;
-  }
-  .achievements .box1 h2 {
-    font-size: 20px !important;
-  }
   .title .title-container .line {
     width: 35.87px !important;
   }
@@ -2465,6 +2444,12 @@ header.black nav {
   }
   .pricing .title .title-container h1 {
     font-size: 30px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .box1 {
+    width: 300px !important;
   }
 }
 
@@ -3908,7 +3893,7 @@ header.black nav {
   }
 }
 
-@media (max-width: 387px) {
+@media (max-width: 391px) {
   .Convert-box {
     padding: 0px 10px;
   }
@@ -3917,7 +3902,7 @@ header.black nav {
     height: 250px !important;
   }
   .box-container-convert p {
-    font-size: 12px !important;
+    font-size: 9px !important;
   }
   .box-container-convert h1 {
     font-size: 14px !important;
@@ -4068,7 +4053,7 @@ input:checked + .tab-label {
 input:checked + .tab-label::after {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  color: white;
+  color: black;
 }
 
 input:checked ~ .tab-content {

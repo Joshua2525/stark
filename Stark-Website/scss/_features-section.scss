@@ -77,10 +77,13 @@
             }
     
             h1{
-                color: rgba(255, 255, 255, 1);
+                color: var(--secondary-color);
                 font-size: 25px !important;
                 margin-top: 20px;
                 margin-bottom: 20px;
+            }
+            p{
+                color: var(--secondary-color);
             }
         }
         .box-feature:hover{
@@ -91,37 +94,47 @@
             width: 400px;
             height: 500px;
         }
-      }
-
+    }
 }
 
 .feature-section{
     display: none !important;
 }
 
-@media (max-width:940px){
+@media (max-width:1025px){
     .feature-section {
         height: auto !important;
         margin-bottom: 50px;
         margin-top: 90px;
-        padding: 0px !important;
+        padding: 0px 120px !important;
+    }
+
+    .box-feature{
+        padding: 0px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center !important;
+
+        p{
+            font-size: 15px !important;
+        }
     }
     .box-feature:hover{
         background-image: url('img/border-mobile.png') !important;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 350px !important;
-        height: 500px !important;
+        width: 380px !important;
+        height: 550px !important;
     }
 }
 
 
+
 @media (max-width:1200px){
-    .title-feature{
-        font-size: 30px !important;
-        width: 100% !important;
-    }
+
     .feature-container-slider{
         display: none !important;
     }
@@ -134,27 +147,23 @@
     }
 }
 
+@media (max-width:540px){
+    .feature-section {
+        padding: 0px 0px !important;
+    }
+}
+
 @media (max-width:450px){
     .title-feature{
         font-size: 30px !important;
         padding: 0px 50px;
          text-align: center !important;
-
     }
 
     .box-feature{
         padding: 0px 50px;
         width: 370px !important;
         height: 420px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center !important;
-        color: #fff;
-        cursor: pointer;
-        margin-top: 20px;
-        border-radius: 10px;
 
         h1{
             font-size: 15px !important;
@@ -177,7 +186,7 @@
 
 
 
-
+// FEATURE SLIDER SCSS STYLEEE ----------------------------------------
 
 
 @import url("css/bootstrap-min.css");
@@ -188,7 +197,6 @@
     justify-content: center !important;
     align-items: center !important;
     height: 900px;
-    margin-top: 100px;
     width: 100%;
 }
 

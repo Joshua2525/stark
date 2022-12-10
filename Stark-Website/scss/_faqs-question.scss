@@ -1,16 +1,4 @@
 
-.faqs-section{
-  background: rgba(19, 19, 19, 1);
-  height: auto;
-}
-
-.faq-section{
-    width: 100%;
-    margin: 0 auto;
-    background: transparent;
-}
-
-
 // FAQS //
 // General
 
@@ -52,7 +40,7 @@ input {
 }
 .tab {
   width: 700px;
-  color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 1);
   overflow: hidden;
   &-label {
     display: flex;
@@ -76,7 +64,7 @@ input {
   &-content {
     max-height: 0;
     padding: 0 1em;
-    color: var(--secondary-color);
+    color: rgb(0, 0, 0);
     transition: all .35s;
   }
   &-close {
@@ -88,7 +76,7 @@ input {
     font-weight: 400;
     cursor: pointer;
     &:hover {
-        color: var(--secondary-color);
+      color: rgb(255, 255, 255);
     }
   }
 }
@@ -112,18 +100,19 @@ input {
 // :checked
 input:checked {
   + .tab-label {
-    background: linear-gradient(101.41deg, #76EA90 0%, #FDFD55 100%);
-    color: black;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border-radius: 8px;
     &::after {
       transform: rotate(45deg);
-      color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
     }
   }
   ~ .tab-content {
     max-height: 100vh;
     padding: 1em;
-    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
 
   }
 }

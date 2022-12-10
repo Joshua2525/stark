@@ -1,15 +1,17 @@
+
 .count{
     background: linear-gradient(90.57deg, #76EA90 0%, #FDFD55 100%);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -290px;
     padding-right: 440px;
 
     .count-container{
+
         display: flex;
         flex-direction: row;
+        
 
         .count-box{
             display: flex;

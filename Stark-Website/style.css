@@ -17,7 +17,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: var(--secondary-color);
 }
 
@@ -36,7 +36,7 @@ body {
 
 .dark-theme {
   --primary-color: rgba(0, 0, 0, 1);
-  --secondary-color: white;
+  --secondary-color: rgb(209, 209, 209);
 }
 
 @font-face {
@@ -114,10 +114,6 @@ nav {
 }
 
 .nowrap {
-  white-space: nowrap;
-}
-
-.about-nav {
   white-space: nowrap;
 }
 
@@ -482,7 +478,7 @@ header.black nav {
     padding: 0;
   }
   .navlinks .itemlinks, .navlinks h1 {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -543,7 +539,7 @@ header.black nav {
 
 .home-section {
   width: 100%;
-  height: auto;
+  height: 850px;
   background-image: url("img/bg-stark.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -560,13 +556,12 @@ header.black nav {
   -ms-flex-line-pack: center;
       align-content: center;
   position: relative;
-  padding-bottom: 195px;
 }
 
 .home-section .left-side {
   margin: 0;
   max-width: 565px;
-  margin-top: -50px;
+  margin-top: 100px;
   margin-right: 350px;
 }
 
@@ -575,11 +570,11 @@ header.black nav {
   font-weight: 100;
   width: 500.76px;
   font-size: 90px;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .home-section .left-side span {
-  font-family: 'Red Hat Text';
+  font-family: 'futura-bold', sans-serif;
   font-weight: 700;
   font-size: 106px;
   color: transparent;
@@ -587,6 +582,7 @@ header.black nav {
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .home-section .left-side .buttons {
@@ -626,7 +622,7 @@ header.black nav {
 
 .home-section .left-side .buttons .button2 {
   background-color: transparent;
-  color: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   border-radius: 5.60983px;
@@ -636,14 +632,14 @@ header.black nav {
 .home-section .left-side .buttons .button1:hover {
   -webkit-box-shadow: 0px 0px 20px -8px #eaeaea;
           box-shadow: 0px 0px 20px -8px #eaeaea;
-  color: #e5e5e5 !important;
+  color: black !important;
 }
 
 .home-section .left-side .buttons .button2:hover {
   background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
   -webkit-box-shadow: 0px 0px 15px #76EA90;
           box-shadow: 0px 0px 15px #76EA90;
-  color: white !important;
+  color: #050505 !important;
 }
 
 .home-section .iphone-mockup {
@@ -659,15 +655,15 @@ header.black nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 200px;
+  margin-bottom: -350px;
 }
 
 .home-section .iphone-mockup video {
   position: absolute;
-  height: 650.56px;
+  height: 645.56px;
   width: 295.39px;
-  background-color: yellow;
-  border-radius: 30px;
+  background-color: black;
+  border-radius: 35px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -712,15 +708,20 @@ header.black nav {
 }
 
 @media (max-width: 1450px) {
+  .home-section {
+    height: auto !important;
+    padding: 100px 0px;
+  }
   .home-section .left-side {
     margin: 0;
     max-width: 565px;
-    margin-top: 200px;
+    margin-top: -50px;
     margin-right: 200px !important;
   }
   .home-section .iphone-mockup {
     width: 295.55px !important;
     height: 592px !important;
+    margin-bottom: 0px !important;
   }
   .home-section .iphone-mockup video {
     height: 548.56px !important;
@@ -747,9 +748,7 @@ header.black nav {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-bottom: 130px;
-  }
-  .home-section .background {
-    height: 100%;
+    padding-top: 130px;
   }
   .home-section .left-side {
     display: -webkit-box;
@@ -766,7 +765,8 @@ header.black nav {
         -ms-flex-align: center;
             align-items: center;
     margin-right: 0px !important;
-    margin-bottom: -100px !important;
+    margin-bottom: 100px !important;
+    margin-top: 50px !important;
   }
   .home-section .left-side h1 {
     text-align: center;
@@ -854,7 +854,6 @@ header.black nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -290px;
   padding-right: 440px;
 }
 
@@ -1048,6 +1047,7 @@ header.black nav {
   height: auto;
   width: 100%;
   padding-top: 100px !important;
+  background: var(--secondary-color);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1055,7 +1055,6 @@ header.black nav {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0px 50px;
-  background: transparent !important;
 }
 
 .top-creator-section .creator-container {
@@ -1096,6 +1095,7 @@ header.black nav {
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .top-creator-section .creator-box-container {
@@ -1293,6 +1293,7 @@ header.black nav {
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .trending-section .trending-box-container {
@@ -1335,9 +1336,10 @@ header.black nav {
   border-radius: 10px;
 }
 
-.trending-section .box-trending img {
-  width: 250px;
+.trending-section .box-trending video {
+  width: 250px !important;
   pointer-events: none;
+  border-radius: 20px !important;
 }
 
 .trending-section .box-trending h2 {
@@ -1360,7 +1362,7 @@ header.black nav {
     margin-top: 50px;
     margin-bottom: 190px !important;
   }
-  .box-trending img {
+  .box-trending video {
     width: 220px !important;
     pointer-events: none;
   }
@@ -1426,6 +1428,10 @@ header.black nav {
     display: block !important;
     margin-top: 50px;
   }
+  .trending-box-container2 video {
+    width: 270px !important;
+    border-radius: 20px !important;
+  }
   .trending-box-container {
     display: none !important;
   }
@@ -1444,8 +1450,8 @@ header.black nav {
             backdrop-filter: blur(20px);
     border-radius: 10px;
   }
-  .card img {
-    width: 80%;
+  .card video {
+    width: 80% !important;
   }
 }
 
@@ -1485,7 +1491,7 @@ header.black nav {
   font-family: 'futura-bold', sans-serif;
   font-size: 50px;
   width: 100%;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .feature-section {
@@ -1571,14 +1577,14 @@ header.black nav {
 }
 
 .feature-section .feature-box-container .box-feature h1 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: 25px !important;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .feature-section .feature-box-container .box-feature p {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .feature-section .feature-box-container .box-feature:hover {
@@ -1850,10 +1856,6 @@ header.black nav {
   display: flex;
   height: 1200px;
   width: 100%;
-  background-image: url("img/bg-pricing.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1918,13 +1920,18 @@ header.black nav {
 }
 
 .pricing .title .title-container h1 {
-  font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 57px;
-  line-height: 103%;
+  font-size: 50px;
+  font-family: 'futura-bold', sans-serif;
+  font-size: 50px;
+  color: transparent;
+  background: url("img/letter-color.png");
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   text-align: center;
   letter-spacing: 0.055em;
-  color: var(--secondary-color);
   padding-left: 85px;
   padding-right: 85px;
 }
@@ -2115,14 +2122,21 @@ header.black nav {
 
 .pricing .box2 .most-popular h2 {
   text-align: center;
-  color: black;
+  color: black !important;
   font-size: 15px !important;
   margin-top: 10px;
   font-weight: 600;
 }
 
+.pricing .box2 .premium {
+  color: transparent;
+  background: url("img/letter-color.png");
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .pricing .box2 h2 {
-  color: white;
   font-weight: 600;
   text-align: left;
   font-size: 44px !important;
@@ -2158,7 +2172,7 @@ header.black nav {
 }
 
 .pricing .box2 .join-btn {
-  background: #76ea90;
+  background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
   color: black !important;
   border-radius: 35.9px;
   font-weight: 600;
@@ -2453,6 +2467,24 @@ header.black nav {
   }
 }
 
+.faqs-section {
+  width: 100%;
+  height: auto;
+}
+
+.faq-section {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.faqs-container {
+  width: 1250px;
+  padding: 50px 100px;
+  height: auto;
+  border-radius: 20px;
+  background: linear-gradient(90.75deg, #76EA90 0%, #FDFD55 100%);
+}
+
 .box-features {
   -webkit-box-shadow: 10px 32px 72px 0px rgba(15, 13, 35, 0.04);
           box-shadow: 10px 32px 72px 0px rgba(15, 13, 35, 0.04);
@@ -2477,13 +2509,13 @@ header.black nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white !important;
+  color: black;
   cursor: pointer;
   margin-top: 20px;
 }
 
 .box-features h2 {
-  color: white;
+  color: black;
   font-size: 25px !important;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -2508,7 +2540,6 @@ header.black nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: var(--primary-color);
 }
 
 .faqs-section .faqs-container {
@@ -2528,7 +2559,7 @@ header.black nav {
 }
 
 .faqs-section .title-faq {
-  color: white;
+  color: black;
   font-size: 60px;
   width: 600px;
   margin-bottom: 100px;
@@ -2572,23 +2603,17 @@ header.black nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 
 .faqs-section .faqs-info .selections h1:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  color: transparent;
-  background: url("img/letter-color.png");
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #767676;
 }
 
 .faqs-section .faqs-info .selections h2 {
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
@@ -2599,18 +2624,14 @@ header.black nav {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  color: #868C9B;
+  color: black;
   margin-top: 10px;
 }
 
 .faqs-section .faqs-info .selections h2:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  color: transparent;
-  background: url("img/letter-color.png");
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #767676;
 }
 
 .faqs-section .faqs-info .selections button {
@@ -2621,19 +2642,19 @@ header.black nav {
   height: 49px;
   cursor: pointer;
   line-height: 27px;
-  color: white;
 }
 
 .faqs-section .faqs-info .selections .join-now {
   background-color: transparent;
-  border: 2px solid #76EA90;
+  border: 2px solid #000000;
   border-radius: 50px;
   font-weight: 600;
   margin-top: 20px;
+  color: black;
 }
 
 .faqs-section .faqs-info .selections .join-now:hover {
-  background: linear-gradient(101.41deg, #76EA90 0%, #FDFD55 100%);
+  background: black;
   border: transparent;
 }
 
@@ -2651,7 +2672,7 @@ header.black nav {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  color: var(--secondary-color);
+  color: black;
 }
 
 .faqs-section .faqs-info .frequently-asked-questions h2 {
@@ -2660,7 +2681,7 @@ header.black nav {
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
-  color: #FFFFFF;
+  color: black;
 }
 
 .faqs-section .faqs-info .frequently-asked-questions p {
@@ -2670,7 +2691,7 @@ header.black nav {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: black;
 }
 
 .faqs-section .faqs-info .frequently-asked-questions #new-p {
@@ -2678,7 +2699,7 @@ header.black nav {
 }
 
 .faqs-section .faqs-info .frequently-asked-questions span {
-  color: var(--secondary-color);
+  color: black;
   font-weight: 700;
   cursor: pointer;
 }
@@ -2903,6 +2924,7 @@ header.black nav {
           flex-direction: column;
   background-color: transparent;
   display: none;
+  margin-left: 50PX;
 }
 
 .community-funds-section h1 {
@@ -2910,7 +2932,7 @@ header.black nav {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  color: var(--secondary-color);
+  color: black;
 }
 
 .community-funds-section p {
@@ -2919,8 +2941,8 @@ header.black nav {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--secondary-color);
   margin-top: 46px;
+  color: black;
 }
 
 .community-funds-section .line {
@@ -3007,6 +3029,22 @@ header.black nav {
   width: 100%;
 }
 
+.team .title-container-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .team .title-team {
   font-family: 'futura', sans-serif;
   margin-bottom: 20px;
@@ -3018,10 +3056,11 @@ header.black nav {
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .team .subtitle-team {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   margin-bottom: 70px;
   font-size: 30px;
   width: 820px;
@@ -3100,7 +3139,7 @@ header.black nav {
 }
 
 .team .box-team1 .line-name .name-role h2 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: 25px !important;
   margin-top: 60px;
   margin-bottom: 2px;
@@ -3113,10 +3152,11 @@ header.black nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 2px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .team .box-team1 .line-name .name-role .bxl-discord-alt {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: 30px;
 }
 
@@ -3147,7 +3187,7 @@ header.black nav {
 }
 
 .team .box-team1 .line-name2 .name-role h2 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   margin-bottom: 2px;
 }
 
@@ -3158,10 +3198,11 @@ header.black nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 2px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .team .box-team1 .line-name2 .name-role .disc {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: 30px;
 }
 
@@ -3220,7 +3261,7 @@ header.black nav {
 }
 
 .team .box-team2 .line-name2 .name-role h2 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   margin-bottom: 2px;
 }
 
@@ -3231,10 +3272,11 @@ header.black nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 2px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .team .box-team2 .line-name2 .name-role .disc {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: 30px;
 }
 
@@ -3293,7 +3335,7 @@ header.black nav {
 }
 
 .team .box-team3 .line-name .name-role h2 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: 25px !important;
   margin-top: 60px;
   margin-bottom: 2px;
@@ -3306,10 +3348,11 @@ header.black nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 2px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .team .box-team3 .line-name .name-role .bxl-discord-alt {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: 30px;
 }
 
@@ -3368,7 +3411,7 @@ header.black nav {
 }
 
 .team .box-team4 .line-name2 .name-role h2 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   margin-bottom: 2px;
 }
 
@@ -3379,10 +3422,11 @@ header.black nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 2px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .team .box-team4 .line-name2 .name-role .disc {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: 30px;
 }
 
@@ -3441,7 +3485,7 @@ header.black nav {
 }
 
 .team .box-team5 .line-name .name-role h2 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: 25px !important;
   margin-top: 60px;
   margin-bottom: 2px;
@@ -3454,10 +3498,11 @@ header.black nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 2px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .team .box-team5 .line-name .name-role .bxl-discord-alt {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: 30px;
 }
 
@@ -3523,11 +3568,13 @@ header.black nav {
   .title-team {
     font-size: 50px !important;
     color: transparent;
+    text-align: center !important;
   }
   .subtitle-team {
     margin-bottom: 70px;
     font-size: 25px !important;
     width: 90% !important;
+    text-align: center !important;
   }
 }
 
@@ -3914,17 +3961,6 @@ header.black nav {
   }
 }
 
-.faqs-section {
-  background: #131313;
-  height: auto;
-}
-
-.faq-section {
-  width: 100%;
-  margin: 0 auto;
-  background: transparent;
-}
-
 .faq-section {
   padding: 0;
   margin-top: 0px;
@@ -3974,7 +4010,7 @@ input {
 
 .tab {
   width: 700px;
-  color: white;
+  color: black;
   overflow: hidden;
 }
 
@@ -4006,7 +4042,7 @@ input {
 .tab-content {
   max-height: 0;
   padding: 0 1em;
-  color: var(--secondary-color);
+  color: black;
   -webkit-transition: all .35s;
   transition: all .35s;
 }
@@ -4026,7 +4062,7 @@ input {
 }
 
 .tab-close:hover {
-  color: var(--secondary-color);
+  color: white;
 }
 
 .question1 {
@@ -4045,21 +4081,22 @@ input {
 }
 
 input:checked + .tab-label {
-  background: linear-gradient(101.41deg, #76EA90 0%, #FDFD55 100%);
-  color: black;
+  background: black;
+  color: white;
   border-radius: 8px;
 }
 
 input:checked + .tab-label::after {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  color: black;
+  color: white;
 }
 
 input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
-  color: white;
+  margin-left: 20px;
+  color: black;
 }
 
 @media (max-width: 1400px) {
@@ -4128,6 +4165,261 @@ input:checked ~ .tab-content {
   }
 }
 
+.roadmap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 50px;
+  padding-top: 50px !important;
+  margin-bottom: 50px;
+}
+
+.roadmap .roadmap-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.roadmap .title-roadmap {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.roadmap .title-roadmap h1 {
+  font-family: 'futura-bold', sans-serif;
+  font-size: 50px;
+  color: transparent;
+  background: url("img/letter-color.png");
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.roadmap .title-roadmap p {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.roadmap .roadmap-box-container {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.roadmap .roadmap-box {
+  padding: 0 50px;
+  margin: 50px 60px;
+  width: calc(33% - 20px);
+  background: transparent;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  width: 510px;
+  height: 286px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.roadmap .roadmap-box .line-box1 {
+  position: absolute;
+  top: 278px;
+  right: -47px;
+  height: 37.5px;
+}
+
+.roadmap .roadmap-box .line-box2 {
+  position: absolute;
+  top: 278px;
+  right: 503.5px;
+}
+
+.roadmap .roadmap-box .line-box3 {
+  position: absolute;
+  top: -28px;
+  right: -47px;
+}
+
+.roadmap .roadmap-box .line-box4 {
+  position: absolute;
+  top: -28px;
+  right: 503.5px;
+}
+
+.roadmap .roadmap-box h2 {
+  font-size: 25px !important;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: transparent;
+  background: url("img/letter-color.png");
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.roadmap .roadmap-box p {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.roadmap-box::before {
+  content: "";
+  position: absolute;
+  inset: 0 !important;
+  border-radius: 19px;
+  padding: 3px;
+  background: linear-gradient(90.75deg, #76EA90 0%, #FDFD55 100%) !important;
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, black)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, black)) !important;
+  -webkit-mask: linear-gradient(black 0 0) content-box, linear-gradient(black 0 0) !important;
+  -webkit-mask-composite: xor !important;
+  mask-composite: exclude !important;
+}
+
+.roadmap-box:hover {
+  color: black !important;
+  background: linear-gradient(90.75deg, #76EA90 0%, #FDFD55 100%) !important;
+}
+
+.roadmap-box:hover p {
+  color: black;
+}
+
+.roadmap-box:hover h2 {
+  color: transparent;
+  background: black;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 780px) {
+  .roadmap-box {
+    padding: 0 50px;
+    margin: 50px 0px !important;
+  }
+  .roadmap-box .line-box1 {
+    display: none;
+  }
+  .roadmap-box .line-box2 {
+    display: none;
+  }
+  .roadmap-box .line-box3 {
+    display: none;
+  }
+  .roadmap-box .line-box4 {
+    display: none;
+  }
+  .roadmap-box h2 {
+    font-size: 20px !important;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  .roadmap-box p {
+    font-weight: 600;
+    font-size: 15px !important;
+    color: var(--primary-color);
+  }
+  .title-roadmap h1 {
+    font-size: 40px;
+  }
+  .title-roadmap p {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 470px) {
+  .roadmap-box {
+    padding: 40px 30px !important;
+    margin: 20px 0px !important;
+    height: auto !important;
+  }
+  .roadmap-box h2 {
+    font-size: 18px !important;
+  }
+  .roadmap-box p {
+    font-size: 14px !important;
+  }
+  .title-roadmap h1 {
+    font-size: 35px !important;
+  }
+  .title-roadmap p {
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .roadmap-box {
+    padding: 40px 20px !important;
+    margin: 20px 0px !important;
+  }
+  .roadmap-box h2 {
+    font-size: 15px !important;
+  }
+  .roadmap-box p {
+    font-size: 12px !important;
+  }
+}
+
 footer {
   color: white;
   background: #040404;
@@ -4145,7 +4437,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 100px;
+  padding: 0px 120px;
 }
 
 .footer-container .left-footer {
@@ -4195,16 +4487,16 @@ footer {
 }
 
 .footer-container .middle-footer .dis {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .footer-container .middle-footer .insta {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .footer-container .middle-footer .fb {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .footer-container .img_footer {

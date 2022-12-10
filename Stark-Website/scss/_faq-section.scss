@@ -1,3 +1,24 @@
+
+.faqs-section{
+  width: 100%;
+  height: auto;
+}
+
+.faq-section{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.faqs-container{
+  width: 1250px;
+  padding: 50px 100px;
+  height: auto;
+  border-radius: 20px;
+  background: linear-gradient(90.75deg, #76EA90 0%, #FDFD55 100%);            
+}
+
+
+
 .box-features{
       box-shadow: 10px 32px 72px 0px rgba(15, 13, 35, 0.04);
         padding: 0 20px;
@@ -11,12 +32,12 @@
         justify-content: center;
         text-align: center;
         align-items: center;
-        color: rgb(255, 255, 255) !important;
+        color: rgba(0, 0, 0, 1);
         cursor: pointer;
         margin-top: 20px;
 
         h2{
-          color: rgb(255, 255, 255);
+          color: rgba(0, 0, 0, 1);
           font-size: 25px !important;
             margin-top: 40px;
             margin-bottom: 20px;
@@ -34,8 +55,6 @@
     justify-content: center;
     flex-direction: column;
 
-    background: var(--primary-color);
-
     .faqs-container{
       display: flex;
       flex-direction: column;
@@ -45,7 +64,7 @@
 
 
     .title-faq{
-      color: rgb(255, 255, 255);
+      color: rgba(0, 0, 0, 1);
       font-size: 60px;
         width: 600px;
         margin-bottom: 100px;
@@ -72,38 +91,28 @@
                 line-height: 30px;
                 width: 250px;
                 display: flex;
-                color: rgb(255, 255, 255);
+                color: rgba(0, 0, 0, 1);
                 cursor: pointer;
 
             }
             h1:hover{
               transform: scale(1.1);
-              color: transparent;     
-              background: url("img/letter-color.png");
-              background-repeat: repeat;
-              -webkit-background-clip: text; 
-              -webkit-text-fill-color: transparent;            
+              color: rgb(118, 118, 118);          
             }
             h2{
-
-                font-family: 'Poppins';
-                font-style: normal;
                 font-weight: 700;
                 font-size: 20px;
                 line-height: 30px;
                 display: flex;
                 align-items: center;
                 cursor: pointer;
-                color: #868C9B;
+                color: rgba(0, 0, 0, 1);
                 margin-top: 10px;
             }
             h2:hover{
               transform: scale(1.1);
-              color: transparent;     
-              background: url("img/letter-color.png");
-              background-repeat: repeat;
-              -webkit-background-clip: text; 
-              -webkit-text-fill-color: transparent;
+              color: rgb(118, 118, 118);
+
             }
             button{
               border: none;
@@ -113,17 +122,18 @@
               height: 49px;
               cursor: pointer;
               line-height: 27px;
-              color: rgb(255, 255, 255);
             }
           .join-now{
               background-color: transparent;
-              border: 2px solid #76EA90;
+              border: 2px solid #000000;
               border-radius: 50px;
               font-weight: 600;
               margin-top: 20px;
+              color: rgb(0, 0, 0);
+
           }
           .join-now:hover{
-            background: linear-gradient(101.41deg, #76EA90 0%, #FDFD55 100%);
+            background: rgb(0, 0, 0);
             border: transparent;
           }
 
@@ -142,15 +152,15 @@
                 font-weight: 700;
                 font-size: 14px;
                 line-height: 21px;
-                color: var(--secondary-color);
-            }
+                color: rgba(0, 0, 0, 1);
+              }
             h2{
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 700;
                 font-size: 40px;
                 line-height: 60px;
-                color: #FFFFFF;                
+                color: rgba(0, 0, 0, 1);
             }
             p{
                 width: 584px;
@@ -159,7 +169,7 @@
                 font-weight: 400;
                 font-size: 20px;
                 line-height: 30px;
-                color: #FFFFFF;
+                color: rgba(0, 0, 0, 1);
             }
 
             #new-p{
@@ -167,7 +177,7 @@
             }
 
             span{
-              color: var(--secondary-color);
+              color: rgba(0, 0, 0, 1);
               font-weight: 700;
               cursor: pointer;
             }

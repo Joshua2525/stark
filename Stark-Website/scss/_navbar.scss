@@ -32,9 +32,6 @@ nav{
    white-space: nowrap;
 }
 
-.about-nav{
-  white-space: nowrap;
-}
 .nav-links a {
    font-size: 16px;
    color: #fff;
@@ -345,7 +342,7 @@ header.black nav{
        padding: 0;
 
        .itemlinks,h1{
-           color: var(--secondary-color);
+           color: var(--primary-color);
            font-style: normal;
            font-weight: 500;
            font-size: 15px;

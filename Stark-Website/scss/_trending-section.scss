@@ -31,6 +31,7 @@
         background-repeat: repeat;
         -webkit-background-clip: text; 
         -webkit-text-fill-color: transparent;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
     }
 
       .trending-box-container{
@@ -57,9 +58,10 @@
         margin-top: 20px;
         border-radius: 10px;
 
-        img{
-            width: 250px;
+        video{
+            width: 250px !important;
             pointer-events: none;
+            border-radius: 20px!important;
         }
 
         h2{
@@ -85,7 +87,7 @@
         margin-top: 50px;
         margin-bottom: 190px !important;
 
-        img{
+        video{
             width: 220px !important;
             pointer-events: none;
         }
@@ -148,6 +150,11 @@
     .trending-box-container2{
         display: block !important;
         margin-top: 50px;
+
+        video{
+            width: 270px !important;
+            border-radius: 20px !important;
+        }
       }
     .trending-box-container{
       display: none !important;
@@ -168,8 +175,8 @@
         backdrop-filter: blur(20px);    
         border-radius: 10px;
     
-            img{
-                width: 80%;
+            video{
+                width: 80% !important;
             }
       }
 

@@ -23,7 +23,7 @@
     font-family: 'futura-bold', sans-serif;
     font-size: 50px;
     width: 100%;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .feature-section {
@@ -77,13 +77,13 @@
             }
     
             h1{
-                color: var(--secondary-color);
+                color: var(--primary-color);
                 font-size: 25px !important;
                 margin-top: 20px;
                 margin-bottom: 20px;
             }
             p{
-                color: var(--secondary-color);
+                color: var(--primary-color);
             }
         }
         .box-feature:hover{

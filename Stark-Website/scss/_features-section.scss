@@ -30,7 +30,6 @@
     height: 1000px !important;
     align-items: center;
     justify-content: center;
-
     height: auto;
     width: 100%;
     padding-top: 100px !important;
@@ -66,7 +65,7 @@
             align-items: left;
             text-align: left;
 
-            color: #fff;
+            color: rgb(0, 0, 0);
             cursor: pointer;
             margin-top: 20px;
             border-radius: 10px;
@@ -76,18 +75,18 @@
             }
     
             h1{
-                color: var(--primary-color);
+                color: rgb(0, 0, 0);
                 font-size: 25px !important;
                 margin-top: 20px;
                 font-weight: 700;
                 margin-bottom: 20px;
             }
             p{
-                color: var(--primary-color);
+                color: rgb(0, 0, 0);
             }
         }
         .box-feature:hover{
-            background-image: url('img/border-mobile2.png');
+            background-image: url('img/border-mobile-400.png') !important;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -122,7 +121,7 @@
         }
     }
     .box-feature:hover{
-        background-image: url('img/border-mobile.png') !important;
+        background-image: url('img/border-mobile-latest.png') !important;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -145,7 +144,25 @@
         justify-content: center;
         height: auto !important;
         margin-bottom: 200px;
+        border-radius: 20px;
+        background: linear-gradient(98.29deg, #76EA90 0%, #FDFD55 100%);
     }
+    .box-feature{
+        margin-top: 100px !important;
+    }
+    .feature-box-container{
+        margin-bottom: 100px !important;
+        padding-bottom: 100px;
+    }
+    .box-feature:hover{
+        background-image: url('img/border-mobile-400.png') !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 350px !important;
+        height: 500px !important;
+    }
+
     .feature-slider{
         display: none !important;
     }
@@ -178,7 +195,7 @@
         }
     }
     .box-feature:hover{
-        background-image: url('img/border-mobile2.png') !important;
+        background-image: url('img/border-mobile-400.png') !important;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

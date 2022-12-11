@@ -1752,6 +1752,11 @@ header.black nav {
   border-radius: 20px;
 }
 
+.container-features:hover {
+  -webkit-filter: drop-shadow(0px 2px 5px #76EA90);
+          filter: drop-shadow(0px 2px 5px #76EA90);
+}
+
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #000000;
@@ -3076,6 +3081,16 @@ header.black nav {
   position: absolute;
   top: 225px;
   right: 72px;
+}
+
+.box-social-media:hover {
+  -webkit-filter: drop-shadow(0px 2px 5px #76EA90);
+          filter: drop-shadow(0px 2px 5px #76EA90);
+}
+
+.box-social-media2:hover {
+  -webkit-filter: drop-shadow(0px 2px 5px #76EA90);
+          filter: drop-shadow(0px 2px 5px #76EA90);
 }
 
 @media (max-width: 1487px) {

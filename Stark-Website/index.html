@@ -80,9 +80,9 @@
     <!--HOME SECTION-->
 
     <div class="home-section" id="home">
-        <div class="left-side">
+        <div class="left-side"  data-aos="zoom-in" data-aos-duration="1000">
 
-            <h1 data-aos="zoom-in" data-aos-duration="1000"> <u>10X </u>  YOUR 📲 SOCIAL <span>NETWORK</span>.</h1>
+            <h1> <u>10X </u>  YOUR 📲 SOCIAL <span>NETWORK</span>.</h1>
 
             <div class="buttons">
 
@@ -97,7 +97,7 @@
             </div>
         </div>
 
-        <div class="iphone-mockup">
+        <div class="iphone-mockup" data-aos="fade-left" data-aos-duration="1000">
             <img src="img/phone14.png" alt="">
 
             <video autoplay loop muted src="img/Andrew Tate Yacht.mp4" type="video/mp4">
@@ -294,12 +294,6 @@
                     <p>Each order will be assigned a designated editor for full video customization to ensure our customers satisfaction. </p>
                 </div>
         
-                <div class="box-feature" data-aos="fade-down" data-aos-delay="250">
-                    <img class="icon-features" src="img/build.png" alt="">
-                    <h1>Build Brand</h1>
-                    <p>Familiarize your followers with custom branding like emojis, </p>
-                </div>
-        
                 <div class="box-feature" data-aos="fade-down" data-aos-delay="400">
                     <img class="icon-features" src="img/effective.png" alt="">
                     <h1>Effective</h1>
@@ -314,6 +308,16 @@
                     <p>Caption Content is proven to increase retention rate by 80%+. Enabling you to reach a bigger audience and gain a following.</p>
                 </div>
 
+
+
+                <!--
+
+                                <div class="box-feature" data-aos="fade-down" data-aos-delay="250">
+                    <img class="icon-features" src="img/build.png" alt="">
+                    <h1>Build Brand</h1>
+                    <p>Familiarize your followers with custom branding like emojis, </p>
+                </div>
+
                 <div class="box-feature" data-aos="fade-down" data-aos-delay="400">
                     <img class="icon-features" src="img/engagement.png" alt="">
                     <h1>Support</h1>
@@ -325,7 +329,8 @@
                     <h1>User Friendly</h1>
                     <p>Intutive UI to help illustrate the importance of  caption content & personal social branding. Our editors are dedicated to help you succeed in all relms.  </p>
                 </div>
-        
+                
+                -->
 
             </div>
         </div>
@@ -337,17 +342,13 @@
             <div class="row1">
                 <div class="col1">
                     <div class="gallery-carousel owl-carousel owl-theme1">
+
+            
+
                         <div class="box-features1" data-aos="fade-down" data-aos-delay="100">
                             <img class="icon-features" src="img/quality.png" alt="">
                             <h1>Quality</h1>
                             <p>Each order will be assigned a designated editor for full video customization to ensure our customers satisfaction. </p>
-                    
-                        </div>
-
-                        <div class="box-features1" data-aos="fade-down" data-aos-delay="100">
-                            <img class="icon-features" src="img/build.png" alt="">
-                            <h1>Build Brand</h1>
-                            <p>Familiarize your followers with custom branding like emojis, </p>
                         </div>
 
                         <div class="box-features1" data-aos="fade-down" data-aos-delay="100">
@@ -356,14 +357,23 @@
                             <p>Social Content proven to convert 
                                 <br>
                             Targeting for growing your social network (E-com, Course sellers, personal brand, education vids, theme repost accounts).</p>
-                
                         </div>
- 
+
                         <div class="box-features1" data-aos="fade-down" data-aos-delay="100">
                             <img class="icon-features" src="img/engagement.png" alt="">
                             <h1>+ Engagement</h1>
                             <p>Caption Content is proven to increase retention rate by 80%+. Enabling you to reach a bigger audience and gain a following.</p>
                         </div>
+
+ 
+                        <!--
+            
+                                             <div class="box-features1" data-aos="fade-down" data-aos-delay="100">
+                            <img class="icon-features" src="img/build.png" alt="">
+                            <h1>Build Brand</h1>
+                            <p>Familiarize your followers with custom branding like emojis, </p>
+                        </div>
+
 
                         <div class="box-features1" data-aos="fade-down" data-aos-delay="100">
                             <img class="icon-features" src="img/engagement.png" alt="">
@@ -376,6 +386,8 @@
                             <h1>User Friendly</h1>
                             <p>Intutive UI to help illustrate the importance of  caption content & personal social branding. Our editors are dedicated to help you succeed in all relms.  </p>
                         </div>
+
+                        -->
                     </div>
                 </div>
             </div>
@@ -895,13 +907,13 @@
                 <div class="first-line">
                     <a class="home-footer" href="#">Home</a>
                     <a  href="#">Learn More</a>
-                    <a class="pricing-footer" href="#">Pricing</a>
-                    <a href="#">Team</a>
+                    <a class="pricing-footer" href="#pricing">Pricing</a>
+                    <a href="#team">Team</a>
                 </div>
 
                 <div class="second-line">
-                    <a href="#">Roadmap</a>
-                    <a class="team-footer" href="#">Faq</a>
+                    <a href="#roadmap">Roadmap</a>
+                    <a class="team-footer" href="#faqs-section">Faq</a>
                     <br>
                 </div>
 
@@ -998,7 +1010,7 @@
         $(document).ready(function () {
                 $(".gallery-carousel").owlCarousel({
                     loop: true,
-                    autoplay: true,
+                    autoplay: false,
                     center: true,
                     responsive: {
                         0: {

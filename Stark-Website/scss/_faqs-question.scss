@@ -5,9 +5,7 @@
 .faq-section {
   padding: 0;
   margin-top: 0px;
-  margin-bottom: 60px;
-  margin-left: 100px;
-  
+  margin-bottom: 60px;  
 }
 
 
@@ -26,6 +24,8 @@ input {
 // Layout
 .row {
   display:flex;
+  margin-right: 50px;
+  margin-bottom: -35px;
   .col {
     flex:1;
     &:last-child {
@@ -39,32 +39,33 @@ input {
   overflow: hidden;
 }
 .tab {
-  width: 700px;
+  width: 1000px;
   color: rgba(0, 0, 0, 1);
+  font-size: 30px;
+  font-weight: 500 !important;
   overflow: hidden;
   &-label {
     display: flex;
     justify-content: space-between;
     padding: 1em;
     background: transparent;
-    font-weight: bold;
     cursor: pointer;
 
     &::after {
       content: "+";
-      font-size: 25px;
+      font-size: 35px;
       font-weight: 200;
       width: 1em;
       height: 1.2em;
       text-align: center;
       transition: all .35s;
-      color: #76EA90;
+      color: #000000;
     }
   }
   &-content {
     max-height: 0;
     padding: 0 1em;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     transition: all .35s;
   }
   &-close {
@@ -82,7 +83,8 @@ input {
 }
 
 .question1{
-    border-bottom: 2px solid rgba(118, 234, 144, 1) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 1) !important;
+
     position: relative;
 }
 .question1::before{
@@ -123,24 +125,43 @@ input:checked {
   padding: 0;
   margin-left: 0px;
 }
-.row{
-    margin-top: 50px !important;
 }
 
-
-}
-@media(max-width:800px){
+@media(max-width:1000px){
   .row {
-    .col {
-      flex:1;
-      &:last-child {
-        margin-left: 0em;
+    display:flex;
+    margin-right: 40px;
+    margin-bottom: -25px;
+  }
+  .tab {
+    width: 600px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px !important;
+    &-label {
+  
+      &::after {
+        content: "+";
+        font-size: 20px !important;
       }
     }
   }
+  .faqs-container{
+    width:750px;
+    padding: 50px 200px !important;
+  }
+  
+}
+
+@media(max-width:800px){
+
+  .row {
+    display:flex;
+    margin-right: 20px;
+    margin-bottom: -40px;
+  }
 
   .tab{
-    width: 500px !important;
+    width: 400px !important;
   }
   .tab-label{
     padding: 10px 0px 10px 10px;
@@ -148,13 +169,16 @@ input:checked {
   .tab-label::after {
     width: 2em;
 }
+.faqs-container{
+  width:550px;
+}
 
 }
 
 
 @media(max-width:520px){
     .tab{
-      width: 400px !important;
+      width: 300px !important;
       font-size: 14px !important;
     }
 
@@ -163,17 +187,57 @@ input:checked {
         justify-content: center;
         align-items: center;
     }
+    .faqs-container{
+      width:400px;
+    }
+    .tab {
+      width: 550px;
+      font-size: 15px !important;
+      &-label {
+    
+        &::after {
+          content: "+";
+          font-size: 15px !important;
+        }
+      }
+    }
   }
 
-  @media(max-width:430px){
-    .tab{
-      width: 100% !important;
-      font-size: 12px !important;
+  @media(max-width:470px){
+    .row {
+      margin-bottom: -40px;
     }
+    .tab {
+      width: 270px;
+      font-size: 14px !important;
+      &-label {
+    
+        &::after {
+          content: "+";
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
 
-    .row{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  @media(max-width:415px){
+    .row {
+      margin-bottom: -45px;
     }
+    .tab {
+      width: 270px !important;
+      font-size: 12px !important;
+      &-label {
+    
+        &::after {
+          content: "+";
+          font-size: 12px !important;
+        }
+      }
+    }
+    .faqs-container{
+      width: auto !important;
+      height: auto;
+    }
+    
   }

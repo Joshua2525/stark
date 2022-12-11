@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     padding: 0px 50px;
-    padding-top: 50px !important;
+    padding-top: 90px !important;
     margin-bottom: 50px;
 
     .roadmap-container{
@@ -16,7 +16,7 @@
         width: 100%;
     }
     .title-roadmap{
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -124,7 +124,7 @@
 .roadmap-box:hover {
     color: rgb(0, 0, 0) !important;
     background: linear-gradient(90.75deg, #76EA90 0%, #FDFD55 100%) !important;       
-    
+
     p{
         color: rgb(0, 0, 0);
     }

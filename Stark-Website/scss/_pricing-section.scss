@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     padding: 0px 50px;
-    padding-top: 50px !important;
+    padding-top: 150px !important;
     font-family: 'Poppins', sans-serif;
 
     .pricing-container{
@@ -145,7 +145,7 @@
         .essentials{
             font-weight: 500;
             font-size: 14.3586px;
-            margin-bottom: 65px;
+            margin-bottom: 25px;
         }
         ul li {
             list-style-type: none!important;
@@ -203,7 +203,7 @@
                 text-align: center;
                 color: black !important;
                 font-size: 15px !important;
-                margin-top: 10px;
+                margin-top: 12px;
                 font-weight: 600;
             }
 
@@ -225,6 +225,8 @@
             background-repeat: repeat;
             -webkit-background-clip: text; 
             -webkit-text-fill-color: transparent;
+            margin-top: 25px !important;
+
         }
 
         h2{
@@ -281,7 +283,7 @@
         .essentials{
             font-weight: 500;
             font-size: 14.3586px;
-            margin-bottom: 65px;
+            margin-bottom: 25px;
         }
         ul li {
             list-style-type: none!important;
@@ -332,10 +334,10 @@
   }
 
 .box1:hover{
-    background: #A5A5A5;
+    filter: drop-shadow(0px 2px 5px #76EA90);
 }
 .box2:hover{
-    background: #A5A5A5;
+    filter: drop-shadow(0px 2px 5px #76EA90);
 }
 
 @media(max-width:1550px){
@@ -498,6 +500,14 @@
         .pricing .pricing-container {
             margin-bottom: 70px;
         }
+        .pricing .box1{
+            margin: 0px 0px !important;
+            margin-bottom: 20px !important;
+          }
+          .pricing .box2{
+            margin: 0px 0px;
+            margin-bottom: 20px;
+          }        
     }
 
 
@@ -510,7 +520,7 @@
     overflow-x: hidden !important;
   }
   .pricing .box1{
-    margin: 0px 0px !important;
+    margin: 0px 0px 0px !important;
     margin-bottom: 20px !important;
   }
   .pricing .box2{
@@ -574,9 +584,4 @@
 }
 }
 
-@media(max-width:450px){
-    .box1{
-        width: 300px !important;
-    }
-}
 

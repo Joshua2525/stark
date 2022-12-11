@@ -1,10 +1,9 @@
 .team {
     display: flex;
-    height: 1000px !important;
+    height: 900px !important;
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding-top: 50px !important;
     font-family: 'Poppins', sans-serif;
     overflow-y: hidden !important;
 
@@ -311,6 +310,7 @@
                 color: transparent;     
                 background: url("img/small-text-color.png");
                 background-repeat: repeat;
+                background-size: cover;
                 -webkit-background-clip: text; 
                 -webkit-text-fill-color: transparent;                    
                 margin-bottom: 2px;

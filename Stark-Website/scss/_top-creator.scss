@@ -74,6 +74,10 @@
     }
 }
 
+.creator-box-container2{
+  display: none !important;
+}
+
 
 @media(max-width:1360px){
     .title-creator{
@@ -128,11 +132,6 @@
   }
   
 
-  @media (max-width: 2600px) {
-    .creator-box-container2{
-      display: none !important;
-    }
-  }
   
   @media (max-width: 911px) {
 

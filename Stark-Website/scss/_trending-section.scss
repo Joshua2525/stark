@@ -73,6 +73,9 @@
     }
 }
 
+.trending-box-container2{
+    display: none !important;
+}
 
 @media(max-width:1360px){
     .title-trending{
@@ -138,12 +141,6 @@
         }
   }
   
-
-  @media (max-width: 2600px) {
-    .trending-box-container2{
-      display: none !important;
-    }
-  }
   
   @media (max-width: 911px) {
 

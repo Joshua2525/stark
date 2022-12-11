@@ -10,7 +10,7 @@
 }
 
 .faqs-container{
-  width: 1250px;
+  width: 1200px;
   padding: 50px 100px;
   height: auto;
   border-radius: 20px;
@@ -18,31 +18,6 @@
 }
 
 
-
-.box-features{
-      box-shadow: 10px 32px 72px 0px rgba(15, 13, 35, 0.04);
-        padding: 0 20px;
-        width: calc(33% - 20px);
-        background: transparent;
-        backdrop-filter: blur(5px);
-        width: 310px;
-        height: 386px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        color: rgba(0, 0, 0, 1);
-        cursor: pointer;
-        margin-top: 20px;
-
-        h2{
-          color: rgba(0, 0, 0, 1);
-          font-size: 25px !important;
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-    }
 
 .faqs-section{
     width: 100%;
@@ -64,16 +39,21 @@
 
 
     .title-faq{
-      color: rgba(0, 0, 0, 1);
-      font-size: 60px;
+        font-size: 60px;
         width: 600px;
         margin-bottom: 100px;
-        margin-right: 500px;
         display: flex;
-        justify-content: left;
-        align-items: left;
-        text-align:left;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
         font-family: 'futura-bold', sans-serif;
+        color: transparent;     
+        background: url("img/letter-color.png");
+        background-repeat: repeat;
+        background-size: cover;
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
     }
     
     .faqs-info{
@@ -334,7 +314,6 @@
 
 @media (max-width:410px){
   .faqs-section{
-    padding: 108px 20px 72px 20px;
 
     .faqs-info{
 

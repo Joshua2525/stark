@@ -21,16 +21,16 @@
 
         h1{
             font-family: 'futura-bold', sans-serif;
-            font-weight: 100;
-            width: 500.76px;
-            font-size: 90px;
+            font-weight: 500;
+            width: 550.76px;
+            font-size: 95px;
             color: var(--primary-color);
         }
 
         span{
             font-family: 'futura-bold', sans-serif;
-            font-weight: 700;
-            font-size: 106px;
+            font-weight: 500;
+            font-size: 95px;
             color: transparent;     
             background: url("img/letter-color.png");
             background-repeat: repeat;
@@ -164,6 +164,12 @@
 
         }        
     }
+    h1{
+        img{
+            width: 70px;
+        }
+    }
+
 }
 
 @media(max-width: 1040px){
@@ -184,6 +190,10 @@
 
             h1{
                 text-align: center;
+                width: 80%;
+                    img{
+                        width: 65px;
+                    }
             }
             h1,span{
                 font-size: 70px !important;
@@ -223,6 +233,13 @@
                 font-size: 45px !important;
                 width: 100%;
             }
+            h1{
+                text-align: center;
+                width: 80%;
+                    img{
+                        width: 40px;
+                    }
+            }
 
             p{
                 font-size: 12px;
@@ -250,12 +267,13 @@
 
 
 
-@media (max-width: 350px){
+@media (max-width: 370px){
     .home-section{
         padding-left: 20px !important; 
         padding-right: 20px !important;
 
         .left-side{
+            width: 70%;
             h1,span{
                 font-size: 35px !important;
             }
@@ -271,4 +289,28 @@
             }
         }
     }
+}
+
+@media (max-width: 415px){
+    .left-side{
+        padding: 10px 10px;
+        h1{
+            font-size: 47px !important;
+            width: 100% !important;
+                img{
+                    width: 40px;
+                }
+            }
+        }
+}
+
+@media (max-width: 340px){
+    .home-section .left-side h1, .home-section .left-side span {
+        font-size: 30px !important;
+
+        img{
+            width: 30px;
+        }
+    }
+
 }

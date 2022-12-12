@@ -1,4 +1,4 @@
-.services {
+.social-platform {
     display: flex;
     width: 100%;
     align-items: center;
@@ -8,7 +8,7 @@
     margin-top: -120px;
 
 
-    .services-container{
+    .social-container{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -16,7 +16,7 @@
         width: 100%;
     }
 
-      .services-box-container{
+      .social-box-container{
         margin-top: 20px;
         display: flex;
         align-items: center;
@@ -89,13 +89,13 @@
           }
           .fb{
             position: absolute;
-            top: 65px;
-            right: 72px;
+            top: 70px;
+            right: 74px;
           }
           .twitter{
             position: absolute;
-            top: 225px;
-            right: 72px;
+            top: 231px;
+            right: 74px;
           }
     }
 }
@@ -108,7 +108,7 @@
 }
 
 
-@media(max-width:1487px){
+@media(max-width:1390px){
     .box-social-media{
         margin-bottom: 50px !important;
     }
@@ -147,7 +147,7 @@
 
 @media(max-width:790px){
 
-.services{
+.social-platform{
     padding: 0px 20px !important;
 }
     

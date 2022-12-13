@@ -632,8 +632,8 @@ header.black nav {
 .home-section .left-side .scroller > span {
   position: absolute;
   top: 0;
-  -webkit-animation: slide 5s infinite;
-          animation: slide 5s infinite;
+  -webkit-animation: slide 7s infinite;
+          animation: slide 7s infinite;
 }
 
 @-webkit-keyframes slide {

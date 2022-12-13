@@ -345,6 +345,31 @@
       }
 }
 
+@media(max-width:580px){
+    .scroller > span {
+        position: absolute;
+        top: 0;
+        animation: slide 8s infinite;            
+      }
+      @keyframes slide {
+        0% {
+          top: 0;
+        }
+        25% {
+          top: -1.2em;
+        }
+        50% {
+          top: -2.6em;
+        }
+        75% {
+          top: -3.6em;
+        }
+        95%{
+            top: 0em;
+        }
+      }
+}
+
 @media(max-width:565px){
     .home-section{
         padding-left: 70px !important; 
@@ -355,7 +380,7 @@
                 font-size: 35px !important;
             }
             span{
-                font-size: 30px !important;
+                font-size: 28px !important;
             }
             h1{
                 text-align: center;
@@ -387,14 +412,61 @@
     }
 }
 
+@media(max-width:426px){
+    .scroller > span {
+        position: absolute;
+        top: 0;
+        animation: slide 8s infinite;            
+      }
+      @keyframes slide {
+        0% {
+          top: 0;
+        }
+        25% {
+          top: -1.4em;
+        }
+        50% {
+          top: -2.8em;
+        }
+        75% {
+          top: -4.3em;
+        }
+        95%{
+            top: 0em;
+        }
+      }
+}
+
+@media(max-width:395px){
+    .scroller > span {
+        position: absolute;
+        top: 0;
+        animation: slide 8s infinite;            
+      }
+      @keyframes slide {
+        0% {
+          top: 0;
+        }
+        25% {
+          top: -1.4em;
+        }
+        50% {
+          top: -2.8em;
+        }
+        75% {
+          top: -4.3em;
+        }
+        95%{
+            top: 0em;
+        }
+      }
+}
 
 
-
-
-@media (max-width: 377px){
+@media (max-width: 380px){
     .home-section{
-        padding-left: 60px !important; 
-        padding-right: 60px !important;
+        padding-left: 50px !important; 
+        padding-right: 50px !important;
 
         .left-side{
             width: 100%;
@@ -402,7 +474,7 @@
                 font-size: 35px !important;
             }
             span{
-                font-size: 30px !important;
+                font-size: 28px !important;
             }
         }
         
@@ -432,7 +504,7 @@
           top: -2.8em;
         }
         75% {
-          top: -4.2em;
+          top: -4.3em;
         }
         95%{
             top: 0em;
@@ -452,17 +524,20 @@
         }
 }
 
-@media (max-width: 350px){
+@media (max-width: 356px){
     .home-section{
         padding-left: 20px !important; 
         padding-right: 20px !important;
     }
-    .home-section .left-side h1, .home-section .left-side span {
+    .home-section .left-side h1, .home-section .left-side {
         font-size: 30px !important;
 
         img{
             width: 30px;
         }
+    }
+    span{
+        font-size: 25px !important;
     }
     .scroller > span {
         position: absolute;

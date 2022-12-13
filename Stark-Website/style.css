@@ -595,15 +595,16 @@ header.black nav {
 .home-section .left-side h1 {
   font-family: 'futura-bold', sans-serif;
   font-weight: 500;
-  width: 670.76px;
-  font-size: 92px;
+  width: 650.76px;
+  font-size: 95px;
   color: var(--primary-color);
 }
 
 .home-section .left-side span {
+  width: 100% !important;
   font-family: 'futura-bold', sans-serif;
   font-weight: 500;
-  font-size: 90px;
+  font-size: 88px;
   color: transparent;
   background: url("img/letter-color.png");
   background-repeat: repeat;
@@ -632,8 +633,8 @@ header.black nav {
 .home-section .left-side .scroller > span {
   position: absolute;
   top: 0;
-  -webkit-animation: slide 7s infinite;
-          animation: slide 7s infinite;
+  -webkit-animation: slide 8s infinite;
+          animation: slide 8s infinite;
 }
 
 @-webkit-keyframes slide {
@@ -641,13 +642,13 @@ header.black nav {
     top: 0;
   }
   25% {
-    top: -1.2em;
+    top: -1.4em;
   }
   50% {
-    top: -2.4em;
+    top: -2.6em;
   }
   75% {
-    top: -3.6em;
+    top: -4em;
   }
   95% {
     top: 0em;
@@ -659,13 +660,13 @@ header.black nav {
     top: 0;
   }
   25% {
-    top: -1.2em;
+    top: -1.4em;
   }
   50% {
-    top: -2.4em;
+    top: -2.6em;
   }
   75% {
-    top: -3.6em;
+    top: -4em;
   }
   95% {
     top: 0em;
@@ -804,6 +805,46 @@ header.black nav {
   h1 img {
     width: 70px;
   }
+  .scroller > span {
+    position: absolute;
+    top: 0;
+    -webkit-animation: slide 8s infinite;
+            animation: slide 8s infinite;
+  }
+  @-webkit-keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.2em;
+    }
+    50% {
+      top: -2.4em;
+    }
+    75% {
+      top: -3.6em;
+    }
+    95% {
+      top: 0em;
+    }
+  }
+  @keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.2em;
+    }
+    50% {
+      top: -2.4em;
+    }
+    75% {
+      top: -3.6em;
+    }
+    95% {
+      top: 0em;
+    }
+  }
 }
 
 @media (max-width: 1400px) {
@@ -870,26 +911,108 @@ header.black nav {
     width: 100%;
     margin-top: 60px;
   }
+  .scroller > span {
+    position: absolute;
+    top: 0;
+    -webkit-animation: slide 8s infinite;
+            animation: slide 8s infinite;
+  }
+  @-webkit-keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.2em;
+    }
+    50% {
+      top: -2.4em;
+    }
+    75% {
+      top: -3.6em;
+    }
+    95% {
+      top: 0em;
+    }
+  }
+  @keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.2em;
+    }
+    50% {
+      top: -2.4em;
+    }
+    75% {
+      top: -3.6em;
+    }
+    95% {
+      top: 0em;
+    }
+  }
 }
 
 @media (max-width: 700px) {
   .home-section {
     padding-bottom: 60px;
   }
+  .scroller > span {
+    position: absolute;
+    top: 0;
+    -webkit-animation: slide 8s infinite;
+            animation: slide 8s infinite;
+  }
+  @-webkit-keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.4em;
+    }
+    50% {
+      top: -2.8em;
+    }
+    75% {
+      top: -4.2em;
+    }
+    95% {
+      top: 0em;
+    }
+  }
+  @keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.4em;
+    }
+    50% {
+      top: -2.8em;
+    }
+    75% {
+      top: -4.2em;
+    }
+    95% {
+      top: 0em;
+    }
+  }
 }
 
 @media (max-width: 565px) {
   .home-section {
-    padding-left: 50px !important;
-    padding-right: 50px !important;
+    padding-left: 70px !important;
+    padding-right: 70px !important;
   }
-  .home-section .left-side h1, .home-section .left-side span {
+  .home-section .left-side h1 {
     font-size: 35px !important;
-    width: 100%;
+  }
+  .home-section .left-side span {
+    font-size: 30px !important;
   }
   .home-section .left-side h1 {
     text-align: center;
-    width: 80%;
+    width: 100%;
   }
   .home-section .left-side h1 img {
     width: 40px;
@@ -913,14 +1036,17 @@ header.black nav {
 
 @media (max-width: 377px) {
   .home-section {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
   }
   .home-section .left-side {
     width: 100%;
   }
-  .home-section .left-side h1, .home-section .left-side span {
+  .home-section .left-side h1 {
     font-size: 35px !important;
+  }
+  .home-section .left-side span {
+    font-size: 30px !important;
   }
   .home-section .buttons button {
     font-size: 14px !important;
@@ -928,14 +1054,53 @@ header.black nav {
     width: 105px !important;
     height: 45px !important;
   }
+  .scroller > span {
+    position: absolute;
+    top: 0;
+    -webkit-animation: slide 8s infinite;
+            animation: slide 8s infinite;
+  }
+  @-webkit-keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.4em;
+    }
+    50% {
+      top: -2.8em;
+    }
+    75% {
+      top: -4.2em;
+    }
+    95% {
+      top: 0em;
+    }
+  }
+  @keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.4em;
+    }
+    50% {
+      top: -2.8em;
+    }
+    75% {
+      top: -4.2em;
+    }
+    95% {
+      top: 0em;
+    }
+  }
 }
 
 @media (max-width: 415px) {
   .left-side {
-    padding: 10px 10px;
+    padding: 15px 15px;
   }
   .left-side h1 {
-    font-size: 47px !important;
     width: 100% !important;
   }
   .left-side h1 img {
@@ -943,12 +1108,56 @@ header.black nav {
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 350px) {
+  .home-section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
   .home-section .left-side h1, .home-section .left-side span {
     font-size: 30px !important;
   }
   .home-section .left-side h1 img, .home-section .left-side span img {
     width: 30px;
+  }
+  .scroller > span {
+    position: absolute;
+    top: 0;
+    -webkit-animation: slide 8s infinite;
+            animation: slide 8s infinite;
+  }
+  @-webkit-keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.2em;
+    }
+    50% {
+      top: -2.4em;
+    }
+    75% {
+      top: -3.6em;
+    }
+    95% {
+      top: 0em;
+    }
+  }
+  @keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.2em;
+    }
+    50% {
+      top: -2.4em;
+    }
+    75% {
+      top: -3.6em;
+    }
+    95% {
+      top: 0em;
+    }
   }
 }
 

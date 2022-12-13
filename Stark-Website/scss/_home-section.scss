@@ -22,23 +22,59 @@
         h1{
             font-family: 'futura-bold', sans-serif;
             font-weight: 500;
-            width: 550.76px;
-            font-size: 95px;
+            width: 670.76px;
+            font-size: 92px;
             color: var(--primary-color);
         }
 
         span{
             font-family: 'futura-bold', sans-serif;
             font-weight: 500;
-            font-size: 95px;
+            font-size: 90px;
             color: transparent;     
             background: url("img/letter-color.png");
             background-repeat: repeat;
+            background-size: cover;
             -webkit-background-clip: text; 
             -webkit-text-fill-color: transparent;
             text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-
         }
+        span{
+            display: block;
+            height: auto;
+            color: #000000;
+            animation: spin_words 6s infinite;
+        }
+        .scroller {
+            height: 1.2em;
+            line-height: 1.2em;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+          }
+          .scroller > span {
+            position: absolute;
+            top: 0;
+            animation: slide 5s infinite;            
+          }
+          @keyframes slide {
+            0% {
+              top: 0;
+            }
+            25% {
+              top: -1.2em;
+            }
+            50% {
+              top: -2.4em;
+            }
+            75% {
+              top: -3.6em;
+            }
+            95%{
+                top: 0em;
+            }
+          }
+
 
         .buttons{
             display: flex;
@@ -85,6 +121,7 @@
         }
     }
 
+
     .iphone-mockup{
         width: 340.55px;
         height: 700px;
@@ -92,35 +129,38 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: -350px;
+        margin-bottom: -320px;
 
+       
         video{
             position: absolute;
-            height: 645.56px;
-            width: 295.39px;
-            background-color: black;
-            border-radius: 35px;
+            
+            // height: 98%;
+            // width: 95%;
+            height: 684.56px;
+            width: 322.39px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 70px;
             object-fit: cover;
          
         }
 
-        img{
+        .iphone14{
             position: absolute;
             top: 0;
             width: 100%;
             height: 100%;
-            pointer-events: none;
-            z-index: 1;
         }
-     
+
+        .call{
+            position: absolute;
+            top: 10px;
+            width: 100%;
+        }
+        
     }
 }
 
-@keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }   
-}
 
 @media(max-width: 1450px){
     .home-section{
@@ -142,8 +182,10 @@
 
     
             video{
-                height: 548.56px !important;
-                width: 258.39px !important;
+                height: 582.56px !important;
+                width: 282.39px !important;
+                border-radius: 62px;
+
             }
         }
     }
@@ -172,6 +214,18 @@
 
 }
 
+@media(max-width: 1400px){
+    .home-section{
+        .left-side{
+            width: 100%;
+            h1,span{
+                font-size: 80px;
+            }
+        }        
+    }
+}
+
+
 @media(max-width: 1040px){
     .home-section{
         flex-direction: column;
@@ -186,11 +240,11 @@
             align-items: center;
             margin-right: 0px!important;
             margin-bottom: 100px !important;
-            margin-top: 50px !important;
+            margin-top: 20px !important;
 
             h1{
                 text-align: center;
-                width: 80%;
+                width: 100%;
                     img{
                         width: 65px;
                     }
@@ -230,7 +284,7 @@
         
         .left-side{
             h1,span{
-                font-size: 45px !important;
+                font-size: 35px !important;
                 width: 100%;
             }
             h1{
@@ -267,13 +321,13 @@
 
 
 
-@media (max-width: 370px){
+@media (max-width: 377px){
     .home-section{
         padding-left: 20px !important; 
         padding-right: 20px !important;
 
         .left-side{
-            width: 70%;
+            width: 100%;
             h1,span{
                 font-size: 35px !important;
             }

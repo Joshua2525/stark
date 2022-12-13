@@ -19,7 +19,7 @@
        font-weight: 700;
    }
    img{
-      margin-bottom: 1px !important;
+      margin-bottom: -3px !important;
    }
 }
 
@@ -145,9 +145,7 @@ header.black nav{
 .burgerlines {
    border-bottom: 2px solid var(--primary-color);
    height: 6px;
-   width: 20px;
-
-  
+   width: 20px; 
 }
 
 
@@ -169,12 +167,10 @@ header.black nav{
   }
 
 .center-nav{
-  margin-left: 280px;
-  margin-right: 120px;
+   margin-left: 250px;
+   margin-right:210px;
    display: flex;
 }
-
-
 
 
 
@@ -199,13 +195,14 @@ header.black nav{
 .icon1{
    margin-right: 20px;
    margin-top: -2px;
+   cursor: pointer;
 }
 
 
 @media (max-width: 1860px){
    .center-nav{
-        margin-left: 225px;
-        margin-right:150px;
+        margin-left: 250px;
+        margin-right:210px;
     }
    
 }
@@ -427,7 +424,12 @@ header.black nav{
       p{
          font-size: 12px !important;
       }
+      img{
+         margin-bottom: -3px;
+      }
+
    }
+   
 }
 
 @media(max-width:350px){

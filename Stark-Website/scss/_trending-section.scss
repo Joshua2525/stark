@@ -97,7 +97,7 @@
     }
 }
 
-@media(max-width:1060px){
+@media(max-width:1020px){
 
     .top-trenidng{
         display: flex;
@@ -116,6 +116,9 @@
         }
         .title-trending{
             margin-bottom: 150px !important;
+        }
+        .trending-section .trending-box-container{
+            margin-bottom: 0px;
         }
 
     }

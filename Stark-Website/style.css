@@ -1821,7 +1821,7 @@ header.black nav {
   }
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 1020px) {
   .top-trenidng {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1848,6 +1848,9 @@ header.black nav {
   }
   .title-trending {
     margin-bottom: 150px !important;
+  }
+  .trending-section .trending-box-container {
+    margin-bottom: 0px;
   }
 }
 
@@ -2043,7 +2046,10 @@ header.black nav {
   }
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1267px) {
+  .feature-section {
+    height: auto;
+  }
   .container-features {
     width: 100% !important;
     height: auto !important;
@@ -3255,18 +3261,18 @@ header.black nav {
 
 .social-platform .box-social-media h2 {
   color: black;
-  font-size: 25px;
-  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 52.5px;
   width: 300px;
-  font-weight: 600;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 5x;
 }
 
 .social-platform .box-social-media2 {
   -webkit-box-shadow: 10px 32px 72px 0px rgba(15, 13, 35, 0.04);
           box-shadow: 10px 32px 72px 0px rgba(15, 13, 35, 0.04);
-  padding: 0 50px !important;
+  padding: 0 10px !important;
   margin: 0 20px;
   width: calc(33% - 20px);
   background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
@@ -3297,28 +3303,19 @@ header.black nav {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 20px;
-  width: 250px;
+  width: 340px;
   text-align: left;
-  margin-left: -150px;
+  margin-left: -175px;
   margin-bottom: 50px;
   margin-top: 50px;
+  line-height: 52.5px;
 }
 
-.social-platform .box-social-media2 .social-media-img {
-  margin-left: -120px;
-  padding: 0px 100px;
-}
-
-.social-platform .box-social-media2 .fb {
-  position: absolute;
-  top: 70px;
-  right: 74px;
-}
-
-.social-platform .box-social-media2 .twitter {
-  position: absolute;
-  top: 231px;
-  right: 74px;
+.social-platform .box-social-media2 .six {
+  width: 220px;
+  margin-left: 25px;
+  margin-right: 18px;
+  margin-bottom: 20.5px;
 }
 
 .box-social-media:hover {
@@ -3332,7 +3329,7 @@ header.black nav {
 }
 
 @media (max-width: 1390px) {
-  .box-social-media {
+  .box-social-media2 {
     margin-bottom: 50px !important;
   }
 }
@@ -3356,15 +3353,9 @@ header.black nav {
     padding: 0px 0px !important;
     margin-bottom: 30px !important;
   }
-  .box-social-media2 .fb {
-    position: static !important;
-  }
-  .box-social-media2 .twitter {
-    position: static !important;
-  }
 }
 
-@media (max-width: 790px) {
+@media (max-width: 770px) {
   .social-platform {
     padding: 0px 20px !important;
   }
@@ -3385,6 +3376,10 @@ header.black nav {
   .box-social-media img {
     width: 400px;
   }
+  .box-social-media h2 {
+    margin-top: 50px;
+    font-size: 30px !important;
+  }
   .box-social-media2 {
     width: auto;
     height: auto !important;
@@ -3404,16 +3399,15 @@ header.black nav {
     width: 250px;
     text-align: center !important;
     margin-left: 0px !important;
-    margin-bottom: 50px;
+    margin-bottom: 20px !important;
   }
   .box-social-media2 .social-media-img img {
-    width: 115px;
+    width: 110px;
   }
-  .box-social-media2 .fb {
-    position: static !important;
-  }
-  .box-social-media2 .twitter {
-    position: static !important;
+  .box-social-media2 .social-media-img .six {
+    width: 170px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -3423,9 +3417,11 @@ header.black nav {
   }
   .box-social-media h2 {
     font-size: 20px !important;
+    text-align: center !important;
+    line-height: 30px !important;
   }
   .box-social-media img {
-    width: 310px !important;
+    width: 322px !important;
   }
   .box-social-media2 h2 {
     font-size: 20px !important;
@@ -3433,18 +3429,23 @@ header.black nav {
     text-align: center !important;
     margin-left: 0px !important;
     margin-bottom: 50px;
+    line-height: 30px !important;
   }
   .box-social-media2 .social-media-img img {
     width: 80px;
   }
+  .box-social-media2 .social-media-img .six {
+    width: 130px;
+    margin-bottom: 12.7px;
+  }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 377px) {
   .box-social-media {
     height: auto !important;
   }
   .box-social-media img {
-    width: 200px !important;
+    width: 320px !important;
   }
   .box-social-media2 h2 {
     font-size: 20px !important;
@@ -3454,7 +3455,11 @@ header.black nav {
     margin-bottom: 50px;
   }
   .box-social-media2 .social-media-img img {
-    width: 80px;
+    width: 60px;
+  }
+  .box-social-media2 .social-media-img .six {
+    width: 100px;
+    margin-bottom: 10px;
   }
 }
 

@@ -4582,6 +4582,9 @@ header.black nav {
     margin-right: 10px;
     line-height: 27px;
   }
+  .convert-section .contact-box .left-texts h1 {
+    font-size: 30px !important;
+  }
   .convert-section .contact-box .right-texts {
     width: 100%;
   }
@@ -4589,7 +4592,7 @@ header.black nav {
     text-align: center;
   }
   .convert-section .contact-box .right-texts .white-paper h2 {
-    font-size: 20px;
+    font-size: 30px !important;
   }
   .convert-section .contact-box .right-texts .white-paper p {
     font-size: 15px;

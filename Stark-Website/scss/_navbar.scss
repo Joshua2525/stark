@@ -92,18 +92,24 @@ nav{
 }
 
 .navitems {
-   padding: 1rem 1.5rem;
-   font-size: 16px;
+   font-size: 15px;
    line-height: 121.5%; 
-   
+}
+
+.center-nav .navitems{
+   padding: 1rem 1.5rem;
+   font-size: 15px;
+   line-height: 121.5%; 
+
 }
 
 
 .navbar a {
    color: white;
-   font-family: 'Poppins', sans-serif;
+   font-family: 'Space Grotesk', sans-serif;
    text-decoration: none;
-   font-weight: 500;
+   font-weight: 400;
+   font-size: 15px;
 }
 
 .dropmenu {
@@ -132,7 +138,7 @@ nav{
 header.black nav{
    background: rgb(76, 76, 76);
    backdrop-filter: blur(100px);    
-   min-height: 60px;
+   min-height: 75px;
    transition: all .20s ease-in-out;
    margin-top: -47px ;
 }
@@ -148,7 +154,10 @@ header.black nav{
    width: 20px; 
 }
 
-
+.read-post{
+   text-decoration:underline !important;
+   font-weight: 500 !important;
+}
 
 .active {
    transform: translateX(0%) !important;
@@ -167,8 +176,8 @@ header.black nav{
   }
 
 .center-nav{
-   margin-left: 250px;
-   margin-right:210px;
+   margin-left: 270px;
+   margin-right:270px;
    display: flex;
 }
 
@@ -180,8 +189,11 @@ header.black nav{
    align-items: center;
 }
 
-.buy-button{
+.create-button{
    background: linear-gradient(94.76deg, #76EA90 0%, #FDFD55 100%);
+   font-family: 'Poppins', sans-serif !important;
+   font-size: 15px;
+   font-weight: 600 !important;
    width: 110px;
    color: #000106 !important;
    display: flex;
@@ -192,17 +204,12 @@ header.black nav{
    border-radius: 5px;
 }
 
-.icon1{
-   margin-right: 20px;
-   margin-top: -2px;
-   cursor: pointer;
-}
 
 
 @media (max-width: 1860px){
    .center-nav{
-        margin-left: 250px;
-        margin-right:210px;
+        margin-left: 270px;
+        margin-right:270px;
     }
    
 }

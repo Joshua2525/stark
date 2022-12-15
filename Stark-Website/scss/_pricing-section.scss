@@ -21,34 +21,26 @@
         justify-content: center;
 
        .title-container{
-        font-family: 'futura', sans-serif;
+        font-family: 'futura-bold', sans-serif !important;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0;
         width: max-content;
         margin-bottom: 50px;
-        
-        .line{
-            height: 2.88px ;
-            background: rgba(118, 234, 144, 1);
-            transform: rotate(0deg);    
-            width: 193.87px;        
-        }
 
         h1{
             font-weight: 700;
-            font-size: 50px;
+            font-size: 60px;
             font-family: 'futura-bold', sans-serif;
-            font-size: 50px;
             color: transparent;     
-            background: url("img/letter-color.png");
+            background: url("img/letter-big.png");
+            background-size: cover;
             background-repeat: repeat;
             -webkit-background-clip: text; 
             -webkit-text-fill-color: transparent;
             text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
             text-align: center;
-            letter-spacing: 0.055em;
             padding-left:85px;
             padding-right:85px;
         }            
@@ -73,7 +65,7 @@
         width: calc(33% - 20px);
         background: rgba(14, 14, 17, 1);
         backdrop-filter: blur(5px);
-        width: 390.08px;
+        width: 400.08px;
         height: 726.31px;
         display: flex;
         flex-direction: column;
@@ -86,7 +78,7 @@
 
         color: #fafafa;
         border-color:  rgba(255, 255, 255, 1);
-        border: solid 7px rgba(255, 255, 255, 1);
+        border: solid 4.63px rgba(255, 255, 255, 1);
 
 
         h2{
@@ -184,7 +176,7 @@
         margin: 0 25px;
         width: calc(33% - 20px);
         background: rgba(14, 14, 17, 1);
-        width: 390.08px;
+        width: 400.08px;
         height: 755.31px;
         display: flex;
         flex-direction: column;
@@ -221,7 +213,8 @@
 
         .premium{
             color: transparent;     
-            background: url("img/letter-color.png");
+            background: url("img/letter-big.png");
+            background-size: cover;
             background-repeat: repeat;
             -webkit-background-clip: text; 
             -webkit-text-fill-color: transparent;
@@ -324,7 +317,7 @@
     position: absolute;
     inset: 0;
     border-radius: 19px; 
-    padding: 7px; 
+    padding: 4.63px; 
     background: linear-gradient(90.75deg, #76EA90 0%, #FDFD55 100%) !important;            
     -webkit-mask: 
        linear-gradient(#fff 0 0) content-box, 
@@ -477,10 +470,6 @@
         .title{
         .title-container{
             
-            .line{
-            width: 100.87px !important;    
-            }
-
             h1{
                 padding-left:55px;
                 padding-right:55px;
@@ -531,11 +520,7 @@
   .title{
 
     .title-container{
-    
         padding-top: 0px !important;
-      .line{
-          width: 83.87px;
-      }
 
       h1{
           font-size: 40px;
@@ -549,10 +534,6 @@
 @media (max-width: 685px){
     .title{
         .title-container{
-    .line{
-        margin-top: 0px;
-        margin-bottom: 0px !important;
-    }
    }
   }
 }
@@ -568,10 +549,6 @@
 @media(max-width:500px){
   .title{
     .title-container{
-    
-      .line{
-          width: 35.87px !important;    
-      }
 
       h1{
           padding-left:15px;

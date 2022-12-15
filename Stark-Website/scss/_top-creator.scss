@@ -24,15 +24,16 @@
 
     .title-creator{
         margin-bottom: 20px;
-        margin-right: 830px;
-        font-family: 'futura-bold', sans-serif;
+        margin-right: 870px;
+        font-weight: 700 !important;
+        font-family: 'futura-bold', sans-serif !important;
         font-size: 50px;
         color: transparent;     
-        background: url("img/letter-color.png");
+        background: url("img/letter-big.png");
+        background-size: cover;
         background-repeat: repeat;
         -webkit-background-clip: text; 
         -webkit-text-fill-color: transparent;    
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
         
     }
 
@@ -61,7 +62,7 @@
         border-radius: 10px;
 
         img{
-            width: 250px;
+            width: 290px ;
             pointer-events: none;
         }
 
@@ -82,7 +83,7 @@
 @media(max-width:1360px){
     .title-creator{
         margin-bottom: 20px;
-        margin-right: 590px !important;
+        margin-right: 620px !important;
         font-size: 40px !important;
     }
     .top-creator-section .box-creator{
@@ -100,12 +101,8 @@
         flex-direction: column;
         }
         .title-creator{
-            margin-bottom: 0px !important;
+            margin-bottom: 50px !important;
             margin-right: 0px !important;
-        }
-        
-        .top-creator-section .box-creator {
-            width: 290px;
         }
 
     }

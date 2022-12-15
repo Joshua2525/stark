@@ -23,15 +23,16 @@
     }
     .title-trending{
         margin-bottom: 150px;
-        margin-right: 920px;
-        font-family: 'futura-bold', sans-serif;
+        margin-right: 965px;
+        font-weight: 700 !important;
+        font-family: 'futura-bold', sans-serif !important;        
         font-size: 50px;
         color: transparent;     
-        background: url("img/letter-color.png");
+        background: url("img/letter-big.png");
+        background-size: cover;
         background-repeat: repeat;
         -webkit-background-clip: text; 
         -webkit-text-fill-color: transparent;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
     }
 
       .trending-box-container{
@@ -48,7 +49,7 @@
     .box-trending{
         width: calc(33% - 20px);
         width: 320px;
-        height: 280px;
+        height: 320px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -59,14 +60,15 @@
         border-radius: 10px;
 
         video{
-            width: 250px !important;
+            width: 290px !important;
+            height: auto !important;
             pointer-events: none;
             border-radius: 20px!important;
         }
 
         h2{
-          color: rgba(255, 255, 255, 1);
-          font-size: 25px !important;
+            color: rgba(255, 255, 255, 1);
+            font-size: 25px !important;
             margin-top: 40px;
             margin-bottom: 20px;
         }
@@ -79,25 +81,29 @@
 
 @media(max-width:1380px){
     .title-trending{
-        margin-bottom: 20px;
-        margin-right: 640px !important;
+        margin-right: 700px !important;
         font-size: 40px !important;
     }
-    .top-creator-section .box-creator{
-        margin-bottom: 40px;
+    .title-trending{
+        margin-bottom: 50px !important;
     }
+
     .box-trending{
-        margin-top: 50px;
-        margin-bottom: 190px !important;
+        margin-top: 130px !important;
+        margin-bottom: 100px !important;
 
         video{
             width: 220px !important;
             pointer-events: none;
         }
     }
+    .trending-section .trending-box-container{
+        margin-bottom: 0px;
+    }
 }
 
-@media(max-width:1020px){
+
+@media(max-width:1055px){
 
     .top-trenidng{
         display: flex;
@@ -112,10 +118,10 @@
         }
 
         .trending-section .box-trending {
-            width: 290px;
+            width: 320px;
         }
         .title-trending{
-            margin-bottom: 150px !important;
+            margin-bottom: 50px !important;
         }
         .trending-section .trending-box-container{
             margin-bottom: 0px;

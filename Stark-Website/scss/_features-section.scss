@@ -1,6 +1,6 @@
 .feature-section {
     display: flex;
-    height: 1000px !important;
+    height: auto !important;
     align-items: center;
     justify-content: center;
     height: auto;
@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     padding: 0px 50px;
+    padding-top: 100px;
 
     .container-features{
         width: 1250px !important;
@@ -79,7 +80,6 @@
 @media (max-width:1025px){
     .feature-section {
         height: auto !important;
-        margin-bottom: 50px;
         margin-top: 90px;
         padding: 0px 50px !important;
     }
@@ -105,10 +105,7 @@
         width: 380px !important;
         height: 550px !important;
     }
-    .container-features{
-        margin-bottom: 100px !important;
 
-    }
 }
 
 
@@ -122,7 +119,6 @@
         height: auto !important;
         background: linear-gradient(90.75deg, #76EA90 0%, #FDFD55 100%) !important;            
         border-radius: 20px;
-        margin-bottom: 350px;
 
     }
     .feature-box-container{

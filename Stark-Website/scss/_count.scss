@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 440px;
+    padding-right: 490px;
 
     .count-container{
 
@@ -21,16 +21,21 @@
             text-align: center;
             width: 250px;
             height: 140px;
+            font-family: 'Poppins', sans-serif !important;
+
 
             h2{
                 margin-bottom: 5px;
                 font-size: 30px;
                 color: rgb(0, 0, 0);
                 text-align: left;
+                font-weight: 500 !important;
+
             }
             p{
                 color: rgb(0, 0, 0);
                 text-align: left;
+                font-weight: 400 !important;
             }
 
         }

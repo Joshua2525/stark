@@ -43,6 +43,8 @@ input {
   color: rgba(0, 0, 0, 1);
   font-size: 30px;
   font-weight: 500 !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+
   overflow: hidden;
   &-label {
     display: flex;
@@ -84,7 +86,6 @@ input {
 
 .question1{
     border-bottom: 1px solid rgba(0, 0, 0, 1) !important;
-
     position: relative;
 }
 .question1::before{
@@ -113,8 +114,10 @@ input:checked {
   ~ .tab-content {
     max-height: 100vh;
     padding: 1em;
-    margin-left: 20px;
+    margin-left: 40px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
+    border-bottom: 0px !important;
 
   }
 }
@@ -172,6 +175,25 @@ input:checked {
 .faqs-container{
   width:550px;
 }
+// :checked
+input:checked {
+  + .tab-label {
+    &::after {
+      transform: rotate(45deg);
+      color: rgb(255, 255, 255);
+    }
+  }
+  ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+    margin-left: 0px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    border-bottom: 0px !important;
+
+  }
+}
+
 
 }
 
@@ -199,6 +221,17 @@ input:checked {
           content: "+";
           font-size: 15px !important;
         }
+      }
+    }input:checked {
+      + .tab-label {
+        &::after {
+          transform: rotate(45deg);
+          color: rgb(255, 255, 255);
+        }
+      }
+      ~ .tab-content {
+        font-size: 14px !important;
+
       }
     }
   }

@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;800&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -42,7 +45,10 @@ body{
     font-family: 'futura-bold';
     src: url(Futura_Bold.ttf);
 }
-
+@font-face {
+    font-family: 'futura-medium';
+    src: url(futura-medium.ttf);
+}
 /* width */
 ::-webkit-scrollbar {
     width: 8px;

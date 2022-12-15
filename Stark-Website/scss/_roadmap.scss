@@ -4,7 +4,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding: 0px 50px;
+    padding: 0px 10px;
     padding-top: 90px !important;
     margin-bottom: 50px;
 
@@ -24,17 +24,18 @@
         
         h1{
             font-family: 'futura-bold', sans-serif;
-            font-size: 50px;
+            font-size: 60px;
             color: transparent;     
-            background: url("img/letter-color.png");
+            background: url("img/letter-big.png");
+            background-size: cover;
             background-repeat: repeat;
             -webkit-background-clip: text; 
             -webkit-text-fill-color: transparent;
             text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
         }
         p{
-            font-size: 45px;
-            margin-bottom: 10px;
+            font-size: 55px;
+            margin-bottom: 5px;
         }
     }
 
@@ -50,12 +51,12 @@
 
     .roadmap-box{
         padding: 0 50px;
-        margin: 50px 60px;
+        margin: 65px 60px;
         width: calc(33% - 20px);
         background: transparent;
         backdrop-filter: blur(5px);
-        width: 510px;
-        height: 286px;
+        width: 560px;
+        height: 265px;
         display: flex;
         flex-direction: column;
         justify-content: center !important;
@@ -68,39 +69,42 @@
 
         .line-box1{
             position: absolute;
-            top: 278px;
-            right: -47px;
+            top: 257px;
+            right: -46px;
             height: 37.5px;
         }
         .line-box2{
             position: absolute;
-            top: 278px;
-            right: 503.5px;
+            top: 257px;
+            right: 553.5px;
         }
         .line-box3{
             position: absolute;
             top: -28px;
-            right: -47px;
+            right: -46px;
         }
         .line-box4{
             position: absolute;
             top: -28px;
-            right: 503.5px;
+            right: 553.5px;
         }
 
         h2{
             font-size: 25px !important;
+            font-family: 'Poppins', sans-serif;
             font-weight: 700;
             margin-bottom: 20px;
             color: transparent;     
-            background: url("img/letter-color.png");
+            background: url("img/letter-big.png");
+            background-size: cover;
             background-repeat: repeat;
             -webkit-background-clip: text; 
             -webkit-text-fill-color: transparent;
             text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
         }
         p{
-            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
             font-size: 18px;
             color: var(--primary-color);
         }

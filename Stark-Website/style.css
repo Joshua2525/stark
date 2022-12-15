@@ -743,7 +743,7 @@ header.black nav {
 }
 
 .home-section .iphone-mockup {
-  width: 340.55px;
+  width: 322.55px;
   height: 700px;
   position: relative;
   display: -webkit-box;
@@ -760,10 +760,10 @@ header.black nav {
 
 .home-section .iphone-mockup video {
   position: absolute;
-  height: 685.56px;
-  width: 322.39px;
+  height: 692.56px;
+  width: 308.39px;
   background-color: black;
-  border-radius: 70px;
+  border-radius: 49.61px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -788,7 +788,7 @@ header.black nav {
   }
   .home-section .left-side {
     margin: 0;
-    max-width: 565px;
+    max-width: 560px;
     margin-top: -50px;
     margin-right: 200px !important;
   }
@@ -798,9 +798,9 @@ header.black nav {
     margin-bottom: 0px !important;
   }
   .home-section .iphone-mockup video {
-    height: 582.56px !important;
-    width: 282.39px !important;
-    border-radius: 62px;
+    height: 585.56px !important;
+    width: 283.39px !important;
+    border-radius: 44.61px;
   }
 }
 
@@ -4984,7 +4984,7 @@ input:checked ~ .tab-content {
     color: white;
   }
   input:checked ~ .tab-content {
-    font-size: 14px !important;
+    font-size: 11px !important;
   }
 }
 

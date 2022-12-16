@@ -23,10 +23,10 @@
     }
     .title-trending{
         margin-bottom: 150px;
-        margin-right: 965px;
+        margin-right: 1120px;
         font-weight: 700 !important;
         font-family: 'futura-bold', sans-serif !important;        
-        font-size: 50px;
+        font-size: 55px;
         color: transparent;     
         background: url("img/letter-big.png");
         background-size: cover;
@@ -48,7 +48,7 @@
 
     .box-trending{
         width: calc(33% - 20px);
-        width: 320px;
+        width: 365px;
         height: 320px;
         display: flex;
         flex-direction: column;
@@ -60,7 +60,7 @@
         border-radius: 10px;
 
         video{
-            width: 290px !important;
+            width: 330px !important;
             height: auto !important;
             pointer-events: none;
             border-radius: 20px!important;
@@ -77,6 +77,41 @@
 
 .trending-box-container2{
     display: none !important;
+}
+
+
+@media(max-width:1800px){
+    .trending-section {
+
+        .title-trending{
+            margin-bottom: 150px;
+            margin-right: 965px;    
+            font-size: 50px !important;
+
+        }
+    
+        .box-trending{
+            width: 320px;
+            height: 320px;
+            display: flex;
+            margin-top: 20px;
+    
+            video{
+                width: 290px !important;
+                height: auto !important;
+            }
+    
+            h2{
+                font-size: 25px !important;
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+    .trending-box-container2{
+        display: none !important;
+    }
 }
 
 @media(max-width:1380px){

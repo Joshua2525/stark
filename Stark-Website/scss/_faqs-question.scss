@@ -39,6 +39,97 @@ input {
   overflow: hidden;
 }
 .tab {
+  width: 1100px;
+  color: rgba(0, 0, 0, 1);
+  font-size: 32.53px;
+  font-weight: 500 !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+
+  overflow: hidden;
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: transparent;
+    cursor: pointer;
+
+    &::after {
+      content: "+";
+      font-size: 35px;
+      font-weight: 200;
+      width: 1em;
+      height: 1.2em;
+      text-align: center;
+      transition: all .35s;
+      color: #000000;
+    }
+  }
+  &-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: rgb(255, 255, 255);
+    transition: all .35s;
+  }
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    color: #A2A9B0;
+    font-weight: 400;
+    cursor: pointer;
+    &:hover {
+      color: rgb(255, 255, 255);
+    }
+  }
+}
+
+.question1{
+    border-bottom: 1px solid rgba(0, 0, 0, 1) !important;
+    position: relative;
+}
+.question1::before{
+  content: "";
+  position: absolute;
+  background: linear-gradient(90.75deg, #76EA90 0%, #FDFD55 100%);            
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
+}
+
+
+// :checked
+input:checked {
+  + .tab-label {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    &::after {
+      transform: rotate(45deg);
+      color: rgb(255, 255, 255);
+    }
+  }
+  ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+    margin-left: 40px;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    border-bottom: 0px !important;
+
+  }
+}
+
+
+@media(max-width:1800px){
+  /* Accordion styles */
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.tab {
   width: 1000px;
   color: rgba(0, 0, 0, 1);
   font-size: 30px;
@@ -120,6 +211,7 @@ input:checked {
     border-bottom: 0px !important;
 
   }
+}
 }
 
 @media(max-width:1400px){

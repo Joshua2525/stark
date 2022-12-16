@@ -1,45 +1,117 @@
 .social-platform {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 50px;
-    font-family: 'Poppins', sans-serif;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 50px;
+  font-family: 'Poppins', sans-serif;
 
 
-    .social-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+  .social-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+  }
+
+    .social-box-container{
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
     }
 
-      .social-box-container{
-        margin-top: 40px;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        text-align: center;
-        justify-content: center;
-        width: 100%;
-      }
-
-    .box-social-media{
+  .box-social-media{
       box-shadow: 10px 32px 72px 0px rgba(15, 13, 35, 0.04);
-        padding: 0 20px;
+      padding: 0 50px;
+      margin: 0 20px;
+      width: calc(33% - 20px);
+      background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
+      backdrop-filter: blur(5px);
+      width: 695px;
+      height: 580px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 20px;
+      
+      h2{
+        color: rgb(0, 0, 0);
+        font-size: 35px;
+        line-height: 52.5px;
+        width: 335px;
+        text-align: left;
+        font-weight: 700;
+        margin-bottom: 5x;
+      }
+  }
+  .box-social-media2{
+      box-shadow: 10px 32px 72px 0px rgba(15, 13, 35, 0.04);
+        padding: 0 10px !important;
         margin: 0 20px;
         width: calc(33% - 20px);
         background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
         backdrop-filter: blur(5px);
-        width: 605px;
-        height: 560px;
+        width: 695px;
+        height: 580px;
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: center;
         align-items: center;
         color: #fff;
         cursor: pointer;
+        border-radius: 20px;
+
+        
+        h2{
+          color: rgb(0, 0, 0);
+          font-size: 35px;
+          font-weight: 700;
+          margin-bottom: 20px;
+          width: 400px;
+          text-align: left;
+          margin-left: -175px;
+          margin-bottom: 50px;
+          margin-top: 50px;
+          line-height: 52.5px;
+        }
+        .six{
+          width: 230px;
+          margin-left: 25px;
+          margin-right: 50px;
+          margin-bottom: 20.5px;
+        }
+        img{
+          width: 150.36px;
+          height: 150.36px;
+        }
+  }
+}
+
+.box-social-media:hover{
+  filter: drop-shadow(0px 2px 5px #76EA90);
+}
+.box-social-media2:hover{
+  filter: drop-shadow(0px 2px 5px #76EA90);
+}
+
+
+@media(max-width:1800px){
+  .social-platform {
+    padding: 0px 50px;
+
+    .box-social-media{
+        padding: 0 20px;
+        margin: 0 20px;
+        width: 605px;
+        height: 560px;
         border-radius: 20px;
         
         h2{
@@ -53,49 +125,34 @@
         }
     }
     .box-social-media2{
-        box-shadow: 10px 32px 72px 0px rgba(15, 13, 35, 0.04);
           padding: 0 10px !important;
           margin: 0 20px;
-          width: calc(33% - 20px);
-          background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
-          backdrop-filter: blur(5px);
           width: 605px;
           height: 564px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          color: #fff;
-          cursor: pointer;
           border-radius: 20px;
 
           
           h2{
-            color: rgb(0, 0, 0);
             font-size: 30px;
-            font-weight: 700;
             margin-bottom: 20px;
             width: 340px;
-            text-align: left;
             margin-left: -175px;
             margin-bottom: 50px;
             margin-top: 50px;
-            line-height: 52.5px;
           }
           .six{
             width: 220px;
             margin-left: 25px;
-            margin-right: 18px;
+            margin-right: 17.5px;
             margin-bottom: 20.5px;
+          }
+          img{
+            width: 127.36px;
+            height: 127.36px;
           }
     }
 }
 
-.box-social-media:hover{
-    filter: drop-shadow(0px 2px 5px #76EA90);
-}
-.box-social-media2:hover{
-    filter: drop-shadow(0px 2px 5px #76EA90);
 }
 
 

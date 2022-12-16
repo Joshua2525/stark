@@ -1,65 +1,95 @@
 .top-creator-section {
-    display: flex;
-    height: auto;
-    width: 100%;
-    padding-top: 100px !important;
-    background: var(--secondary-color);
-    align-items: center;
-    justify-content: center;
-    padding: 0px 50px;
+  display: flex;
+  height: auto;
+  width: 100%;
+  padding-top: 100px !important;
+  background: var(--secondary-color);
+  align-items: center;
+  justify-content: center;
+  padding: 0px 50px;
 
-    .creator-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+  .creator-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+  }
+
+  .top-creator{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+  .title-creator{
+      margin-bottom: 20px;
+      margin-right: 1020px;
+      font-weight: 700 !important;
+      font-family: 'futura-bold', sans-serif !important;
+      font-size: 55px;
+      color: transparent;     
+      background: url("img/letter-big.png");
+      background-size: cover;
+      background-repeat: repeat;
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent;    
+      
+  }
+    .creator-box-container{
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
     }
 
-    .top-creator{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
+  .box-creator{
+      width: calc(33% - 20px);
+      width: 365px;
+      height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 20px;
+      border-radius: 10px;
+
+      img{
+          width: 330px;
+          pointer-events: none;
+      }
+
+      h2{
+        color: rgba(255, 255, 255, 1);
+        font-size: 25px !important;
+          margin-top: 40px;
+          margin-bottom: 20px;
+      }
+  }
+}
+
+.creator-box-container2{
+display: none !important;
+}
+
+@media(max-width:1800px){
+  .top-creator-section {
 
     .title-creator{
         margin-bottom: 20px;
         margin-right: 870px;
-        font-weight: 700 !important;
-        font-family: 'futura-bold', sans-serif !important;
-        font-size: 50px;
-        color: transparent;     
-        background: url("img/letter-big.png");
-        background-size: cover;
-        background-repeat: repeat;
-        -webkit-background-clip: text; 
-        -webkit-text-fill-color: transparent;    
-        
+        font-size: 50px;  
     }
 
-
-      .creator-box-container{
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        text-align: center;
-        justify-content: center;
-        width: 100%;
-      }
-
     .box-creator{
-        width: calc(33% - 20px);
         width: 320px;
         height: 280px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        cursor: pointer;
         margin-top: 20px;
-        border-radius: 10px;
 
         img{
             width: 290px ;
@@ -67,8 +97,7 @@
         }
 
         h2{
-          color: rgba(255, 255, 255, 1);
-          font-size: 25px !important;
+          font-size: 25px ;
             margin-top: 40px;
             margin-bottom: 20px;
         }
@@ -79,6 +108,7 @@
   display: none !important;
 }
 
+}
 
 @media(max-width:1360px){
     .title-creator{

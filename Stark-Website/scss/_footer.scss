@@ -20,6 +20,12 @@ footer{
     }
 }
 
+@media(max-width:1800px){
+    .footer-container{
+        padding: 0px 50px !important;
+    }
+}
+
 .footer-container{
     display: flex;
     justify-content: space-between;
@@ -182,7 +188,7 @@ footer{
         padding: 20px;
     }
     .footer-container{
-        padding: 0px 20px;
+        padding: 0px 20px !important;
     
         .left-footer {
 

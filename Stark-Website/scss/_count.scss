@@ -1,14 +1,12 @@
-
 .count{
     background: linear-gradient(90.57deg, #76EA90 0%, #FDFD55 100%);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 490px;
+    padding-right: 665px;
 
     .count-container{
-
         display: flex;
         flex-direction: row;
         
@@ -20,13 +18,13 @@
             flex-direction: column;
             text-align: center;
             width: 250px;
-            height: 140px;
+            height: 170px;
             font-family: 'Poppins', sans-serif !important;
 
 
             h2{
                 margin-bottom: 5px;
-                font-size: 30px;
+                font-size: 41.32px;
                 color: rgb(0, 0, 0);
                 text-align: left;
                 font-weight: 500 !important;
@@ -35,6 +33,7 @@
             p{
                 color: rgb(0, 0, 0);
                 text-align: left;
+                text-align: 20.07px;
                 font-weight: 400 !important;
             }
 
@@ -42,6 +41,36 @@
     }
 }
 
+
+
+@media(max-width:1800px){
+    .count{
+        padding-right: 490px;
+    
+        .count-container{
+            
+            .count-box{
+                width: 250px;
+                height: 140px;
+                font-family: 'Poppins', sans-serif !important;
+    
+    
+                h2{
+
+                    font-size: 30px;
+                    font-weight: 500;
+    
+                }
+                p{
+                    font-weight: 400 !important;
+                }
+    
+            }
+        }
+    }
+    
+    
+}
 
 @media(max-width: 1450px){
     .count{

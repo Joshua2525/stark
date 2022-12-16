@@ -65,7 +65,7 @@
         margin: 0 20px;
         width: calc(33% - 20px);
         background: transparent;
-        width: 223px;
+        width: 255px;
         height: 386px;
         display: flex;
         flex-direction: column;
@@ -76,7 +76,7 @@
         border-radius: 10px;
 
         .img-container{
-            width: 197px;
+            width: 229px;
             pointer-events: none;
         }
 
@@ -168,7 +168,7 @@
       margin: 0 20px;
       width: calc(33% - 20px);
       background: transparent;
-      width: 223px;
+      width: 255px;
       height: 386px;
       display: flex;
       flex-direction: column;
@@ -179,7 +179,7 @@
       border-radius: 10px;
 
       .img-container{
-        width: 197px;
+        width: 229px;
         pointer-events: none;
       }
 
@@ -227,7 +227,7 @@
       margin: 0 20px;
       width: calc(33% - 20px);
       background: transparent;
-      width: 223px;
+      width: 255px;
       height: 386px;
       display: flex;
       flex-direction: column;
@@ -238,7 +238,7 @@
       border-radius: 10px;
 
       .img-container{
-        width: 197px;
+        width: 229px;
         pointer-events: none;
       }
 
@@ -292,7 +292,7 @@
       margin: 0 20px;
       width: calc(33% - 20px);
       background: transparent;
-      width: 223px;
+      width: 255px;
       height: 386px;
       display: flex;
       flex-direction: column;
@@ -303,7 +303,7 @@
       border-radius: 10px;
 
       .img-container{
-        width: 197px;
+        width: 229px;
         pointer-events: none;
       }
 
@@ -353,7 +353,7 @@
       margin: 0 20px;
       width: calc(33% - 20px);
       background: transparent;
-      width: 223px;
+      width: 255px;
       height: 386px;
       display: flex;
       flex-direction: column;
@@ -364,7 +364,7 @@
       border-radius: 10px;
 
       .img-container{
-          width: 197px;
+          width: 229px;
           pointer-events: none;
       }
 
@@ -427,6 +427,127 @@
 }
 .box-team5:hover{
   transform: scale(1.1) !important;
+}
+
+
+
+@media(max-width:1800px){
+    .team {
+
+      .team-box-container2{
+        display: none;
+      }
+
+      .title-team{
+          font-size: 60px;
+      }
+
+      .subtitle-team{
+          margin-bottom: 70px;
+          font-size: 30px;
+          width: 820px;
+      }
+
+      .box-team1{
+          width: 223px;
+          height: 386px;
+
+          .img-container{
+              width: 197px;
+              pointer-events: none;
+          }
+
+          .line-name{
+
+              .name-role{
+
+                  h2{
+                      font-size: 25px !important;
+                  }
+              }
+          }
+
+          .line-name2{
+
+              .line-down{
+                  height: 190px;
+              }
+          }
+      }
+
+
+      .box-team2{
+        width: 223px;
+        height: 386px;
+
+        .img-container{
+          width: 197px;
+          pointer-events: none;
+        }
+    }
+      .box-team3{
+        width: 223px;
+        height: 386px;
+
+        .img-container{
+          width: 197px;
+          pointer-events: none;
+        }
+
+        .line-name{
+
+            .line-down{
+                height: 190px;
+            }
+
+            .name-role{
+
+                h2{
+                    color: var(--primary-color);
+                    font-size: 25px !important;
+                    margin-top: 60px;
+                    margin-bottom: 2px;
+                    font-family: 'futura-bold', sans-serif;
+                    letter-spacing: 0.5px;
+
+                  }
+            }
+        }
+    }
+      .box-team4{
+        width: 223px;
+        height: 386px;
+
+        .img-container{
+          width: 197px;
+          pointer-events: none;
+        }
+
+        .line-name2{
+
+            .line-down{
+                height: 190px;
+            }
+        }
+    }
+      .box-team5{
+        width: 223px;
+        height: 386px;
+
+        .img-container{
+            width: 197px;
+            pointer-events: none;
+        }
+
+        .line-name{
+
+            .line-down{
+                height: 190px;
+            }
+        }
+    }
+  }
+
 }
 
 

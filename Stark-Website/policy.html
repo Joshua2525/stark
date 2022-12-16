@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Policy</title>
+
+    <!--STYLE CSS & SCSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--FAVICON-->
+    <link rel="icon" type="image/x-icon" href="img/favicon-stark.png"> 
+
+</head>
+<body>
+
+    <div class="top">
+        <p>The <a href="">Stark.Live</a>   Roadmap - 2023 <a class="read-post" href="#roadmap">Read Post <img src="img/right-arrow 1.png" class="right-arrow"> </a></p>
+    </div>
+
+
+    <!--NAVBAR-SECTION -->
+    <header>
+        <div class="limiter">
+            <nav class="navbar">
+                <a href="#"><img id="logo2" class="nav-logo1" src="img/light-logo.png" alt=""></a>
+
+                <ul class="navlinks" id="links">
+                    <a href="#"><img class="logo-nav" src="img/light-logo.png" id="logo1" ></a>
+                    
+                    <div class="center-nav">
+                        <li class="navitems nowrap"><a href="index.html" class="itemlinks">Learn More</a></li>
+                        <li class="navitems"><a href="#team" class="itemlinks">Team</a></li>
+                        <li class="navitems"><a href="#roadmap" class="itemlinks">Roadmap</a></li>
+                        <li class="navitems"><a href="#faqs-section" class="itemlinks">FAQ</a></li>
+                    </div>
+
+                    <div class="right-nav">
+                      <li class="navitems create-btn"><a href="" class="itemlinks create-button">+ CREATE</a></li>
+                    </div>
+
+                </ul>
+
+                <div id="burger">
+                    <div class="burgerlines"></div>
+                    <div class="burgerlines"></div>
+                    <div class="burgerlines"></div>
+                </div>
+            </nav>
+        </div>
+      </header>
+
+      <section class="policy-section">
+        <div class="title-policy">
+             <h1>PRIVATE POLICY</h1>
+        </div>
+
+        <div class="policy-list">
+            <h1>1. INTRODUCTIONS WE COLLECT</h1>
+            <p>Stark Team are committed to protecting the privacy of our users. This privacy policy explains how we collect, use, and disclose your personal information when you use our services.</p>
+            <br>
+            <p>We collect the following types of information from you when you use our services:</p>
+
+            <li>Personal information: This includes information that can be used to identify you, such as your name, email address, and payment information. We collect this information when you create an account with us, or when you provide it to us in order to access our services.</li>
+            <li>Content: When you submit content to us for captioning, we collect and process the content in order to provide our services.</li>
+            <li>Usage information: We collect information about how you use our services, including the pages you visit and the actions you take within our platform.</li>
+            <li>Device information: We collect information about the device you use to access our services, including the type of device, its operating system, and its IP address.</li>
+            <br>
+
+            <h1>2. How We Use Your Information</h1>
+            <p>We use the information we collect from you for the following purposes:</p>
+            <li>To provide and improve our services: We use your personal information, content, and usage information to provide you with the captioning services that you request, and to improve the quality and functionality of our services.</li>
+            <li>To communicate with you: We may use your personal information to communicate with you about your use of our services, to respond to your inquiries, or to provide you with information that we think may be of interest to you.</li>
+            <li>For research and development: We may use your personal information and usage information to conduct research and development activities in order to improve our services.</li>
+            <li>For legal purposes: We may use your personal information and content if we are required to do so by law, or if we believe that such action is necessary to comply with legal processes, to protect the rights and safety of our users or third parties, or to prevent illegal activities.</li>
+            
+            <br>
+
+            <h1>3. Sharing of Your Information</h1>
+            <p>We do not share your personal information with third parties, except in the following cases:</p>
+            <li>Service providers: We may share your personal information with third-party service providers who assist us in providing our services, such as payment processing companies or data storage providers. These service providers are contractually obligated to protect your personal information and to use it only for the purposes for which it was disclosed.</li>
+            <li>Legal reasons: We may disclose your personal information if we are required to do so by law, or if we believe that such action is necessary to comply with legal processes, to protect the rights and safety of our users or third parties, or to prevent illegal activities.</li>
+            <li>Business transfers: In the event that our business is sold, merged, or otherwise transferred, we may disclose or transfer your personal information to the acquiring entity in order to continue providing our services to you.</li>
+            
+            <br>
+
+            <h1>4. Security</h1>
+            <p>We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure. However, no security measures are perfect, and we cannot guarantee the security of your personal information.</p>
+            
+            <br>
+
+            <h1>5. Changes to Our Privacy Policy</h1>
+            <p>We may update this privacy policy from time to time in order to reflect changes to</p>
+  
+        </div>
+    </section>
+
+      <!--MENUBAR SCRIPT-->
+
+      <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.js"
+      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+      crossorigin="anonymous"></script>
+  
+      <script>
+          const burger = document.getElementById('burger');
+          const links = document.getElementById('links');
+  
+          burger.addEventListener('click', () => {
+              links.classList.toggle('active');
+          })
+  
+          $("#links").click(() => {
+              links.classList.remove('active');
+          })
+      </script>
+  
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  
+      <script>
+          $(window).scroll(function(){
+              if($(window).scrollTop()){
+                  $("header").addClass("black");
+              }
+              else{
+                  $("header").removeClass("black");
+              }
+          });
+
+        </script>
+    
+</body>
+</html>

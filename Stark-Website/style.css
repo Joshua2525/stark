@@ -2874,10 +2874,10 @@ header.black nav {
     padding-right: 85px;
   }
   .pricing .title .title-container p {
-    color: #ccc;
+    color: white;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;
   }
   .pricing .pricing-box-container2 {
     display: none;
@@ -3294,7 +3294,7 @@ header.black nav {
     width: 600px;
   }
   .subtitle-faq {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
@@ -6202,7 +6202,7 @@ input:checked ~ .tab-content {
     margin-bottom: 5px;
   }
   .roadmap .automate {
-    font-size: 20px;
+    font-size: 22px;
   }
   .roadmap .roadmap-box-container {
     margin-top: 20px;

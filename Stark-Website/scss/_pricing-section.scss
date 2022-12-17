@@ -24,6 +24,7 @@
         font-family: 'futura-bold', sans-serif !important;
         display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
         margin: 0;
         width: max-content;
@@ -43,7 +44,15 @@
             text-align: center;
             padding-left:85px;
             padding-right:85px;
-        }            
+            margin-bottom: 10px;
+        }     
+        p{
+            color: rgba(255, 255, 255, 1);
+            font-family: 'Poppins', sans-serif !important;
+            font-weight: 600;
+            font-size: 26px;
+            
+        }       
        }
     }
 
@@ -342,6 +351,12 @@
                 font-size: 60px;
                 padding-left:85px;
                 padding-right:85px;
+            }    
+            p{
+                color: #ccc;
+                font-family: 'Poppins', sans-serif !important;
+                font-weight: 600;
+                font-size: 20px;
             }            
            }
         }
@@ -660,7 +675,14 @@
     .title-pricing{
       font-size: 30px !important;
       line-height: 40px;
-  }
+    }
+    .title-container{
+        p{
+            font-size: 14px !important;
+            text-align: center;
+            width: 80%;
+        }
+    }
   }
   
 

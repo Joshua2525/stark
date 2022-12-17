@@ -12,6 +12,9 @@
     <!--FAVICON-->
     <link rel="icon" type="image/x-icon" href="img/favicon-stark.png"> 
 
+    <!--AOS ANIMATION LINK-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -31,9 +34,9 @@
                     
                     <div class="center-nav">
                         <li class="navitems nowrap"><a href="index.html" class="itemlinks">Learn More</a></li>
-                        <li class="navitems"><a href="#team" class="itemlinks">Team</a></li>
-                        <li class="navitems"><a href="#roadmap" class="itemlinks">Roadmap</a></li>
-                        <li class="navitems"><a href="#faqs-section" class="itemlinks">FAQ</a></li>
+                        <li class="navitems"><a href="index.html#team" class="itemlinks">Team</a></li>
+                        <li class="navitems"><a href="index.html#roadmap" class="itemlinks">Roadmap</a></li>
+                        <li class="navitems"><a href="index.html#faqs-section" class="itemlinks">FAQ</a></li>
                     </div>
 
                     <div class="right-nav">
@@ -53,10 +56,10 @@
 
       <section class="policy-section">
         <div class="title-policy">
-             <h1>PRIVATE POLICY</h1>
+             <h1 data-aos="zoom-out" data-aos-duration="1000">PRIVATE POLICY</h1>
         </div>
 
-        <div class="policy-list">
+        <div class="policy-list" data-aos="slide-up" data-aos-duration="1500">
             <h1>1. INTRODUCTIONS WE COLLECT</h1>
             <p>Stark Team are committed to protecting the privacy of our users. This privacy policy explains how we collect, use, and disclose your personal information when you use our services.</p>
             <br>
@@ -203,8 +206,16 @@
                   $("header").removeClass("black");
               }
           });
+       </script>
 
+    <!-- ANIMATION -->
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
         </script>
+
     
 </body>
 </html>

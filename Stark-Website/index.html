@@ -113,17 +113,17 @@
         <div class="count">
             <div class="count-container">
 
-                <div class="count-box">
+                <div class="count-box" data-aos="fade-up" data-aos-delay="100">
                     <h2>1k+</h2>
                     <p>Active Monthly Users</p>
                 </div>
 
-                <div class="count-box">
+                <div class="count-box" data-aos="fade-up" data-aos-delay="250">
                     <h2>520M+</h2>
                     <p>Users Reached</p>
                 </div>
 
-                <div class="count-box">
+                <div class="count-box" data-aos="fade-up" data-aos-delay="350">
                     <h2>100+</h2>
                     <p>Digital Video Assets</p>
                 </div>
@@ -567,14 +567,14 @@
 
     <section class="roadmap" id="roadmap">
         <div class="roadmap-container">
-            <div class="title-roadmap" data-aos="fade-up" data-aos-duration="1000">
+            <div class="title-roadmap" data-aos="flip-down" data-aos-duration="1000">
                 <h1 >
                     ROADMAP                  
                 </h1>
                 <p>⚡</p>
             </div>
 
-            <p class="automate">Automate & Scale</p>
+            <p data-aos="flip-down" data-aos-duration="1000" class="automate">Automate & Scale</p>
 
           <div class="roadmap-box-container" >
             
@@ -611,9 +611,9 @@
 
     <!--FAQs SECTION--> 
 
-    <section class="faqs-section" id="faqs-section">
-        <h1 data-aos="fade-up" data-aos-duration="1000" class="title-faq">FREQUENTLY ASKED QUESTIONS</h1>
-        <p class="subtitle-faq">We have THE ANSWERS!</p>
+    <section class="faqs-section" id="faqs-section" name="faqs-section">
+        <h1 data-aos="flip-down" data-aos-duration="1000" class="title-faq">FREQUENTLY ASKED QUESTIONS</h1>
+        <p data-aos="flip-down" data-aos-duration="1000" class="subtitle-faq">We have THE ANSWERS!</p>
         <div class="faqs-container">
 
             <div class="faqs-info">
@@ -679,14 +679,15 @@
 
     <!-- TEAM SECTION  -->
 
-    <section class="team" id="team">
+    <section class="team" id="team" name="team">
         <div class="team-container">
 
-            <div class="title-container-team">
-                <h1 class="title-team" data-aos="fade-down" data-aos-duration="1000">TEAM</h1>
-                <p data-aos="fade-up" data-aos-delay="1000"  class="subtitle-team">Starks team goal is to help encourage young creators
+            <div class="title-container-team" data-aos="flip-down" data-aos-duration="1000">
+                <h1 class="title-team">TEAM</h1>
+                <p class="subtitle-team">Starks team goal is to help encourage young creators
                     to build their own social platforms.  </p>
             </div>
+
             <div class="team-box-container" >
 
                 <!--BOX 1--> 
@@ -937,8 +938,6 @@
 
     <script src="js/darkmode.js"></script>
 
-    <!--SLIDER SCRIPT-->
-
 
     <!--MENUBAR SCRIPT-->
 
@@ -982,33 +981,6 @@
         AOS.init();
     </script>
 
-
-    <!-- SLIDER FEATURES -->
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-                $(".gallery-carousel").owlCarousel({
-                    loop: true,
-                    autoplay: true,
-                    center: true,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 1
-                        },
-                        1000: {
-                            items: 3
-                        }
-                    }
-                });
-            });
-    </script>
         
 </body>
 </html>

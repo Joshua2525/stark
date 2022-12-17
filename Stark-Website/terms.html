@@ -12,6 +12,9 @@
     <!--FAVICON-->
     <link rel="icon" type="image/x-icon" href="img/favicon-stark.png"> 
 
+    <!--AOS ANIMATION LINK-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -31,9 +34,9 @@
                     
                     <div class="center-nav">
                         <li class="navitems nowrap"><a href="index.html" class="itemlinks">Learn More</a></li>
-                        <li class="navitems"><a href="#team" class="itemlinks">Team</a></li>
-                        <li class="navitems"><a href="#roadmap" class="itemlinks">Roadmap</a></li>
-                        <li class="navitems"><a href="#faqs-section" class="itemlinks">FAQ</a></li>
+                        <li class="navitems"><a href="index.html#team" class="itemlinks">Team</a></li>
+                        <li class="navitems"><a href="index.html#roadmap" class="itemlinks">Roadmap</a></li>
+                        <li class="navitems"><a href="index.html#faqs-section" class="itemlinks">FAQ</a></li>
                     </div>
 
                     <div class="right-nav">
@@ -52,11 +55,11 @@
       </header>
 
       <section class="terms-section">
-        <div class="title-terms">
+        <div class="title-terms" data-aos="zoom-out" data-aos-duration="1000">
              <h1>TERMS OF SERVICE</h1>
         </div>
 
-        <div class="terms-list">
+        <div class="terms-list" data-aos="slide-up" data-aos-duration="1500" >
             <h1>1. INTRODUCTIONS</h1>
             <p>Welcome to our social media caption content agency! By accessing or using our services, you agree to be bound by these terms of service and our privacy policy. If you do not agree to these terms, you may not use our services.Welcome to Caption Content Social Media Agency! These terms and conditions outline the rules and regulations for the use of our website, located at <a href="http://stark.live/">Stark.Live.</a>  By accessing this website, you accept and agree to be bound by these terms and conditions in full. If you disagree with any part of these terms and conditions, please do not use our website.</p>
 
@@ -202,6 +205,16 @@
               }
           });
       </script>
+
+
+    <!-- ANIMATION -->
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
+  
   
 
 </body>

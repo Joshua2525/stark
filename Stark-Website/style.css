@@ -1271,6 +1271,49 @@ header.black nav {
   }
 }
 
+@media (max-width: 541px) {
+  .scroller > span {
+    position: absolute;
+    top: 0;
+    -webkit-animation: slide 8s infinite;
+            animation: slide 8s infinite;
+  }
+  @-webkit-keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.6em;
+    }
+    50% {
+      top: -2.8em;
+    }
+    75% {
+      top: -4.3em;
+    }
+    95% {
+      top: 0em;
+    }
+  }
+  @keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.6em;
+    }
+    50% {
+      top: -2.8em;
+    }
+    75% {
+      top: -4.3em;
+    }
+    95% {
+      top: 0em;
+    }
+  }
+}
+
 @media (max-width: 426px) {
   .scroller > span {
     position: absolute;
@@ -4119,9 +4162,10 @@ header.black nav {
   margin-bottom: 20px;
   font-weight: 600;
   text-align: center;
-  font-size: 60px;
+  font-size: 70px;
   color: transparent;
   background: url("img/mid-text-color.png");
+  background-size: cover;
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -32,9 +32,10 @@
             -webkit-background-clip: text; 
             -webkit-text-fill-color: transparent;
         }
-        p{
-            font-size: 59px;
-            margin-bottom: 1px;
+        img{
+            width: 70px;
+            margin-left: 10px;
+            pointer-events: none;
         }
     }
     .automate{
@@ -185,9 +186,9 @@
                 -webkit-text-fill-color: transparent;
                 text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
             }
-            p{
-                font-size: 55px;
-                margin-bottom: 5px;
+            img{
+                width: 60px;
+                margin-left: 10px;
             }
         }
         .automate{
@@ -362,6 +363,7 @@
         p{
             font-size: 14px !important;
         }
+       
     }
     .title-roadmap{
         
@@ -371,6 +373,9 @@
         p{
             font-size: 30px !important; 
             margin-top: 2px;
+        }
+        img{
+            width: 32px !important;
         }
     }
 }

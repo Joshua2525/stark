@@ -51,6 +51,9 @@
         font-weight: 700;
         margin-bottom: 5x;
       }
+      img{
+        pointer-events: none;
+      }
   }
   .box-social-media2{
       box-shadow: 10px 32px 72px 0px rgba(15, 13, 35, 0.04);
@@ -91,6 +94,7 @@
         img{
           width: 150.36px;
           height: 150.36px;
+          pointer-events: none;
         }
   }
 }

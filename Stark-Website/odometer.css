@@ -72,7 +72,7 @@
   -moz-transition: -moz-transform 3s;
   -ms-transition: -ms-transform 3s;
   -o-transition: -o-transform 3s;
-  transition: transform 3s;
+  transition: transform 4s;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);

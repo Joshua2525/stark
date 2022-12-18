@@ -1736,7 +1736,7 @@ header.black nav {
   }
 }
 
-@media (max-width: 345px) {
+@media (max-width: 355px) {
   .count-container {
     padding: 0px 50px;
   }
@@ -1752,6 +1752,9 @@ header.black nav {
   .count-container .count-box p {
     color: black;
     font-size: 9px !important;
+  }
+  .count-container .count-box span {
+    font-size: 14px !important;
   }
 }
 

@@ -118,7 +118,7 @@
             <div class="count-container">
 
                 <div class="count-box" data-aos="fade-up" data-aos-delay="100">
-                    <h2> <span class="pod__item__number js-count" data-count="1">100</span>K+</h2>
+                    <h2 id="users"> <span class="pod__item__number js-count" data-count="999">0</span>+</h2>
                     <p>Active Monthly Users</p>
                 </div>
 
@@ -1004,7 +1004,7 @@
                             countNum: countTo
                         },
                         {
-                            duration: 3000,
+                            duration: 1500,
                             easing: "linear",
                             step: function () {
                                 // Count up with commas
@@ -1013,6 +1013,12 @@
                             complete: function () {
                                 // Add comma after done counting
                                 $this.text(this.countNum.toLocaleString("en"));
+                                var data=document.getElementById('users').innerText;    
+                                
+                                if(data = "999+"){
+                                     users.innerText = "1K+"; 
+                                }
+                                
                             }
                         }
                     );
@@ -1053,6 +1059,7 @@
                         {
                             duration: 3000,
                             easing: "linear",
+
                             step: function () {
                                 // Count up with commas
                                 $this.text(Math.floor(this.countNum).toLocaleString("en"));

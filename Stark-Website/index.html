@@ -118,22 +118,23 @@
             <div class="count-container">
 
                 <div class="count-box" data-aos="fade-up" data-aos-delay="100">
-                    <h2> <span class="totalprojects">1</span>K+</h2>
+                    <h2> <span class="pod__item__number js-count" data-count="1">100</span>K+</h2>
                     <p>Active Monthly Users</p>
                 </div>
 
                 <div class="count-box" data-aos="fade-up" data-aos-delay="250">
-                    <h2> <span class="totalcustomers">520</span>M+</h2>
+                    <h2> <span class="pod__item__number js-count" data-count="520">0</span>M+</h2>
                     <p>Users Reached</p>
                 </div>
 
                 <div class="count-box" data-aos="fade-up" data-aos-delay="350">
-                    <h2> <span class="dataspent">100</span>+</h2>
+                    <h2> <span class="pod__item__number js-count" data-count="100">0</span>+</h2>
                     <p>Digital Video Assets</p>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!--CREATOR LIST SECTION-->
 
@@ -980,75 +981,67 @@
     </script>
 
 
+  <!--COUNTER JS SCROLL DOWN -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+
+    <script>
+        (function ($) {
+	var controller = new ScrollMagic.Controller();
+
+	/*------------------------------------*\
+        $NUMBERS
+    \*------------------------------------*/
+
+            function animateNumber() {
+                $(".js-count").each(function () {
+                    var $this = $(this),
+                        countTo = $this.attr("data-count");
+                    $({ countNum: $this.text() }).animate(
+                        {
+                            countNum: countTo
+                        },
+                        {
+                            duration: 3000,
+                            easing: "linear",
+                            step: function () {
+                                // Count up with commas
+                                $this.text(Math.floor(this.countNum).toLocaleString("en"));
+                            },
+                            complete: function () {
+                                // Add comma after done counting
+                                $this.text(this.countNum.toLocaleString("en"));
+                            }
+                        }
+                    );
+                });
+	        }
+
+            new ScrollMagic.Scene({
+                triggerElement: ".count"
+            })
+                .on("enter", function () {
+                    $(".count").addClass("pod--animated");
+                    animateNumber();
+                })
+                .on("leave", function () {
+                    $(".count").removeClass("pod--animated");
+                })
+                .addTo(controller);
+        })(jQuery);
+
+    </script>
+
     <!-- ANIMATION -->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="odometer.js"></script>
-    <script>
-
-        const respOdometer = document.querySelector
-        (".totalprojects");
-
-        const respOdometer2 = document.querySelector
-        (".totalcustomers");
-
-        const respOdometer3 = document.querySelector
-        (".dataspent");
-
-        const respOdometer4 = document.querySelector
-        (".monthly");
-
-        const respOdometer5 = document.querySelector
-        (".reach");
-
-        const respOdometer6 = document.querySelector
-        (".digital");
-
-
-        const respodometer = new Odometer({
-            el : respOdometer,
-        })
-
-        const respodometer2 = new Odometer({
-            el : respOdometer2,
-        })
-
-        const respodometer3 = new Odometer({
-            el : respOdometer3,
-        })
-
-        const respodometer4 = new Odometer({
-            el : respOdometer4,
-        })
-
-        const respodometer5 = new Odometer({
-            el : respOdometer5,
-        })
-
-        const respodometer6 = new Odometer({
-            el : respOdometer6,
-        })
-
-
-        
-        respodometer.update(500);
-        respOdometer.innerHTML = 1;
-        respodometer2.update(999);
-        respOdometer2.innerHTML = 520;
-        respodometer3.update(999);
-        respOdometer3.innerHTML = 100;
-        respodometer4.update(500);
-        respOdometer4.innerHTML = 1;
-        respodometer5.update(999);
-        respOdometer5.innerHTML = 520;
-        respodometer6.update(999);
-        respOdometer6.innerHTML = 100;
-
-    </script>
     <script>
         AOS.init();
     </script>
+
 
         
 </body>

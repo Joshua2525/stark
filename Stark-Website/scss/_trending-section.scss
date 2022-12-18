@@ -210,6 +210,27 @@
     }
   }
 
+  @media (max-width: 500px) {
+
+    .trending-box-container2{
+
+        video{
+            width: 300px !important;
+            border-radius: 20px !important;
+        }
+      }
+  }
+  @media (max-width: 350px) {
+
+    .trending-box-container2{
+
+        video{
+            width: 300px !important;
+            border-radius: 20px !important;
+        }
+      }
+  }
+
   @media (max-width: 425px) {
 
     .card{

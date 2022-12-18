@@ -1034,52 +1034,52 @@
 
     </script>
 
-<script>
-    (function ($) {
-var controller = new ScrollMagic.Controller();
+    <script>
+        (function ($) {
+    var controller = new ScrollMagic.Controller();
 
-/*------------------------------------*\
-    $NUMBERS
-\*------------------------------------*/
+    /*------------------------------------*\
+        $NUMBERS
+    \*------------------------------------*/
 
-        function animateNumber() {
-            $(".js-count2").each(function () {
-                var $this = $(this),
-                    countTo = $this.attr("data-count");
-                $({ countNum: $this.text() }).animate(
-                    {
-                        countNum: countTo
-                    },
-                    {
-                        duration: 3000,
-                        easing: "linear",
-                        step: function () {
-                            // Count up with commas
-                            $this.text(Math.floor(this.countNum).toLocaleString("en"));
+            function animateNumber() {
+                $(".js-count2").each(function () {
+                    var $this = $(this),
+                        countTo = $this.attr("data-count");
+                    $({ countNum: $this.text() }).animate(
+                        {
+                            countNum: countTo
                         },
-                        complete: function () {
-                            // Add comma after done counting
-                            $this.text(this.countNum.toLocaleString("en"));
+                        {
+                            duration: 3000,
+                            easing: "linear",
+                            step: function () {
+                                // Count up with commas
+                                $this.text(Math.floor(this.countNum).toLocaleString("en"));
+                            },
+                            complete: function () {
+                                // Add comma after done counting
+                                $this.text(this.countNum.toLocaleString("en"));
+                            }
                         }
-                    }
-                );
-            });
-        }
+                    );
+                });
+            }
 
-        new ScrollMagic.Scene({
-            triggerElement: ".convert-section"
-        })
-            .on("enter", function () {
-                $(".convert-section").addClass("pod--animated");
-                animateNumber();
+            new ScrollMagic.Scene({
+                triggerElement: ".convert-section"
             })
-            .on("leave", function () {
-                $(".convert-section").removeClass("pod--animated");
-            })
-            .addTo(controller);
-    })(jQuery);
+                .on("enter", function () {
+                    $(".convert-section").addClass("pod--animated");
+                    animateNumber();
+                })
+                .on("leave", function () {
+                    $(".convert-section").removeClass("pod--animated");
+                })
+                .addTo(controller);
+        })(jQuery);
 
-</script>
+    </script>
 
 
     <!-- ANIMATION -->

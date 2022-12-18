@@ -794,7 +794,7 @@
                         
                         <div class="counter-convert-box">
                             <div class="convert-box1">
-                                <h2> <span class="pod__item__number js-count2" data-count="1">100</span>k+</h2>
+                                <h2 id="users2"> <span class="pod__item__number js-count2" data-count="999">0</span>k+</h2>
                                 <p>Active Monthly Users</p>
                             </div>
 
@@ -804,7 +804,7 @@
                             </div>
 
                             <div class="convert-box1">
-                                <h2> <span class="pod__item__number js-count2"  data-count="100">0</span> +</h2>
+                                <h2> <span class="pod__item__number js-count2"  data-count="100">0</span>+</h2>
                                 <p>Digital Video Assets</p>
                             </div>
                         </div>
@@ -1065,9 +1065,14 @@
                                 $this.text(Math.floor(this.countNum).toLocaleString("en"));
                             },
                             complete: function () {
-                                // Add comma after done counting
-                                $this.text(this.countNum.toLocaleString("en"));
+                            // Add comma after done counting
+                            $this.text(this.countNum.toLocaleString("en"));
+                            var data=document.getElementById('users2').innerText;    
+                                
+                                if(data = "999+"){
+                                     users2.innerText = "1K+"; 
                             }
+                        }
                         }
                     );
                 });

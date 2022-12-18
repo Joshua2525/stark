@@ -794,17 +794,17 @@
                         
                         <div class="counter-convert-box">
                             <div class="convert-box1">
-                                <h2> <span class="monthly">1</span>k+</h2>
+                                <h2> <span class="pod__item__number js-count2" data-count="1">100</span>k+</h2>
                                 <p>Active Monthly Users</p>
                             </div>
 
                             <div class="convert-box-center">
-                                <h2> <span class="reach">520</span>M+</h2>
+                                <h2> <span class="pod__item__number js-count2"  data-count="520">0</span>M+</h2>
                                 <p>Users Reached</p>
                             </div>
 
                             <div class="convert-box1">
-                                <h2> <span class="digital">100</span> +</h2>
+                                <h2> <span class="pod__item__number js-count2"  data-count="100">0</span> +</h2>
                                 <p>Digital Video Assets</p>
                             </div>
                         </div>
@@ -1033,6 +1033,54 @@
         })(jQuery);
 
     </script>
+
+<script>
+    (function ($) {
+var controller = new ScrollMagic.Controller();
+
+/*------------------------------------*\
+    $NUMBERS
+\*------------------------------------*/
+
+        function animateNumber() {
+            $(".js-count2").each(function () {
+                var $this = $(this),
+                    countTo = $this.attr("data-count");
+                $({ countNum: $this.text() }).animate(
+                    {
+                        countNum: countTo
+                    },
+                    {
+                        duration: 3000,
+                        easing: "linear",
+                        step: function () {
+                            // Count up with commas
+                            $this.text(Math.floor(this.countNum).toLocaleString("en"));
+                        },
+                        complete: function () {
+                            // Add comma after done counting
+                            $this.text(this.countNum.toLocaleString("en"));
+                        }
+                    }
+                );
+            });
+        }
+
+        new ScrollMagic.Scene({
+            triggerElement: ".convert-section"
+        })
+            .on("enter", function () {
+                $(".convert-section").addClass("pod--animated");
+                animateNumber();
+            })
+            .on("leave", function () {
+                $(".convert-section").removeClass("pod--animated");
+            })
+            .addTo(controller);
+    })(jQuery);
+
+</script>
+
 
     <!-- ANIMATION -->
 

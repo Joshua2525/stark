@@ -1591,7 +1591,6 @@ header.black nav {
 }
 
 .count .count-container .count-box span {
-  margin-top: 0.55px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
@@ -1696,9 +1695,6 @@ header.black nav {
   .count-container .count-box p {
     color: black;
     font-size: 14px !important;
-  }
-  .count-container .count-box span {
-    margin-top: 0.9px !important;
   }
 }
 

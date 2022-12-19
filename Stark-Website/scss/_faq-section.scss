@@ -396,10 +396,20 @@
   }
 }
 
+
+@media(max-width:430px){
+  .title-faq{
+    font-size: 30px !important;
+    width: 120% !important;
+}
+}
+
+
+
 @media(max-width:355px){
   .title-faq{
-    font-size: 25px !important;
-    width: 90% !important;
+    font-size: 30px !important;
+    width: 100% !important;
   }
 }
 

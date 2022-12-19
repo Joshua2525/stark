@@ -244,6 +244,26 @@
 
   }
   
+  @media (max-width: 430px) {
+    .title-trending{
+      font-size: 40px !important;
+      margin-bottom: -20px;
+    }
+  }
+
+  @media (max-width: 398px) {
+    .title-trending{
+      font-size: 35px !important;
+    }
+  }
+
+  @media (max-width: 355px) {
+    .title-trending{
+      font-size: 30px !important;
+      margin-bottom: -20px;
+    }
+  }
+  
 
   
 

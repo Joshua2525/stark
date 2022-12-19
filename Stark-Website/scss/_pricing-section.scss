@@ -797,6 +797,28 @@
 
 }
 
+
+@media(max-width:430px){
+    .pricing .title .title-container h1{
+        font-size: 40px !important;
+    }
+}
+
+@media(max-width:398px){
+    .pricing .title .title-container h1{
+        font-size: 40px !important;
+    }
+}
+
+@media(max-width:355px){
+    .pricing .title .title-container h1{
+        font-size: 30px !important;
+    }
+}
+
+
+
+
 @media(max-width:335px){
 
     .pricing{
@@ -810,5 +832,8 @@
     }
   
 }
+
+
+
 
 

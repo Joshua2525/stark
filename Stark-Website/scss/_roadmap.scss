@@ -380,6 +380,27 @@
     }
 }
 
+@media(max-width:430px){
+    .roadmap .title-roadmap h1{
+        font-size: 40px !important;
+
+        img{
+            width: 40px !important;
+        }
+    }
+}
+
+@media(max-width:355px){
+    .roadmap .title-roadmap h1{
+        font-size: 30px !important;
+        img{
+            width: 25px !important;
+        }
+    }
+
+}
+
+
 @media(max-width:350px){
     .roadmap-box{
         padding: 40px 20px !important;

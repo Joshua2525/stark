@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stark</title>
-    
+
     <!--STYLE CSS & SCSS-->
     <link rel="stylesheet" href="style.css">
 
@@ -25,13 +25,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
    
     <!--ODOMETER-->
-     <link rel="stylesheet" href="odometer.css" />
-     <link real="odometer.js"/>
+    <link rel="stylesheet" href="odometer.css" />
+    <link real="odometer.js"/>
 
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- jquery -->
+    <script src="js/jquery-3.4.1.min.js"></script>  
 
 </head>
 <body>
     
+    <!--TOP DIV-->
 
     <div class="top">
         <p>The <a href="">Stark.Live</a>   Roadmap - 2023 <a class="read-post" href="#roadmap">Read Post <img src="img/right-arrow 1.png" class="right-arrow"> </a></p>
@@ -39,6 +45,7 @@
 
 
     <!--NAVBAR-SECTION -->
+
     <header>
         <div class="limiter">
             <nav class="navbar">
@@ -67,7 +74,7 @@
                 </div>
             </nav>
         </div>
-      </header>
+    </header>
 
 
     <!--HOME SECTION-->
@@ -109,7 +116,6 @@
         
     </div>
 
-
     <!--COUNT SECTION-->
 
     <section class="count-section">
@@ -134,7 +140,6 @@
             </div>
         </div>
     </section>
-
 
     <!--CREATOR LIST SECTION-->
 
@@ -209,11 +214,9 @@
         </div>
     </section>
 
+    <!--TRENDING LIST SECTION-->
 
-
-     <!--TRENDING LIST SECTION-->
-
-     <section class="trending-section" id="trending">
+    <section class="trending-section" id="trending">
         <div class="trending-container">
             <div class="top-trending">
                 <h1 class="title-trending" data-aos="fade-right" data-aos-duration="1500">
@@ -285,6 +288,8 @@
         </div>
     </section>
 
+    <!--FEATURES-SECTION -->
+
     <section class="feature-section" id="features">
     
         <div class="container-features">
@@ -317,40 +322,70 @@
         </div>
     </section>
 
-
     <!-- SOCIAL PLATFORM SECTION  -->
 
-      <section class="social-platform" id="services">
-        <div class="social-container">
-    
-          <div class="social-box-container">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 
-            <div class="box-social-media2" data-aos="flip-right" data-aos-duration="1000">
-                <h2>Use Stark.Live <br>
-                    Cross-platform reach </h2>
-                <div class="social-media-img">
-                    <img class="six" src="img/6X.png" alt="">
-                    <img src="img/tiktok-box.png" alt="">
-                    <img src="img/snap-box.png" alt="">
-                    <img src="img/insta-box.png" alt="">
-                    <img src="img/yt-box.png" alt="">
-                    <img src="img/fb-box.png" alt="">
-                    <img src="img/twitter-box.png" alt="">
+    <section class="social-platform-section">
+        <div class="title-social-media">
+            <h1>6X Reach using
+                Stark Cross-platform</h1>
+        </div>
+
+
+        <div class="allplatformsmaindiv mainsection" data-id="6">
+            <div class="custom-container">
+                <div class="allplatformsdiv">
+                    <div class="iconscrollingdiv">
+                        <img src="img/frame.png" class="frameimg" alt="All your platform in one place">
+                        <div class="owl-carousel owl-theme">
+        
+                            <div class="item">
+                                <picture>
+                                    <img src="img/twitter1.png" alt="Twitter" class="lazy">
+                                </picture>
+                            </div>
+        
+                            <div class="item">
+                                <picture>
+                                    <img src="img/instagram1.png" alt="Instagram" class="lazy">
+                                </picture>
+                            </div>
+        
+                            <div class="item">
+                                <picture>
+                                    <img src="img/tiktok1.png" alt="Tiktok" class="lazy">
+                                </picture>
+                            </div>
+        
+                            <div class="item">
+                                <picture>
+                                    <img src="img/youtube1.png" alt="Youtube" class="lazy">
+                                </picture>
+                            </div>
+        
+                            <div class="item">
+                                <picture>
+                                    <img src="img/snapchat1.png" alt="Snapchat" class="lazy">
+                                </picture>
+                            </div>
+                            
+                            <div class="item">
+                                <picture>
+                                    <img src="img/facebook1.png" alt="Facebook" class="lazy">
+                                </picture>
+                            </div>
+        
+                        
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="box-social-media" data-aos="flip-right" data-aos-duration="1000">
-              <h2>Reach + millions
-                in less than 30 days.</h2>
-              <img src="img/iPhone-14-Pro.png" alt="" />
-              <img src="" alt="">
-            </div>
-    
-          </div>
         </div>
-      </section>
 
+    </section>
 
     <!-- PRICING SECTION  -->
 
@@ -367,7 +402,6 @@
 
             <div class="pricing-box-container" >
             
-
                 <div class="box1" data-aos="fade-down" data-aos-delay="250">
                     <h2>Standard</h2>
                     <h3>$55 <span>USD</span> </h3>
@@ -381,7 +415,7 @@
                     <ul>
                         <li>
                             <i class="fa fa-check"></i>
-                            <p>3 (Caption Videos) edited by Stark team</p> 
+                            <p>3 Videos edited by Stark team</p> 
                         </li>
                         <li>
                             <i class="fa fa-check"></i>
@@ -396,7 +430,6 @@
                             <p>Discord Community Access</p> 
                         </li>
                     </ul>
-
                 </div>
 
                 <div class="box2" data-aos="fade-down" data-aos-delay="400">
@@ -415,7 +448,7 @@
                     <ul>
                         <li>
                             <i class="fa fa-check"></i>
-                            <p>10 (Caption Videos) edited by Stark team</p> 
+                            <p>10 Videos edited by Stark team</p> 
                         </li>
                         <li>
                             <i class="fa fa-check"></i>
@@ -460,16 +493,12 @@
                             <p>Discord Community Access</p> 
                         </li>
                     </ul>
-
                 </div>
-
             </div>
 
-
-        <!-- PRICING BOX FOR MOBILE SIZE  -->
+        <!-- PRICING BOX FOR MOBILE SIZE (HTML) -->
 
         <div class="pricing-box-container2" >
-        
 
             <div class="box2" data-aos="fade-down" data-aos-delay="400">
                 <div class="most-popular">
@@ -569,8 +598,7 @@
        </div>
     </section>
 
-
-    
+    <!--ROADMAP SECTION -->
 
     <section class="roadmap" id="roadmap">
         <div class="roadmap-container">
@@ -612,9 +640,6 @@
           </div>
         </div>
     </section>
-
-
-
 
     <!--FAQs SECTION--> 
 
@@ -678,11 +703,9 @@
                         </div>
                         </div>             
                     </section>
-
+                </div>
             </div>
-        </div>
     </section>
-
 
     <!-- TEAM SECTION  -->
 
@@ -777,69 +800,60 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
+    <!--CONVERT SECTION--> 
 
-    <!--CONVERT BOX--> 
-
-        <!--CONTACT SECTION-->
-
-        <div class="convert-section" id="contact">
-        
-            <div class="contact-box" data-aos="flip-down" data-aos-duration="1000">
-                <div class="left-texts">
-                        <h1>Join our community</h1>
-                        
-                        <div class="counter-convert-box">
-                            <div class="convert-box1">
-                                <h2 id="users2"> <span class="pod__item__number js-count2" data-count="999">0</span>k+</h2>
-                                <p>Active Monthly Users</p>
-                            </div>
-
-                            <div class="convert-box-center">
-                                <h2> <span class="pod__item__number js-count2"  data-count="520">0</span>M+</h2>
-                                <p>Users Reached</p>
-                            </div>
-
-                            <div class="convert-box1">
-                                <h2> <span class="pod__item__number js-count2"  data-count="100">0</span>+</h2>
-                                <p>Digital Video Assets</p>
-                            </div>
-                        </div>
-
-                        <div class="button-convert-container">
-
-                            <a href="#">
-                                <button type="button" class="button-convert1">+Create </button>
-                            </a>
-            
-                            <a href="#">
-                                <button type="button" class="button-convert2">Follow us </button>
-                            </a>
-                            
-                        </div>
-                </div>
+    <div class="convert-section" id="contact">
     
-                <div class="right-texts">
-                    <div class="white-paper">
-                        <h2>White-paper</h2>
-                        <p>Read the whitepaper for an in depth
-                            coverage of Stark including roadmap, 
-                            introduction, team, caption content, and more!</p>
-                        <a href="">
-                            <button class="white-btn">White-paper</button>
+        <div class="contact-box" data-aos="flip-down" data-aos-duration="1000">
+            <div class="left-texts">
+                    <h1>Join our community</h1>
+                    
+                    <div class="counter-convert-box">
+                        <div class="convert-box1">
+                            <h2 id="users2"> <span class="pod__item__number js-count2" data-count="999">0</span>k+</h2>
+                            <p>Active Monthly Users</p>
+                        </div>
+
+                        <div class="convert-box-center">
+                            <h2> <span class="pod__item__number js-count2"  data-count="520">0</span>M+</h2>
+                            <p>Users Reached</p>
+                        </div>
+
+                        <div class="convert-box1">
+                            <h2> <span class="pod__item__number js-count2"  data-count="100">0</span>+</h2>
+                            <p>Digital Video Assets</p>
+                        </div>
+                    </div>
+
+                    <div class="button-convert-container">
+                        <a href="#">
+                            <button type="button" class="button-convert1">+Create </button>
+                        </a>
+        
+                        <a href="#">
+                            <button type="button" class="button-convert2">Follow us </button>
                         </a>
                     </div>
+              </div>
+
+            <div class="right-texts">
+                <div class="white-paper">
+                    <h2>White-paper</h2>
+                    <p>Read the whitepaper for an in depth
+                        coverage of Stark including roadmap, 
+                        introduction, team, caption content, and more!</p>
+                    <a href="">
+                        <button class="white-btn">White-paper</button>
+                    </a>
                 </div>
             </div>
-
         </div>
+    </div>
     
-
-
-    <!--FOOTER CODE-->
+    <!--FOOTER SECTION-->
 
     <footer id="footer">
         <div class="footer-container">
@@ -915,8 +929,10 @@
 
 
 
-    <!--JS OF TOP CREATOR & TRENDING SLIDER--> 
 
+
+
+    <!--JS OF TOP CREATOR & TRENDING SLIDER START--> 
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -938,6 +954,9 @@
     </script>
 
 
+    <!--JS OF TOP CREATOR & TRENDING SLIDER END--> 
+
+
     <!--JS OF FAQS--> 
     
     <script src="js/faqs.js"></script>
@@ -947,7 +966,7 @@
     <script src="js/darkmode.js"></script>
 
 
-    <!--MENUBAR SCRIPT-->
+    <!--MENUBAR SCRIPT START-->
 
     <script
     src="https://code.jquery.com/jquery-3.6.0.slim.js"
@@ -980,127 +999,187 @@
         });
     </script>
 
+    <!--MENUBAR SCRIPT END-->
 
-  <!--COUNTER JS SCROLL DOWN -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--COUNTER JS SCROLL DOWN FOR COUNTER SECTION START -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script>
-        (function ($) {
-	var controller = new ScrollMagic.Controller();
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 
-	/*------------------------------------*\
-        $NUMBERS
-    \*------------------------------------*/
+        <script>
+            (function ($) {
+        var controller = new ScrollMagic.Controller();
 
-            function animateNumber() {
-                $(".js-count").each(function () {
-                    var $this = $(this),
-                        countTo = $this.attr("data-count");
-                    $({ countNum: $this.text() }).animate(
-                        {
-                            countNum: countTo
-                        },
-                        {
-                            duration: 1500,
-                            easing: "linear",
-                            step: function () {
-                                // Count up with commas
-                                $this.text(Math.floor(this.countNum).toLocaleString("en"));
+        /*------------------------------------*\
+            $NUMBERS
+        \*------------------------------------*/
+
+                function animateNumber() {
+                    $(".js-count").each(function () {
+                        var $this = $(this),
+                            countTo = $this.attr("data-count");
+                        $({ countNum: $this.text() }).animate(
+                            {
+                                countNum: countTo
                             },
-                            complete: function () {
+                            {
+                                duration: 1500,
+                                easing: "linear",
+                                step: function () {
+                                    // Count up with commas
+                                    $this.text(Math.floor(this.countNum).toLocaleString("en"));
+                                },
+                                complete: function () {
+                                    // Add comma after done counting
+                                    $this.text(this.countNum.toLocaleString("en"));
+                                    var data=document.getElementById('users').innerText;    
+                                    
+                                    if(data = "999+"){
+                                        users.innerText = "1K+"; 
+                                    }
+                                    
+                                }
+                            }
+                        );
+                    });
+                }
+
+                new ScrollMagic.Scene({
+                    triggerElement: ".count"
+                })
+                    .on("enter", function () {
+                        $(".count").addClass("pod--animated");
+                        animateNumber();
+                    })
+                    .on("leave", function () {
+                        $(".count").removeClass("pod--animated");
+                    })
+                    .addTo(controller);
+            })(jQuery);
+
+        </script>
+
+        <!--COUNTER JS SCROLL DOWN FOR COUNTER SECTION END -->
+
+
+        <!--COUNTER JS SCROLL DOWN FOR JOIN OUR COMMUNITY SECTION START -->
+
+        <script>
+            (function ($) {
+        var controller = new ScrollMagic.Controller();
+
+        /*------------------------------------*\
+            $NUMBERS
+        \*------------------------------------*/
+
+                function animateNumber() {
+                    $(".js-count2").each(function () {
+                        var $this = $(this),
+                            countTo = $this.attr("data-count");
+                        $({ countNum: $this.text() }).animate(
+                            {
+                                countNum: countTo
+                            },
+                            {
+                                duration: 3000,
+                                easing: "linear",
+
+                                step: function () {
+                                    // Count up with commas
+                                    $this.text(Math.floor(this.countNum).toLocaleString("en"));
+                                },
+                                complete: function () {
                                 // Add comma after done counting
                                 $this.text(this.countNum.toLocaleString("en"));
-                                var data=document.getElementById('users').innerText;    
-                                
-                                if(data = "999+"){
-                                     users.innerText = "1K+"; 
+                                var data=document.getElementById('users2').innerText;    
+                                    
+                                    if(data = "999+"){
+                                        users2.innerText = "1K+"; 
                                 }
-                                
                             }
-                        }
-                    );
+                            }
+                        );
+                    });
+                }
+
+                new ScrollMagic.Scene({
+                    triggerElement: ".convert-section"
+                })
+                    .on("enter", function () {
+                        $(".convert-section").addClass("pod--animated");
+                        animateNumber();
+                    })
+                    .on("leave", function () {
+                        $(".convert-section").removeClass("pod--animated");
+                    })
+                    .addTo(controller);
+            })(jQuery);
+
+        </script>
+
+        <!--COUNTER JS SCROLL DOWN FOR JOIN OUR COMMUNITY SECTION START -->
+
+        <!-- ANIMATION AOS-->
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
+
+        <!-- SLIDER SOCIAL MEDIA JS-->
+
+        <script src="js/owl.carousel.js"></script>
+        <script>
+            $(document).ready(function(){
+                AOS.init();
+            });
+            $(window).on("scroll", function () {
+            AOS.init();
+            });
+            $(function(){
+                $('.owl-carousel').on('initialized.owl.carousel translate.owl.carousel', function(e){
+                    idx = e.item.index;
+                    $('.owl-item.big').removeClass('big');
+                    $('.owl-item.medium-left').removeClass('medium-left');
+                    $('.owl-item.medium-right').removeClass('medium-right');
+                    $('.owl-item').eq(idx).addClass('big');
+                    $('.owl-item').eq(idx-1).addClass('medium-left');
+                    $('.owl-item').eq(idx+1).addClass('medium-right');
                 });
-	        }
-
-            new ScrollMagic.Scene({
-                triggerElement: ".count"
-            })
-                .on("enter", function () {
-                    $(".count").addClass("pod--animated");
-                    animateNumber();
-                })
-                .on("leave", function () {
-                    $(".count").removeClass("pod--animated");
-                })
-                .addTo(controller);
-        })(jQuery);
-
-    </script>
-
-    <script>
-        (function ($) {
-    var controller = new ScrollMagic.Controller();
-
-    /*------------------------------------*\
-        $NUMBERS
-    \*------------------------------------*/
-
-            function animateNumber() {
-                $(".js-count2").each(function () {
-                    var $this = $(this),
-                        countTo = $this.attr("data-count");
-                    $({ countNum: $this.text() }).animate(
-                        {
-                            countNum: countTo
+            
+                var owl = $('.owl-carousel');
+                owl.owlCarousel({
+                    nav: false,
+                    dots: false,
+                    loop: true,
+                    center: true,
+                    autoplay:true,
+                    autoplayTimeout:800,
+                    autoplayHoverPause:true,
+                    responsive: {
+                        0: {
+                            margin: 10,
+                            items: 2.2
                         },
-                        {
-                            duration: 3000,
-                            easing: "linear",
-
-                            step: function () {
-                                // Count up with commas
-                                $this.text(Math.floor(this.countNum).toLocaleString("en"));
-                            },
-                            complete: function () {
-                            // Add comma after done counting
-                            $this.text(this.countNum.toLocaleString("en"));
-                            var data=document.getElementById('users2').innerText;    
-                                
-                                if(data = "999+"){
-                                     users2.innerText = "1K+"; 
-                            }
+                        768: {
+                            margin: 70,
+                            items: 5
+                        },
+                        1000: {
+                            margin: 130,
+                            items: 5
                         }
-                        }
-                    );
-                });
-            }
-
-            new ScrollMagic.Scene({
-                triggerElement: ".convert-section"
-            })
-                .on("enter", function () {
-                    $(".convert-section").addClass("pod--animated");
-                    animateNumber();
+                    }
                 })
-                .on("leave", function () {
-                    $(".convert-section").removeClass("pod--animated");
-                })
-                .addTo(controller);
-        })(jQuery);
+            }); 
+            
+        </script>
 
-    </script>
+        <script src="js/custom.js"></script>
 
-
-    <!-- ANIMATION -->
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-        AOS.init();
-    </script>
 
 
         

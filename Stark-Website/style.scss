@@ -1,4 +1,6 @@
+//* STYLE SCSS CODE  *//
 
+//* IMPORT FONT *//
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
@@ -31,11 +33,15 @@ body{
     --bg-home-primary--: url("img/bg-home.png");
     --bg-home-secondary--: url("img/bg-dark.png");
     overflow-x: hidden ;
- }
+}
+
 .dark-theme{
     --primary-color: rgba(0, 0, 0, 1);
     --secondary-color: rgb(209, 209, 209);
 }
+
+
+//* FONT CSS *//
 
 @font-face {
     font-family: 'futura';
@@ -53,24 +59,28 @@ body{
     font-family: 'HelveticaNeue LT 93 BlackEx';
     src: url(Helvetica-Neue-LT-Com-93-Black-Extended.ttf);
 }
-/* width */
+
+
+//* SCROLL BAR CSS *//
+
+/* width scroll */
 ::-webkit-scrollbar {
     width: 8px;
-    }
+}
     
-/* Track */
+/* Track scroll */
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px rgb(7, 7, 7); 
     border-radius: 10px;
 }
     
-/* Handle */
+/* Handle scroll */
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(90.04deg, #76EA90 0%, #FDFD55 100%);
     border-radius: 10px;
 }
     
-/* Handle on hover */
+/* Handle on hover scroll */
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(90.04deg, #76EA90 0%, #FDFD55 100%);
     filter: blur(10px);
@@ -78,6 +88,86 @@ body{
 }
 
 
+@media(max-width: 1980px) and (min-width: 768px){
+
+    .allplatformsmaindiv{
+        margin-top: 100px;
+        padding-bottom: 13.889vw;
+        
+    }
+    .allplatformsmaindiv .allplatformsdiv .titleallplatform{
+        width: 100%;
+        margin-bottom: 5.556vw;
+    }
+    .allplatformsmaindiv .allplatformsdiv .titleallplatform p{
+        margin-bottom: 0;
+        font-weight: 900;
+        font-size: 3.889vw;
+        line-height: 4.583vw;
+        text-align: center;
+        letter-spacing: 0.625px;
+        text-transform: capitalize;
+        color: #F6F6F7;
+        max-width: 39.514vw;
+        margin: 0 auto;
+    }
+    .allplatformsmaindiv .allplatformsdiv .iconscrollingdiv{
+        position: relative;
+        width: 88.958vw;
+        margin: 0 auto;
+        height: 23.056vw;
+        display: flex;
+        align-items: center;
+    }
+    .allplatformsmaindiv .allplatformsdiv .iconscrollingdiv .frameimg{
+        position: absolute;
+        width: 23.056vw;
+        left: calc(50% - 11.806vw);
+    }
+    .owl-item.active.center img{
+        transition: 0.5s all ease-in-out;
+        transform: scale(1.55);   
+    }
+    .owl-item.active.medium-left img,
+    .owl-item.active.medium-right img{
+        transform: scale(1.2);   
+    }
+    .owl-carousel .owl-stage-outer .medium-left{
+       position: relative;
+       right: 2.083vw;
+    }
+    .owl-carousel .owl-stage-outer .medium-right{
+       position: relative;
+       left: 2.083vw;
+    }
+    .owl-carousel .owl-stage-outer{
+        padding: 5.208vw 0;
+    }
+    .allplatformsmaindiv .allplatformsdiv .iconscrollingdiv .overlaybg{
+        position: unset;
+    }
+    .allplatformsmaindiv .allplatformsdiv .iconscrollingdiv .overlaybg .firstbg{
+        position: absolute;
+        width: 26.458vw;
+        height: 23.056vw;
+        left: -1vw;
+        top: 0;
+        background: linear-gradient(90deg, #1F1A35 0%, rgba(29, 25, 50, 0) 100%);
+        z-index: 1;
+    }
+    .allplatformsmaindiv .allplatformsdiv .iconscrollingdiv .overlaybg .secondbg{
+        position: absolute;
+        width: 26.458vw;
+        height: 23.056vw;
+        right: -1vw;
+        top: 0vw;
+        background: linear-gradient(90deg, #1F1A35 0%, rgba(29, 25, 50, 0) 100%);
+        z-index: 1;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+}
+
+//* IMPORT SCSS FOR EVERY SECTION *// 
 
 @import "scss/navbar";
 @import "scss/home-section";

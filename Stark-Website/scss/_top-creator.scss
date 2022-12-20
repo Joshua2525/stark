@@ -1,3 +1,5 @@
+//* CREATOR SCSS SECTION  *//
+
 .top-creator-section {
   display: flex;
   height: auto;
@@ -24,9 +26,9 @@
 
   .title-creator{
       margin-bottom: 20px;
-      margin-right: 1020px;
-      font-weight: 700 !important;
-      font-family: 'futura-bold', sans-serif !important;
+      margin-right: 890px;
+      font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
+      font-weight: 700;
       font-size: 55px;
       color: transparent;     
       background: url("img/letter-big.png");
@@ -82,7 +84,7 @@ display: none !important;
 
     .title-creator{
         margin-bottom: 20px;
-        margin-right: 870px;
+        margin-right: 750px;
         font-size: 50px;  
     }
 
@@ -142,6 +144,7 @@ display: none !important;
     .title-creator{
       font-size: 30px !important;
       line-height: 40px;
+      text-align: center;
   }
 }
   

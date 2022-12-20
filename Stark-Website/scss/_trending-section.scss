@@ -1,3 +1,5 @@
+//* TRENDING SCSS SECTION  *//
+
 .trending-section {
     display: flex;
     height: auto;
@@ -23,9 +25,9 @@
     }
     .title-trending{
         margin-bottom: 150px;
-        margin-right: 1120px;
-        font-weight: 700 !important;
-        font-family: 'futura-bold', sans-serif !important;        
+        margin-right: 1020px;
+        font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
+        font-weight: 700;       
         font-size: 55px;
         color: transparent;     
         background: url("img/letter-big.png");
@@ -85,7 +87,7 @@
 
         .title-trending{
             margin-bottom: 150px;
-            margin-right: 965px;    
+            margin-right: 890px;    
             font-size: 50px;
 
         }

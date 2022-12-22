@@ -177,6 +177,15 @@ display: none !important;
       width: 350px;
       text-align: center;
     }
+    .card-content{
+      img{
+        margin-top: 50px;
+      }
+    }
+    .title-creator{
+      margin-bottom: -20px !important;
+  }
+
   }
 
   @media (max-width: 425px) {

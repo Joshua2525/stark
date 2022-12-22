@@ -45,7 +45,7 @@
         justify-content: center;
         width: 100%;
         margin-bottom: 100px;
-
+        
       }
 
     .box-trending{
@@ -60,12 +60,14 @@
         cursor: pointer;
         margin-top: 20px;
         border-radius: 10px;
+       
 
         video{
             width: 330px !important;
             height: auto !important;
             pointer-events: none;
             border-radius: 20px!important;
+           
         }
 
         h2{
@@ -186,6 +188,13 @@
             width: 100%;
         }
   }
+
+  .swiper-pagination {
+    padding-bottom: 15px !important;
+    z-index: 99;
+    color: #fff;
+    background-color: #fff;
+  }
   
   
   @media (max-width: 911px) {
@@ -198,7 +207,15 @@
             width: 325px !important;
             border-radius: 20px !important;
         }
+        .card-content{
+            video{
+              margin-top: 50px;
+            }
+          }
       }
+     .title-trending{           
+        margin-bottom: -20px !important;
+     }
     .trending-box-container{
       display: none !important;
     }
@@ -206,9 +223,6 @@
     .swiper{
       width: 350px;
       text-align: center;
-    }
-    .title-trending{
-        margin-bottom: 10px !important;
     }
   }
 

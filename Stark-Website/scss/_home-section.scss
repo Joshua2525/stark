@@ -160,6 +160,9 @@
   }
 }
 
+.home-section2{
+  display: none;
+}
 
 
 @media(max-width: 1800px){
@@ -613,337 +616,258 @@
     }
 }
 
-@media(max-width:395px){
-    .scroller > span {
-        position: absolute;
-        top: 0;
-        animation: slide 8s infinite;            
-      }
-      @keyframes slide {
-        0% {
-          top: 0;
-        }
-        25% {
-          top: -1.4em;
-        }
-        50% {
-          top: -2.8em;
-        }
-        75% {
-          top: -4.3em;
-        }
-        95%{
-            top: 0em;
-        }
-      }
-}
 
 
-@media (max-width: 380px){
-    .home-section{
-        padding-left: 50px !important; 
-        padding-right: 50px !important;
 
-        .left-side{
-            width: 100%;
-            h1{
-                font-size: 35px !important;
-            }
-            span{
-                font-size: 28px !important;
-            }
-        }
-        
-        .buttons{
-
-            button{
-                font-size: 14px !important;
-                border-style: none;
-                width: 105px !important;
-                height: 45px !important;                
-            }
-        }
-    }
-    .scroller > span {
-        position: absolute;
-        top: 0;
-        animation: slide 8s infinite;            
-      }
-      @keyframes slide {
-        0% {
-          top: 0;
-        }
-        25% {
-          top: -1.4em;
-        }
-        50% {
-          top: -2.8em;
-        }
-        75% {
-          top: -4.3em;
-        }
-        95%{
-            top: 0em;
-        }
-      }
-}
-
-@media (max-width: 415px){
-    .left-side{
-        padding: 15px 15px;
-        h1{
-            width: 100% !important;
-                img{
-                    width: 40px;
-                }
-            }
-        }
-}
-
-@media (max-width: 356px){
-    .home-section{
-        padding-left: 20px !important; 
-        padding-right: 20px !important;
-    }
-    .home-section .left-side h1, .home-section .left-side {
-        font-size: 30px !important;
-
-        img{
-            width: 30px;
-        }
-    }
-    span{
-        font-size: 25px !important;
-    }
-    .scroller > span {
-        position: absolute;
-        top: 0;
-        animation: slide 8s infinite;            
-      }
-      @keyframes slide {
-        0% {
-          top: 0;
-        }
-        25% {
-          top: -1.2em;
-        }
-        50% {
-          top: -2.4em;
-        }
-        75% {
-          top: -3.6em;
-        }
-        95%{
-            top: 0em;
-        }
-      }
-
-}
+// HOME FOR MOBILE SIZE SCSS //
 
 
-// CHANGE FONT
+@media(max-width:450px){
 
-@media(max-width:430px){
   .home-section{
-    padding-left: 10px !important; 
-    padding-right: 10px !important;
-}
-.home-section .left-side h1, .home-section .left-side {
-    font-size: 60px !important;
+    display: none;
+  }
+  .home-section2{
+    display: block;
+  }
 
-    img{
-        width: 60px;
-    }    
-  }
-  .home-section .left-side span{
-    font-size: 52px !important;
-  }
-  .scroller > span {
-    position: absolute;
-    top: 0;
-    animation: slide 8s infinite;            
-  }
-  @keyframes slide {
-    0% {
-      top: 0;
-    }
-    25% {
-      top: -1.5em;
-    }
-    50% {
-      top: -2.9em;
-    }
-    75% {
-      top: -4.3em;
-    }
-    95%{
-        top: 0em;
-    }
-  }
-}
-
-
-@media(max-width:415px){
-  .home-section{
-    padding-left: 0px !important; 
-    padding-right: 0px !important;
-}
-.home-section .left-side h1, .home-section .left-side {
-    font-size: 60px !important;
-
-    img{
-        width: 60px;
-    }    
-  }
-  .home-section .left-side span{
-    font-size: 51px !important;
-  }
-  .scroller > span {
-    position: absolute;
-    top: 0;
-    animation: slide 8s infinite;            
-  }
-  @keyframes slide {
-    0% {
-      top: 0;
-    }
-    25% {
-      top: -1.5em;
-    }
-    50% {
-      top: -2.9em;
-    }
-    75% {
-      top: -4.3em;
-    }
-    95%{
-        top: 0em;
-    }
-  }
-}
-
-@media(max-width:402px){
-  .home-section{
-    padding-left: 0px !important; 
-    padding-right: 0px !important;
-}
-.home-section .left-side h1, .home-section .left-side {
-    font-size: 55px !important;
-
-    img{
-        width: 55px;
-    }    
-  }
-  .home-section .left-side span{
-    font-size: 45px !important;
-  }
-}
-
-@media(max-width:385px){
-  .home-section{
-    padding-left: 0px !important; 
-    padding-right: 0px !important;
-}
-.home-section .left-side h1, .home-section .left-side {
-    font-size: 50px !important;
-
-    img{
-        width: 55px;
-    }    
-  }
-  .home-section .left-side span{
-    font-size: 46px !important;
-  }
-  .scroller > span {
-    position: absolute;
-    top: 0;
-    animation: slide 8s infinite;            
-  }
-  @keyframes slide {
-    0% {
-      top: 0;
-    }
-    25% {
-      top: -1.3em;
-    }
-    50% {
-      top: -2.7em;
-    }
-    75% {
-      top: -4.0em;
-    }
-    95%{
-        top: 0em;
-    }
-  }
-}
-
-@media(max-width:365px){
-.home-section .left-side h1, .home-section .left-side {
-    font-size: 40px !important;
-
-    img{
-        width: 45px;
-    }    
-  }
-  .home-section .left-side span{
-    font-size: 40px !important;
-  }
-  .scroller > span {
-    position: absolute;
-    top: 0;
-    animation: slide 8s infinite;            
-  }
-  @keyframes slide {
-    0% {
-      top: 0;
-    }
-    25% {
-      top: -1.1em;
-    }
-    50% {
-      top: -2.4em;
-    }
-    75% {
-      top: -3.6em;
-    }
-    95%{
-        top: 0em;
-    }
-  }
-}
-
-@media(max-width:325px){
-  .home-section .left-side h1, .home-section .left-side {
-      font-size: 30px !important;
+  .home-section2{
+      width: 100%;
+      height: 1150px !important;
+      background-image: url("img/bg-stark.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      flex-direction: column;
+      display: flex;
+      justify-content: center !important;
+      align-items: center !important;
   
-      img{
-          width: 35px;
-      }    
+    
+      .left-side2{
+          margin-top: 100px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .content-convert{
+            font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif !important;
+            font-weight: 700 !important;
+            font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif !important;
+            color: transparent;     
+            background: url("img/letter-big.png") ;
+            background-repeat: repeat ;
+            background-size: cover;
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+            font-size: 14px;
+            margin-bottom: 20px;
+          }
+    
+          h1{
+              font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif !important;
+              font-weight: 700 !important;
+              font-size: 45px !important;
+              color: var(--primary-color);
+              width: 370px !important;
+  
+              img{
+                  width: 50px;
+              }
+          }
+    
+          .button-mobile{
+              margin-top: 20px;
+              margin-bottom: 70px;
+  
+  
+              button{
+                  border: none;
+                  font-family: 'Poppins', sans-serif;
+                  font-size: 18px;
+                  border-style: none;
+                  width: 198px;
+                  height: 55.26px;
+                  cursor: pointer;
+                  line-height: 27px;
+                  
+              }
+              .button-mobile-home{
+                  background: transparent;
+                  position: relative;
+
+                p{
+                    font-weight: 700 !important;
+                    font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif !important;
+                    color: transparent;     
+                    background: url("img/letter-big.png") ;
+                    background-repeat: repeat ;
+                    background-size: cover;
+                    -webkit-background-clip: text; 
+                    -webkit-text-fill-color: transparent;
+                }
+              }
+              .button1:hover {
+                  box-shadow: 0px 0px 20px -8px #eaeaea;
+                  color: rgb(0, 0, 0) !important;
+              }
+          }
+      }
+    
+    
+  
+      .iphone-mockup2{
+          width: 295.55px !important;
+          height: 592px !important;
+          margin-bottom: -10px !important;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      
+      
+          video{
+              height: 585.56px !important;
+              width: 283.39px !important;
+              border-radius: 44.61px;
+              position: absolute;
+              background-color: rgb(0, 0, 0);
+              border-radius: 43.61px;
+              object-fit: cover;
+      
+          }
+  
+          .iphone14{
+              position: absolute;
+              top: 0;
+              width: 100%;
+              height: 100%;
+          }
+    
+          .call{
+              position: absolute;
+              top: 10px;
+              width: 100%;
+          }
+          
+      }
     }
-    .home-section .left-side span{
-      font-size: 30px !important;
-    }
-    .scroller > span {
+    
+    .button-mobile-home::before {
+      content: "";
       position: absolute;
-      top: 0;
-      animation: slide 8s infinite;            
+      inset: 0;
+      border-radius: 5.75581px !important;
+      padding: 2px; 
+      background: linear-gradient(90.75deg, #76EA90 0%, #FDFD55 100%) !important;            
+      -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0) !important;
+      -webkit-mask-composite: xor !important;
+              mask-composite: exclude !important; 
+  }
+  .home-section2 .left-side2 h1{
+     color:#ffffff;
+     font-weight: 700;
+  }
+  .home-section2 .left-side2 p{
+     margin:0;
+     overflow: hidden;
+  }
+  .home-section2 .left-side2 p span{
+      font-size: 38px !important;
+      display: inline-block;
+     display: none;
+     font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif !important;
+     font-weight: 700 !important;
+     color: transparent;     
+     background: url("img/letter-big.png");
+     background-repeat: repeat;
+     background-size: cover;
+     -webkit-background-clip: text; 
+     -webkit-text-fill-color: transparent;
+  }
+  
+    .home-section2 .left-side2 p span.text-in{
+    display: block;
+    animation: textIn .5s ease;
+  }
+  .home-section2 .left-side2 p span.text-out{
+    animation: textOut .5s ease;
+  }
+  @keyframes textIn{
+    0%{
+      transform: translateY(100%);
     }
-    @keyframes slide {
-      0% {
-        top: 0;
-      }
-      25% {
-        top: -1.2em;
-      }
-      50% {
-        top: -2.4em;
-      }
-      75% {
-        top: -3.6em;
-      }
-      95%{
-          top: 0em;
-      }
+    100%{
+      transform: translateY(0%);
     }
+  }
+  @keyframes textOut{
+    0%{
+      transform: translateY(0%);
+    }
+    100%{
+      transform: translateY(-100%);
+  
+    }
+  }
+  
+  
+  }
+  
+  @media(max-width:381px){
+  
+      .home-section2 .left-side2 h1{
+          text-align: center !important;        
+          color:#ffffff;
+          width: 325px !important;
+          margin-left: 5px;
+          font-weight: 700;
+          font-size: 40px !important;
+  
+          img{
+              width: 40px;
+          }
+       }
+       .left-side2{
+          .buttons{
+              margin-top: 20px;
+              margin-right: 0px !important;
+              margin-bottom: 70px;
+    
+              button{
+                  border-style: none;
+                  width: 150px !important;
+                  height: 50px !important;
+                  margin-right: 0px !important;
+                  line-height: 27px;
+                  
+              }
+          }
+       }
+      .home-section2 .left-side2 p span{
+          font-size: 35px !important;
+      }
+      
+  }
+  
+  @media(max-width:341px){
+  
+      .home-section2 .left-side2 h1{
+          text-align: center !important;        
+          color:#ffffff;
+          width: 70% !important;
+          font-weight: 700;
+          font-size: 30px !important;
+  
+          img{
+              width: 30px;
+          }
+       }
+      .home-section2 .left-side2 p span{
+          font-size: 30px !important;
+      }
+      
   }

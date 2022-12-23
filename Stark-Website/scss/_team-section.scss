@@ -432,7 +432,9 @@
   transform: scale(1.1) !important;
 }
 
-
+.team2{
+  display: none;
+}
 
 @media(max-width:1800px){
     .team {
@@ -761,124 +763,156 @@
 }
 
 
-@media(max-width:430px){
-  .title-team{
-    font-size: 40px !important;
+@media(max-width:450px){
+
+.team{
+  display: none;
+}
+.team2{
+  display: block;
+}
+
+.team2 {
+  display: flex;
+  height: auto !important;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 80px;
+
+  .team-container2{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+  }
+  .title-container-team2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .title-team2{
+    font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
+    font-weight: 700;       
+    font-size: 35px !important;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: transparent;     
+    background: url("img/letter-big.png");
+    background-size: cover;
+    background-repeat: repeat;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+
+  }
+
+    .team-box-container2{
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      font-family: 'futura-bold', sans-serif !important;
+
+    }
+
+  .box-team-mobile{
+      padding: 0 20px;
+      width: calc(33% - 20px);
+      background: transparent;
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 20px;
+
+      .img-container{
+          width: 350px;
+          margin-top: 40px;
+          pointer-events: none;
+      }
+
+          .name-role{
+              margin-top: 10px;
+              text-align: center;
+
+              h2{
+                  color: var(--primary-color);
+                  font-size: 27.35px !important;
+                  font-weight: 700;
+                  margin-top: 40px;
+                  font-family: 'futura-bold', sans-serif;
+                  letter-spacing: 0.5px;
+              }
+              
+              p{
+                  color: transparent;     
+                  background: url("img/small-text-color.png");
+                  background-repeat: repeat;
+                  background-size: cover;
+                  font-size: 20.51px;
+                  -webkit-background-clip: text; 
+                  -webkit-text-fill-color: transparent;  
+                  margin-bottom: 20px !important;
+                  margin-top: 10px;
+                  font-family: 'futura-medium', sans-serif;
+                  font-weight: 500;
+
+              }
+              .bxl-discord-alt{
+                color: var(--primary-color);
+                font-size: 30px;
+              }
+          }
+      }
   }
 }
 
+@media(max-width:351px){
+  .team2 {
+  
+    .title-team2{
+      font-size: 30px !important;
+    }
+  
+    .box-team-mobile{
+  
+        .img-container{
+            width: 300px;
+        }
+        
+        .name-role{
+          margin-top: 10px;
+          text-align: center;
 
-@media(max-width:355px){
-  .title-team{
-    font-size: 30px !important;
-  }
-}
-
-@media(max-width:395px){
-  .team .team-box-container{
-    padding-right: 45px;
-  }
-}
-
-
-@media(max-width:377px){
-  .team{
-    padding-top: 100px !important;
-    height: auto !important;
-    overflow-x: hidden !important;
-  }
-  .bxl-discord-alt{
-    font-size: 22px !important;
-  }
-
-
-
-
-  // Box 1
-  .team .box-team1 .img-container {
-    width: 150px !important;
-  }
-  .team .box-team1 .line-name .line-down{
-    height: 140px;
-  }
-  .team .box-team1{
-    height: 250px;
-  }
-  .team .box-team1 .line-name .name-role {
-    margin-top: 10px !important;
-  }
+          h2{
+              font-size: 25px !important;
+              margin-top: 30px;
+          }
+          
+          p{
+              font-size: 18px !important;
+              margin-bottom: 10px !important;
+              margin-top: 10px;
 
 
-  //box2
-  .team .box-team2 .img-container {
-    width: 150px !important;
+          }
+          .bxl-discord-alt{
+            color: var(--primary-color);
+            font-size: 24px !important;
+          }
+      }
+      }
   }
-  .team .box-team2 .line-name2 .line-down{
-      height: 140px !important;
-  }
-  .team .box-team2 .line-name2{
-    justify-content: right;
-    width: 230px;
-  }
-  .team .box-team2 .line-name2 .name-role h2{
-    font-size: 15px
-  }
-  .team .box-team2{
-    height: 250px;
-  }
-
-  //box3
-  .team .box-team3 .img-container {
-    width: 150px !important;
-  }
-  .team .box-team3 .line-name .line-down{
-    height: 140px;
-  }
-  .team .box-team3{
-    height: 250px;
-    margin-top: 50px !important;
-  }
-  .team .box-team3 .line-name .name-role {
-    margin-top: 10px !important;
-  }
-
-
-  //box4
-  .team .box-team4 .img-container {
-    width: 150px !important;
-  }
-
-  .team .box-team4 .line-name2 .line-down{
-    height: 10px !important;
-  }
-  .team .box-team4 .line-name2{
-    justify-content: right;
-    width: 260px;
-  }
-  .line4{
-    height: 140px !important;
-  }
-  .team .box-team4 .line-name2 .name-role h2{
-    font-size: 15px
-  }
-  .team .box-team4{
-    height: 250px;
-  }
-
-
-  //box5
-  .team .box-team5 .img-container {
-    width: 150px !important;
-  }
-  .team .box-team5 .line-name .name-role{
-    margin-top: 5px !important;
-  }
-  .line5{
-    height: 130px !important;
-  }
-  .team .box-team5{
-    width: 260px;
-    margin-top: -20px;
-  }
-
 }

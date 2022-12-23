@@ -47,7 +47,7 @@
     <!--NAVBAR-SECTION -->
 
     <header>
-        <div class="limiter">
+        <div class="limiter nav1">
             <nav class="navbar">
                 <a href="#"><img id="logo2" class="nav-logo1" src="img/light-logo.png" alt=""></a>
 
@@ -61,6 +61,12 @@
                         <li class="navitems"><a href="#faqs-section" class="itemlinks">FAQ</a></li>
                     </div>
 
+                    <div class="center-nav2">
+                        <li class="navitems nowrap"><a href="#home2" class="itemlinks">Learn More</a></li>
+                        <li class="navitems"><a href="#team2" class="itemlinks">Team</a></li>
+                        <li class="navitems"><a href="#roadmap2" class="itemlinks">Roadmap</a></li>
+                    </div>
+
                     <div class="right-nav">
                       <li class="navitems create-btn"><a href="" class="itemlinks create-button">+ CREATE</a></li>
                     </div>
@@ -70,12 +76,10 @@
                 <div id="burger">
                     <div class="burgerlines"></div>
                     <div class="burgerlines"></div>
-                    <div class="burgerlines"></div>
                 </div>
             </nav>
         </div>
     </header>
-
 
     <!--HOME SECTION-->
 
@@ -116,6 +120,79 @@
         
     </div>
 
+
+    <!--HOME SECTION FOR MOBILE -->
+
+        <div class="home-section2" id="home2">
+            <div class="left-side2"  data-aos="fade-right" data-aos-duration="1500">
+                <p class="content-convert">CONTENT THAT CONVERTS</p>
+                <h1> <u>10X </u>  YOUR <img class="phone-emoji" src="img/phone-emoji.png" alt=""> SOCIAL </h1>
+                <p class="animate-text">
+                    <span>NETWORK</span>
+                    <span>REACH</span>
+                    <span>CONVERSION</span>
+                    <span>ENGAGEMENT</span>
+                 </p>
+                <div class="button-mobile">
+    
+                    <a href="#pricing">
+                        <button type="button" class="button-mobile-home">
+                           <p>+CREATE</p>  
+                        </button>
+                    </a>
+                    
+                </div>
+            </div>
+    
+            <div class="iphone-mockup2" data-aos="fade-left" data-aos-duration="1500">
+                <img class="iphone14" src="img/iPhone14-home.png" alt="">
+    
+                <video autoplay muted loop src="img/Andrew Tate Yacht.mp4" type="video/mp4"></video>
+    
+                <img class="call" src="img/Dynamic Island.svg" alt="">
+            </div>
+            
+        </div>
+    
+    
+    
+    
+    
+        <script>
+            const txts=document.querySelector(".animate-text").children,
+                  txtsLen=txts.length;
+              let index=0;
+             const textInTimer=3000,
+                   textOutTimer=2800;
+    
+            function animateText() {
+               for(let i=0; i<txtsLen; i++){
+                 txts[i].classList.remove("text-in","text-out");  
+               }
+               txts[index].classList.add("text-in");
+    
+               setTimeout(function(){
+                   txts[index].classList.add("text-out");              
+               },textOutTimer)
+    
+               setTimeout(function(){
+    
+                 if(index == txtsLen-1){
+                     index=0;
+                   }
+                  else{
+                      index++;
+                    }
+                   animateText();
+               },textInTimer); 
+            }
+            
+            window.onload=animateText;
+      
+    </script>
+    
+
+
     <!--COUNT SECTION-->
 
     <section class="count-section">
@@ -124,18 +201,24 @@
             <div class="count-container">
 
                 <div class="count-box" data-aos="fade-up" data-aos-delay="100">
-                    <h2 id="users"> <span class="pod__item__number js-count" data-count="999">0</span>+</h2>
-                    <p>Active Monthly Users</p>
+                    <div class="counter-number">
+                        <h2 id="users"> <span class="pod__item__number js-count" data-count="999">0</span>+</h2>
+                        <p>Active Monthly Users 5</p>
+                    </div>
                 </div>
 
                 <div class="count-box" data-aos="fade-up" data-aos-delay="250">
-                    <h2> <span class="pod__item__number js-count" data-count="520">0</span>M+</h2>
-                    <p>Users Reached</p>
+                    <div class="counter-number">
+                        <h2> <span class="pod__item__number js-count" data-count="520">0</span>M+</h2>
+                        <p>Users Reached</p>   
+                    </div>
                 </div>
 
                 <div class="count-box" data-aos="fade-up" data-aos-delay="350">
-                    <h2> <span class="pod__item__number js-count" data-count="100">0</span>+</h2>
-                    <p>Digital Video Assets</p>
+                    <div class="counter-number">
+                        <h2 > <span class="pod__item__number js-count" data-count="100">0</span>+</h2>
+                        <p>Digital Video Assets</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,7 +230,10 @@
         <div class="creator-container">
             <div class="top-creator">
                 <h1 class="title-creator" data-aos="fade-right" data-aos-duration="1500">
-                    TOP CREATOR
+                   TOP CREATOR
+                </h1>
+                <h1 class="title-creator2" data-aos="fade-right" data-aos-duration="1500">
+                    CREATOR
                 </h1>
             </div>
         
@@ -330,7 +416,7 @@
 
     <section class="feature-section2" id="features">
 
-        <h1 class="title-feature" data-aos="fade-right" data-aos-duration="1500">STARL.LIVE</h1>     
+        <h1 class="title-feature" data-aos="fade-right" data-aos-duration="1500">SERVICE</h1>     
 
         <div class="container-features2">
 
@@ -338,20 +424,20 @@
         
                 <div class="box-feature-mobile" data-aos="fade-down" data-aos-delay="400">
                     <img class="icon-features" src="img/reach-mobile.png" alt="">
-                    <h1>Reach</h1>
-                    <p>Engaging captions proven to increase user retention by +80%. Algorithmically pushing your content’s ranking, reach and engagement.</p>
+                    <h1>REACH</h1>
+                    <p>Engaging captions <u>proven</u> to increase user retention by +80%. Algorithmically pushing your content’s ranking, reach and engagement.</p>
                 </div>
 
                 <div class="box-feature-mobile" data-aos="fade-down" data-aos-delay="100">
                     <img class="icon-features" src="img/quality-mobile.png" alt="">
-                    <h1>Quality</h1>
+                    <h1>QUALITY</h1>
                     <p>Each order will be assigned an editor for full video customization. 
                         Emojis, colors, font, music, and more! </p>
                 </div>
 
                 <div class="box-feature-mobile" data-aos="fade-down" data-aos-delay="400">
                     <img class="icon-features" src="img/effective-mobile.png" alt="">
-                    <h1>Effective</h1>
+                    <h1>EFFECTIVE</h1>
                     <p>Social Content that converts.
                         Target an audience and build your Social-Network. 
                         Step 2. Vertically integrate your
@@ -363,70 +449,11 @@
     </section>
 
 
-    <!-- SOCIAL PLATFORM SECTION  -->
+    <!-- CAROUSEL JS & STYLE-->
 
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-
-    <section class="social-platform-section">
-        <div class="title-social-media">
-            <h1>6X Reach using
-                Stark Cross-platform</h1>
-        </div>
-
-
-        <div class="allplatformsmaindiv mainsection" data-id="6">
-            <div class="custom-container">
-                <div class="allplatformsdiv">
-                    <div class="iconscrollingdiv">
-                        <img src="img/frame.png" class="frameimg" alt="All your platform in one place">
-                        <div class="owl-carousel owl-theme">
-        
-                            <div class="item">
-                                <picture>
-                                    <img src="img/twitter1.png" alt="Twitter" class="lazy">
-                                </picture>
-                            </div>
-        
-                            <div class="item">
-                                <picture>
-                                    <img src="img/instagram1.png" alt="Instagram" class="lazy">
-                                </picture>
-                            </div>
-        
-                            <div class="item">
-                                <picture>
-                                    <img src="img/tiktok1.png" alt="Tiktok" class="lazy">
-                                </picture>
-                            </div>
-        
-                            <div class="item">
-                                <picture>
-                                    <img src="img/youtube1.png" alt="Youtube" class="lazy">
-                                </picture>
-                            </div>
-        
-                            <div class="item">
-                                <picture>
-                                    <img src="img/snapchat1.png" alt="Snapchat" class="lazy">
-                                </picture>
-                            </div>
-                            
-                            <div class="item">
-                                <picture>
-                                    <img src="img/facebook1.png" alt="Facebook" class="lazy">
-                                </picture>
-                            </div>
-        
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
 
     <!-- PRICING SECTION  -->
 
@@ -641,14 +668,6 @@
 
 
 
-
-
-
-
-
-
-
-
     <section class="pricing2" id="pricing">
         <div class="pricing-container2">
     
@@ -658,9 +677,11 @@
             <div class="pricing-box-container2" >
 
                 <div class="swiper mySwiper2 container">
+
                     <div class="swiper-wrapper content">
 
                     <div class="swiper-slide card1">
+
                         <div class="card-content">
                             <div class="card-content">
 
@@ -672,10 +693,10 @@
                                     <h3>$105 <span>USD</span> </h3>
                                     <p>per month/user</p>
                     
-                                    <button class="join-btn">Join now</button>
+                                    <button class="join-btn">+CREATE</button>
                     
                                     <div class="line"></div>
-                                    <p class="essentials">The essentials to get you up and running. </p>
+                                    <p class="essentials">For power users and teams looking to take their socials to the next level. </p>
                     
                                     <ul>
                                         <li>
@@ -710,7 +731,7 @@
                                     <h3>$55 <span>USD</span> </h3>
                                     <p>per month/user</p>
                     
-                                    <button class="join-btn">Join now</button>
+                                    <button class="join-btn">+CREATE</button>
                     
                                     <div class="line"></div>
                                     <p class="essentials">The essentials to get you up and running. </p>
@@ -746,7 +767,7 @@
                                 <h3>$55 <span>USD</span> </h3>
                                 <p>per month/user</p>
                 
-                                <button class="join-btn">Join now</button>
+                                <button class="join-btn">+CREATE </button>
                 
                                 <div class="line"></div>
                                 <p class="essentials">The essentials to get you up and running. </p>
@@ -772,7 +793,6 @@
                             </div>
                         </div>
                     </div>
-
                     </div>
                     <div class="swiper-pagination"></div>
 
@@ -782,20 +802,6 @@
             
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!--ROADMAP SECTION -->
@@ -840,6 +846,51 @@
           </div>
         </div>
     </section>
+
+    <!-- ROADMAP SECTION FOR MOBILE SIZE -->
+    <section class="roadmap2" id="roadmap2">
+        <div class="roadmap-container2">
+            <div class="title-roadmap2" data-aos="fade-right" data-aos-duration="1500">
+                <h1 >
+                    ROADMAP                  
+                </h1>
+                <img class="thunder" src="img/light.png" alt="">
+            </div>
+
+            <p data-aos="fade-left" data-aos-duration="1500" class="automate">Automate & Scale</p>
+
+          <div class="roadmap-box-container2" >
+            
+            <div class="roadmap-box2" data-aos="fade-down" data-aos-delay="100">
+              <h2 id="num1" data-aos="zoom-in" data-aos-duration="1500">Q1 , 2023</h2>
+              <p>Integrate automated scheduling API for users to rapidly create + manage Multiple accounts cross-platform. TikTok / IG Reels</p>
+            </div>
+
+            <img class="line-mobile" id="line-mobile" src="img/line-mobile.png" data-aos="fade-down" data-aos-delay="100">
+    
+            <div class="roadmap-box2" data-aos="fade-down" data-aos-delay="250">
+                <h2 data-aos="zoom-in" data-aos-duration="1500">Q2 , 2023</h2>
+                <p>In-app infrastructure to streamline process for users and maximize efficiency   </p>
+            </div>
+    
+            <img class="line-mobile" id="line-mobile" src="img/line-mobile.png" data-aos="fade-down" data-aos-delay="250">
+
+            <div class="roadmap-box2" data-aos="fade-down" data-aos-delay="400">
+                <h2 data-aos="zoom-in" data-aos-duration="1500">Q3 , 2023</h2>
+                <p>Expand our agency services as we grow & execute our communities interests and needs. </p>
+            </div>
+
+            <img class="line-mobile" id="line-mobile" src="img/line-mobile.png" data-aos="fade-down" data-aos-delay="400">
+    
+            <div class="roadmap-box2" data-aos="fade-down" data-aos-delay="550">
+              <h2 data-aos="zoom-in" data-aos-duration="1500">Q4 , 2023</h2>
+              <p>Reach 1B+ Million users </p>
+            </div>
+    
+          </div>
+        </div>
+    </section>
+
 
     <!--FAQs SECTION--> 
 
@@ -1003,6 +1054,120 @@
         </div>
     </section>
 
+
+    <!-- TEAM SECTION FOR MOBILE  -->
+
+    <section class="team2" id="team2" name="team">
+        <div class="team-container2">
+
+            <div class="title-container-team2" >
+                <h1 class="title-team2" data-aos="fade-right" data-aos-duration="1500">TEAM</h1>
+            </div>
+
+
+            <div class="team-box-container2" >
+
+                <div class="swiper mySwiper2 container">
+                    <div class="swiper-wrapper content">
+
+                                <!--BOX 1--> 
+
+                                <div class="swiper-slide card1">
+                                    <div class="card-content">
+                                        <div class="card-content">
+                                            <div class="card-content">
+                                                <div class="box-team-mobile" data-aos="fade-down" data-aos-delay="100">
+                                                    <img id="imgcontainer" class="img-container" src="img/con1.png" alt="">
+                                                    <div class="name-role">
+                                                        <h2>CON</h2>
+                                                        <p>Founder Dev</p>
+                                                        <i class='bx bxl-discord-alt'></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--BOX 2--> 
+                        
+                                <div class="swiper-slide card1">
+                                    <div class="card-content">
+                                        <div class="card-content">
+                                            <div class="card-content">
+                                                <div class="box-team-mobile" data-aos="fade-down" data-aos-delay="100">
+                                                    <img id="imgcontainer" class="img-container" src="img/chris.png" alt="">
+                                                    <div class="name-role">
+                                                        <h2>CHRIS</h2>
+                                                        <p>Creative Lead</p>
+                                                        <i class='bx bxl-discord-alt'></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--BOX 3--> 
+
+                                <div class="swiper-slide card1">
+                                    <div class="card-content">
+                                        <div class="card-content">
+                                            <div class="box-team-mobile" data-aos="fade-down" data-aos-delay="100">
+                                                <img id="imgcontainer" class="img-container" src="img/greg.png" alt="">
+                                                <div class="name-role">
+                                                    <h2>GREG</h2>
+                                                    <p>Editor</p>
+                                                    <i class='bx bxl-discord-alt'></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--BOX 4--> 
+
+                                <div class="swiper-slide card1">
+                                    <div class="card-content">
+                                        <div class="card-content">
+                                            <div class="card-content">
+                                                <div class="box-team-mobile" data-aos="fade-down" data-aos-delay="100">
+                                                    <img id="imgcontainer" class="img-container" src="img/jared.png" alt="">
+                                                    <div class="name-role">
+                                                        <h2>JARED</h2>
+                                                        <p>Communications</p>
+                                                        <i class='bx bxl-discord-alt'></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--BOX 5--> 
+                        
+                                <div class="swiper-slide card1">
+                                    <div class="card-content">
+                                        <div class="card-content">
+                                            <div class="box-team-mobile" data-aos="fade-down" data-aos-delay="100">
+                                                <img id="imgcontainer" class="img-container" src="img/jordie.png" alt="">
+                                                <div class="name-role">
+                                                    <h2>JORDIE</h2>
+                                                    <p>Editor</p>
+                                                    <i class='bx bxl-discord-alt'></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
     <!--CONVERT SECTION--> 
 
     <div class="convert-section" id="contact">
@@ -1052,10 +1217,53 @@
             </div>
         </div>
     </div>
+
+
+     <!--CONVERT SECTION FOR MOBILE--> 
+
+     <div class="convert-section2" id="contact">
+    
+        <div class="contact-box2" data-aos="flip-down" data-aos-duration="1000">
+            <div class="left-texts2">
+                    <h1>JOIN COMMUNITY</h1>
+                    
+                    <div class="counter-convert-box2">
+                        <div class="convert-box2">
+                            <h2 id="users3"> <span class="pod__item__number js-count2" data-count="999">0</span>k+</h2>
+                            <p>Active Monthly Users</p>
+                        </div>
+
+                        <div class="convert-box-center2">
+                            <h2> <span class="pod__item__number js-count2"  data-count="520">0</span>M+</h2>
+                            <p>Users Reached</p>
+                        </div>
+
+                        <div class="convert-box2">
+                            <h2> <span class="pod__item__number js-count2"  data-count="100">0</span>+</h2>
+                            <p>Digital Video Assets</p>
+                        </div>
+                    </div>
+              </div>
+
+            <div class="right-texts2">
+                <div class="white-paper2">
+                    <h2>WHITE-PAPER</h2>
+                    <p class="white-p">Read the whitepaper for an in depth
+                        coverage of Stark including roadmap, 
+                        introduction, team, caption content, and more!</p>
+                    <a href="">
+                        <button class="white-btn">
+                           <p>White-paper</p> </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     
     <!--FOOTER SECTION-->
 
-    <footer id="footer">
+    <footer class="footer1" id="footer">
         <div class="footer-container">
 
             <!--LEFT SIDE OF FOOTER--> 
@@ -1127,7 +1335,52 @@
         <p>@2022 Stark.Live. All rights reserved  </p>
     </footer>
 
+    <!--FOOTER FOR MOBILE--> 
 
+    <footer class="footer2" id="footer2">
+
+        <div class="footer-container2">
+
+            <div class="title-footer2">
+                <h1>Legal</h1>
+            </div>
+
+            <div class="button-convert-container">
+                <a href="#">
+                    <button type="button" class="button-convert1">
+                       <p>+CREATE</p>  </button>
+                </a>
+        
+                <a href="#">
+                    <button type="button" class="button-convert2">Follow Us </button>
+                </a>
+            </div>
+        
+            <!--MIDDLE SIDE OF FOOTER--> 
+
+            <div class="legal-footer">
+                <div class="terms2">
+                    <a href="mailto:starksequence@gmail.com">
+                        <p>Support</p>
+                    </a>
+                    <a href="terms.html">
+                        <p class="terms-service2">Terms of service</p>
+                    </a>
+                    <a href="policy.html">
+                        <p>Private Policy</p>
+                    </a>
+                </div>
+            </div>
+
+
+            <!--BOTTOM SIDE OF FOOTER--> 
+
+            <div class="bottom-footer2">
+              <p>@2022 Stark.Live. All rights reserved </p>
+            </div>
+
+        </div>
+    </footer>
 
 
 
@@ -1321,6 +1574,64 @@
         </script>
 
         <!--COUNTER JS SCROLL DOWN FOR JOIN OUR COMMUNITY SECTION START -->
+
+
+                <!--COUNTER JS SCROLL DOWN FOR JOIN OUR COMMUNITY SECTION START -->
+
+                <script>
+                    (function ($) {
+                var controller = new ScrollMagic.Controller();
+        
+                /*------------------------------------*\
+                    $NUMBERS
+                \*------------------------------------*/
+        
+                        function animateNumber() {
+                            $(".js-count2").each(function () {
+                                var $this = $(this),
+                                    countTo = $this.attr("data-count");
+                                $({ countNum: $this.text() }).animate(
+                                    {
+                                        countNum: countTo
+                                    },
+                                    {
+                                        duration: 3000,
+                                        easing: "linear",
+        
+                                        step: function () {
+                                            // Count up with commas
+                                            $this.text(Math.floor(this.countNum).toLocaleString("en"));
+                                        },
+                                        complete: function () {
+                                        // Add comma after done counting
+                                        $this.text(this.countNum.toLocaleString("en"));
+                                        var data=document.getElementById('users3').innerText;    
+                                            
+                                            if(data = "999+"){
+                                                users3.innerText = "1K+"; 
+                                        }
+                                    }
+                                    }
+                                );
+                            });
+                        }
+        
+                        new ScrollMagic.Scene({
+                            triggerElement: ".convert-section"
+                        })
+                            .on("enter", function () {
+                                $(".convert-section").addClass("pod--animated");
+                                animateNumber();
+                            })
+                            .on("leave", function () {
+                                $(".convert-section").removeClass("pod--animated");
+                            })
+                            .addTo(controller);
+                    })(jQuery);
+        
+                </script>
+        
+                <!--COUNTER JS SCROLL DOWN FOR JOIN OUR COMMUNITY SECTION START -->
 
         <!-- ANIMATION AOS-->
 

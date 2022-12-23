@@ -19,6 +19,12 @@
   background: linear-gradient(90.75deg, #76EA90 0%, #FDFD55 100%);            
 }
 
+@media(max-width:451px){
+  .faqs-section{
+    display: none !important;
+  }
+}
+
 @media(max-width:1800px){
   .faqs-container{
     width: 1250px;

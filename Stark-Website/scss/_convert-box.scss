@@ -170,6 +170,10 @@
     }
 }
 
+.convert-section2{
+    display: none;
+}
+
 @media(max-width:1800px){
     .convert-section{
         padding-top: 100px;
@@ -561,44 +565,284 @@
 
 
 
-@media (max-width: 340px){
-    .convert-section{
 
-        .contact-box{
 
-            .left-texts{
-                width: 100% !important;
+//* CONVERT SCSS SECTION FOR MOBILE  *//
 
-                .counter-convert-box{
-                    width: 100% !important;
+@media(max-width:450px){
 
-                    .convert-box1{
+.convert-section{
+    display: none;
+}
+.counter-section2{
+    display: block;
+}
+.convert-section2{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
 
-                        h2{
-                            font-size: 17px !important;
-                        }
-                        span{
-                            font-size: 17px !important;
-                        }
-                        p{
-                            font-size: 10px !important;
-                        }
+
+    .contact-box2{
+        width: 100%;
+        margin-top: 62px;   
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+
+        .left-texts2{
+            max-width: 1000px;
+
+            .counter-convert-box2{
+                display: flex;
+                flex-direction: column;
+                margin-top: 40px;
+                margin-bottom: 50px;
+
+                .convert-box2{
+                    color: rgb(255, 255, 255);
+                    position: relative;
+                    padding: 0px 30px;
+                    width: 306px;
+                    height: 147px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    h2{
+                        font-weight: 700 !important;
+                        font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif !important;
+                        color: transparent;     
+                        background: url("img/letter-big.png") ;
+                        background-repeat: repeat ;
+                        background-size: cover;
+                        -webkit-background-clip: text; 
+                        -webkit-text-fill-color: transparent;
+                        font-size: 41.3194px !important;
+                        margin-bottom: 5px;
                     }
-                    .convert-box-center{
-
-                        p{
-                            font-size: 10px !important;
-                        }
-                        
-                        h2{
-                            font-size: 16px !important;
-                        }
-                        span{
-                            font-size: 17px !important;
-                        }
+                    p{
+                        font-weight: 400 !important;
+                        font-size: 20.07px;
                     }
-
+                    span{
+                        font-weight: 700 !important;
+                        font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif !important;
+                        color: transparent;     
+                        background: url("img/letter-big.png") ;
+                        background-repeat: repeat ;
+                        background-size: cover;
+                        -webkit-background-clip: text; 
+                        -webkit-text-fill-color: transparent;
+                        font-size: 41.3194px !important;
+                    }
                 }
+                
+                .convert-box-center2{
+                    color: rgb(255, 255, 255);
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    padding: 0px 30px;
+                    width: 306px;
+                    height: 147px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    position: relative;
+
+                    h2{
+                        font-weight: 700 !important;
+                        font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif !important;
+                        color: transparent;     
+                        background: url("img/letter-big.png") ;
+                        background-repeat: repeat ;
+                        background-size: cover;
+                        -webkit-background-clip: text; 
+                        -webkit-text-fill-color: transparent;
+                        font-size: 41.3194px !important;
+                        margin-bottom: 5px;
+                        
+                    }
+                    p{
+                        font-weight: 400 !important;
+                        font-size: 20.07px;
+                    }
+                    span{
+                        font-weight: 700 !important;
+                        font-size: 41.3194px !important;
+                    }
+                }
+            }
+
+            
+            h1{
+                font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif !important;
+                font-size: 35px;
+                width: 300px;
+                text-align: center;   
+                margin-bottom: 50px;     
+                font-weight: 700 !important;
+                font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif !important;
+                color: transparent;     
+                background: url("img/letter-big.png") ;
+                background-repeat: repeat ;
+                background-size: cover;
+                -webkit-background-clip: text; 
+                -webkit-text-fill-color: transparent;
+            }
+            
+        }
+
+        .right-texts2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 80px;
+
+            .white-paper2{
+
+                h2{
+                    margin-bottom: 20px;
+                    font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif !important;
+                    font-size: 35px;
+                    text-align: center;   
+                    margin-bottom: 40px;     
+                    font-weight: 700 !important;
+                    font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif !important;
+                    color: transparent;     
+                    background: url("img/letter-big.png") ;
+                    background-repeat: repeat ;
+                    background-size: cover;
+                    -webkit-background-clip: text; 
+                    -webkit-text-fill-color: transparent;
+                }
+                
+                .white-p{
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: rgb(255, 255, 255) ;
+                    font-family: 'HelveticaNeue', sans-serif !important;
+                    
+                }
+                
+                button{
+                    font-weight: 500;
+                    font-size: 15px;
+                    border-style: none;
+                    width: 231px;
+                    height: 56px;
+                    cursor: pointer;   
+                }
+                .white-btn{
+                    background: rgb(0, 0, 0) ;
+                    color: rgb(255, 255, 255) !important;
+                    border-radius: 30px;
+                    font-weight: 600;
+                    margin-top: 50px;
+                    position: relative;
+
+                    p{
+                        text-align: center;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.convert-box2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 19px; 
+    padding: 3px; 
+    background: linear-gradient(90.75deg, #76EA90 0%, #FDFD55 100%);            
+    -webkit-mask: 
+       linear-gradient(rgb(0, 0, 0) 0 0) content-box, 
+       linear-gradient(rgb(0, 0, 0) 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+  }
+
+  .convert-box-center2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 19px; 
+    padding: 3px; 
+    background: linear-gradient(90.75deg, #76EA90 0%, #FDFD55 100%);            
+    -webkit-mask: 
+       linear-gradient(rgb(0, 0, 0) 0 0) content-box, 
+       linear-gradient(rgb(0, 0, 0) 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+  }
+
+  .white-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 30px; 
+    padding: 3px; 
+    background: linear-gradient(90.75deg, #76EA90 0%, #FDFD55 100%);            
+    -webkit-mask: 
+       linear-gradient(rgb(0, 0, 0) 0 0) content-box, 
+       linear-gradient(rgb(0, 0, 0) 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+   }
+}
+
+@media(max-width:378px){
+    .convert-section2{
+        padding: 0px 10px !important;
+    }
+}
+
+@media(max-width:360){
+    .convert-section2{
+        padding: 0px 50px;
+        
+            .right-texts2{
+
+                .white-paper2{
+                    width: 100% !important;
+                    
+                    .white-p{
+                        width: 100% !important;
+                    }
+                }
+            }
+    }
+}
+@media (max-width: 355px){
+    .left-texts2{
+        h1{
+            font-size: 30px !important;
+        }
+    }
+
+
+    .right-texts2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 80px;
+
+        .white-paper2{
+            font-family: 'Darker Grotesque', sans-serif !important;
+
+            h2{
+                font-size: 30px !important;
             }
         }
     }

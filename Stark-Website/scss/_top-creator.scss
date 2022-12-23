@@ -79,6 +79,11 @@
 display: none !important;
 }
 
+.title-creator2{
+  display: none;  
+}
+
+
 @media(max-width:1800px){
   .top-creator-section {
 
@@ -123,8 +128,26 @@ display: none !important;
     }
 }
 
-@media(max-width:1060px){
+@media(max-width:1061px){
+  .title-creator{
+    display: none;  
+  }
+  .title-creator2{
+    display: block;  
+  }
+  
+  
 
+  .title-creator2{
+    font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
+    font-size: 40px;
+    color: transparent;     
+    background: url("img/letter-big.png");
+    background-size: cover;
+    background-repeat: repeat;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;    
+    }
     .top-creator{
         display: flex;
         justify-content: center !important;
@@ -132,22 +155,17 @@ display: none !important;
         align-content: center;
         flex-direction: column;
         }
-        .title-creator{
+        .title-creator2{
             margin-bottom: 50px !important;
             margin-right: 0px !important;
+        }
+        .title-creator{
+          display: none;
         }
 
     }
 
 
-@media(max-width:600px){
-    .title-creator{
-      font-size: 30px !important;
-      line-height: 40px;
-      text-align: center;
-  }
-}
-  
   
 .card{
     border-radius: 10px;
@@ -160,7 +178,12 @@ display: none !important;
             width: 100%;
         }
   }
-  
+  @media (max-width: 500px) {
+
+    .top-creator-section{
+        padding-top: 50px !important;
+    }
+  }
 
   
   @media (max-width: 911px) {
@@ -182,7 +205,7 @@ display: none !important;
         margin-top: 50px;
       }
     }
-    .title-creator{
+    .title-creator2{
       margin-bottom: -20px !important;
   }
 
@@ -201,26 +224,37 @@ display: none !important;
 
   }
   
-  @media (max-width: 430px) {
-    .title-creator{
-      font-size: 40px !important;
+  @media (max-width: 431px) {
+    .title-creator2{
+      font-size: 35px !important;
       margin-bottom: -20px;
+    }
+    .card-content{
+      img{
+        width: 350px !important;
+      }
     }
   }
 
   @media (max-width: 398px) {
-    .title-creator{
+    .title-creator2{
       font-size: 35px !important;
     }
   }
 
   @media (max-width: 355px) {
-    .title-creator{
+    .title-creator2{
       font-size: 30px !important;
       margin-bottom: -20px;
     }
   }
-  
+  @media(max-width:359px){
+    .card-content{
+        img{
+          width: 300px !important;
+        }
+      }
+  }
 
   
 

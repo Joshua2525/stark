@@ -150,8 +150,8 @@ header.black nav{
 
 .burgerlines {
    border-bottom: 2px solid var(--primary-color);
-   height: 6px;
-   width: 20px; 
+   height: 7px;
+   width: 30px; 
 }
 
 .read-post{
@@ -233,7 +233,38 @@ header.black nav{
 }
 
 
+.center-nav2{
+   display: none;
+}
 
+@media(max-width:450px){
+   .center-nav2{
+      display: block;
+   }
+   .center-nav{
+      display: none !important;
+   }
+   .center-nav2{
+         margin: 0px !important;
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         width: 100%;
+         padding-top: 50px;
+    
+        }
+        .navitems {
+         font-size: 15px;
+         line-height: 121.5%; 
+      }
+      
+      .center-nav2 .navitems{
+         padding: 0.7rem 1.5rem;
+         font-size: 15px;
+         line-height: 121.5%; 
+      
+      }
+}
 
 @media (max-width: 1860px){
    .center-nav{

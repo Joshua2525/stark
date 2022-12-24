@@ -191,6 +191,7 @@
         height: 500px;
         margin-top: 150px;
         margin-bottom: 20px;
+        position: relative;
 
         .count-box{
             display: flex;
@@ -203,6 +204,7 @@
             text-align: left !important;
             margin-bottom: 25px;
             border-radius: 30px;
+            position: relative;
 
             .counter-number{
                 text-align: left;

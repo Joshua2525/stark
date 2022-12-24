@@ -865,7 +865,7 @@
                         font-weight: 400;
 
                     i{
-                        margin-top: 9px;
+                        margin-top: 10px;
                     }
 
                     p{
@@ -1029,7 +1029,7 @@
                         font-weight: 400;
 
                     i{
-                        margin-top: 9px;
+                        margin-top: 6px;
                     }
 
                     p{
@@ -1071,7 +1071,7 @@ h2{
     color: rgba(255, 255, 255, 1);
     font-weight: 600;
     text-align: left;
-    font-size: 40px !important;
+    font-size: 35px !important;
 }
 h3{
     font-size: 50px !important;
@@ -1111,7 +1111,7 @@ button{
 .premium{
     font-weight: 700;
     text-align: left;
-    font-size: 40px !important;
+    font-size: 35px !important;
 }
 
 
@@ -1155,7 +1155,8 @@ button{
 
 @media(max-width:350px){
 .pricing2 {
-    padding: 0px 0px !important;
+    padding-top: 100px !important;
+
 .box1-mobile{
     margin: 0 20px;
     li {
@@ -1164,6 +1165,9 @@ button{
             font-size:  12px !important;
         }
     }
+}
+.pricing2 .box1-mobile h2{
+    font-size: 3px !important;
 }
 .box2-mobile{
     margin: 0 20px;

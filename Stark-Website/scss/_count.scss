@@ -191,6 +191,10 @@
         height: 500px;
         margin-top: 150px;
         margin-bottom: 20px;
+        overflow-wrap: break-word !important;
+        word-wrap    : break-word !important;
+        word-break: break-all !important;
+        overflow-wrap: break-all !important;
 
         .count-box{
             display: flex;

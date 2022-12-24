@@ -126,7 +126,7 @@
         <div class="home-section2" id="home2">
             <div class="left-side2"  data-aos="fade-right" data-aos-duration="1500">
                 <p class="content-convert">CONTENT THAT CONVERTS</p>
-                <h1> <u>10X </u>  YOUR <img class="phone-emoji" src="img/phone-emoji.png" alt=""> SOCIAL </h1>
+                <h1> 10X  YOUR <img class="phone-emoji" src="img/phone-emoji.png" alt=""> SOCIAL </h1>
                 <p class="animate-text">
                     <span>NETWORK</span>
                     <span>REACH</span>
@@ -203,7 +203,7 @@
                 <div class="count-box" data-aos="fade-up" data-aos-delay="100">
                     <div class="counter-number">
                         <h2 id="users"> <span class="pod__item__number js-count" data-count="999">0</span>+</h2>
-                        <p>Active Monthly Users 5</p>
+                        <p>Active Monthly Users</p>
                     </div>
                 </div>
 
@@ -1640,59 +1640,6 @@
         <script>
             AOS.init();
         </script>
-
-        <!-- SLIDER SOCIAL MEDIA JS-->
-
-        <script src="js/owl.carousel.js"></script>
-        <script>
-            $(document).ready(function(){
-                AOS.init();
-            });
-            $(window).on("scroll", function () {
-            AOS.init();
-            });
-            $(function(){
-                $('.owl-carousel').on('initialized.owl.carousel translate.owl.carousel', function(e){
-                    idx = e.item.index;
-                    $('.owl-item.big').removeClass('big');
-                    $('.owl-item.medium-left').removeClass('medium-left');
-                    $('.owl-item.medium-right').removeClass('medium-right');
-                    $('.owl-item').eq(idx).addClass('big');
-                    $('.owl-item').eq(idx-1).addClass('medium-left');
-                    $('.owl-item').eq(idx+1).addClass('medium-right');
-                });
-            
-                var owl = $('.owl-carousel');
-                owl.owlCarousel({
-                    nav: false,
-                    dots: false,
-                    loop: true,
-                    center: true,
-                    autoplay:true,
-                    autoplayTimeout:800,
-                    autoplayHoverPause:true,
-                    responsive: {
-                        0: {
-                            margin: 10,
-                            items: 2.2
-                        },
-                        768: {
-                            margin: 70,
-                            items: 5
-                        },
-                        1000: {
-                            margin: 130,
-                            items: 5
-                        }
-                    }
-                })
-            }); 
-            
-        </script>
-
-        <script src="js/custom.js"></script>
-
-
 
         
 </body>

@@ -1907,10 +1907,6 @@ header.black nav {
     height: 500px;
     margin-top: 150px;
     margin-bottom: 20px;
-    overflow-wrap: break-word !important;
-    word-wrap: break-word !important;
-    word-break: break-all !important;
-    overflow-wrap: break-all !important;
   }
   .count-container .count-box {
     display: -webkit-box;
@@ -1932,11 +1928,7 @@ header.black nav {
     text-align: left !important;
     margin-bottom: 25px;
     border-radius: 30px;
-    position: relative !important;
-    overflow-wrap: break-word !important;
-    word-wrap: break-word !important;
-    word-break: break-all !important;
-    overflow-wrap: break-all !important;
+    overflow: hidden !important;
   }
   .count-container .count-box .counter-number {
     text-align: left;

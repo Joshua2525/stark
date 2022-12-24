@@ -1221,7 +1221,7 @@
 
      <!--CONVERT SECTION FOR MOBILE--> 
 
-     <div class="convert-section2" id="contact">
+     <div class="convert-section2" id="contact2">
     
         <div class="contact-box2" data-aos="flip-down" data-aos-duration="1000">
             <div class="left-texts2">
@@ -1229,17 +1229,17 @@
                     
                     <div class="counter-convert-box2">
                         <div class="convert-box2">
-                            <h2 id="users3"> <span class="pod__item__number js-count2" data-count="999">0</span>k+</h2>
+                            <h2 id="users3"> <span class="pod__item__number js-count3" data-count="999">0</span>k+</h2>
                             <p>Active Monthly Users</p>
                         </div>
 
                         <div class="convert-box-center2">
-                            <h2> <span class="pod__item__number js-count2"  data-count="520">0</span>M+</h2>
+                            <h2> <span class="pod__item__number js-count3"  data-count="520">0</span>M+</h2>
                             <p>Users Reached</p>
                         </div>
 
                         <div class="convert-box2">
-                            <h2> <span class="pod__item__number js-count2"  data-count="100">0</span>+</h2>
+                            <h2> <span class="pod__item__number js-count3"  data-count="100">0</span>+</h2>
                             <p>Digital Video Assets</p>
                         </div>
                     </div>
@@ -1407,7 +1407,6 @@
       });
     </script>
 
-
     <!--JS OF TOP CREATOR & TRENDING SLIDER END--> 
 
 
@@ -1456,190 +1455,20 @@
     <!--MENUBAR SCRIPT END-->
 
 
-    <!--COUNTER JS SCROLL DOWN FOR COUNTER SECTION START -->
+    <!--COUNTER JS SCROLL DOWN FOR COUNTER JS  -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-
-        <script>
-            (function ($) {
-        var controller = new ScrollMagic.Controller();
-
-        /*------------------------------------*\
-            $NUMBERS
-        \*------------------------------------*/
-
-                function animateNumber() {
-                    $(".js-count").each(function () {
-                        var $this = $(this),
-                            countTo = $this.attr("data-count");
-                        $({ countNum: $this.text() }).animate(
-                            {
-                                countNum: countTo
-                            },
-                            {
-                                duration: 1500,
-                                easing: "linear",
-                                step: function () {
-                                    // Count up with commas
-                                    $this.text(Math.floor(this.countNum).toLocaleString("en"));
-                                },
-                                complete: function () {
-                                    // Add comma after done counting
-                                    $this.text(this.countNum.toLocaleString("en"));
-                                    var data=document.getElementById('users').innerText;    
-                                    
-                                    if(data = "999+"){
-                                        users.innerText = "1K+"; 
-                                    }
-                                    
-                                }
-                            }
-                        );
-                    });
-                }
-
-                new ScrollMagic.Scene({
-                    triggerElement: ".count"
-                })
-                    .on("enter", function () {
-                        $(".count").addClass("pod--animated");
-                        animateNumber();
-                    })
-                    .on("leave", function () {
-                        $(".count").removeClass("pod--animated");
-                    })
-                    .addTo(controller);
-            })(jQuery);
-
-        </script>
-
-        <!--COUNTER JS SCROLL DOWN FOR COUNTER SECTION END -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="js/counterScroll.js"></script>
 
 
-        <!--COUNTER JS SCROLL DOWN FOR JOIN OUR COMMUNITY SECTION START -->
+    <!-- ANIMATION AOS-->
 
-        <script>
-            (function ($) {
-        var controller = new ScrollMagic.Controller();
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        /*------------------------------------*\
-            $NUMBERS
-        \*------------------------------------*/
-
-                function animateNumber() {
-                    $(".js-count2").each(function () {
-                        var $this = $(this),
-                            countTo = $this.attr("data-count");
-                        $({ countNum: $this.text() }).animate(
-                            {
-                                countNum: countTo
-                            },
-                            {
-                                duration: 3000,
-                                easing: "linear",
-
-                                step: function () {
-                                    // Count up with commas
-                                    $this.text(Math.floor(this.countNum).toLocaleString("en"));
-                                },
-                                complete: function () {
-                                // Add comma after done counting
-                                $this.text(this.countNum.toLocaleString("en"));
-                                var data=document.getElementById('users2').innerText;    
-                                    
-                                    if(data = "999+"){
-                                        users2.innerText = "1K+"; 
-                                }
-                            }
-                            }
-                        );
-                    });
-                }
-
-                new ScrollMagic.Scene({
-                    triggerElement: ".convert-section"
-                })
-                    .on("enter", function () {
-                        $(".convert-section").addClass("pod--animated");
-                        animateNumber();
-                    })
-                    .on("leave", function () {
-                        $(".convert-section").removeClass("pod--animated");
-                    })
-                    .addTo(controller);
-            })(jQuery);
-
-        </script>
-
-        <!--COUNTER JS SCROLL DOWN FOR JOIN OUR COMMUNITY SECTION START -->
-
-
-                <!--COUNTER JS SCROLL DOWN FOR JOIN OUR COMMUNITY SECTION START -->
-
-                <script>
-                    (function ($) {
-                var controller = new ScrollMagic.Controller();
-        
-                /*------------------------------------*\
-                    $NUMBERS
-                \*------------------------------------*/
-        
-                        function animateNumber() {
-                            $(".js-count2").each(function () {
-                                var $this = $(this),
-                                    countTo = $this.attr("data-count");
-                                $({ countNum: $this.text() }).animate(
-                                    {
-                                        countNum: countTo
-                                    },
-                                    {
-                                        duration: 3000,
-                                        easing: "linear",
-        
-                                        step: function () {
-                                            // Count up with commas
-                                            $this.text(Math.floor(this.countNum).toLocaleString("en"));
-                                        },
-                                        complete: function () {
-                                        // Add comma after done counting
-                                        $this.text(this.countNum.toLocaleString("en"));
-                                        var data=document.getElementById('users3').innerText;    
-                                            
-                                            if(data = "999+"){
-                                                users3.innerText = "1K+"; 
-                                        }
-                                    }
-                                    }
-                                );
-                            });
-                        }
-        
-                        new ScrollMagic.Scene({
-                            triggerElement: ".convert-section"
-                        })
-                            .on("enter", function () {
-                                $(".convert-section").addClass("pod--animated");
-                                animateNumber();
-                            })
-                            .on("leave", function () {
-                                $(".convert-section").removeClass("pod--animated");
-                            })
-                            .addTo(controller);
-                    })(jQuery);
-        
-                </script>
-        
-                <!--COUNTER JS SCROLL DOWN FOR JOIN OUR COMMUNITY SECTION START -->
-
-        <!-- ANIMATION AOS-->
-
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-        <script>
-            AOS.init();
-        </script>
+    <script>
+        AOS.init();
+    </script>
 
         
 </body>

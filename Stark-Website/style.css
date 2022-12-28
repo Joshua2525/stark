@@ -779,15 +779,15 @@ header.black nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .home-section .left-side .buttons button {
   border: none;
-  font-size: 18px;
+  font-size: 15px;
   border-style: none;
-  width: 170px;
-  height: 59px;
+  width: 190px;
+  height: 70px;
   cursor: pointer;
   margin-right: 23px;
   line-height: 27px;
@@ -800,7 +800,7 @@ header.black nav {
           box-shadow: 0px 0px 15px #76EA90;
   border-radius: 5.60983px;
   color: black !important;
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .home-section .left-side .buttons .button2 {
@@ -968,7 +968,7 @@ header.black nav {
   }
   .home-section .left-side .buttons button {
     border: none;
-    font-size: 18px;
+    font-size: 15px;
     border-style: none;
     width: 170px;
     height: 59px;
@@ -3129,7 +3129,7 @@ header.black nav {
 
 .pricing .box1 button {
   border: none;
-  font-size: 18px;
+  font-size: 12px;
   border-style: none;
   width: 176px;
   height: 54px;
@@ -3292,7 +3292,7 @@ header.black nav {
 .pricing .box2 button {
   font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
   border: none;
-  font-size: 18px;
+  font-size: 12px;
   border-style: none;
   width: 176px;
   height: 54px;
@@ -3431,7 +3431,7 @@ header.black nav {
     text-align: left;
   }
   .pricing .box1 button {
-    font-size: 18px;
+    font-size: 12px;
     width: 160px;
     height: 49px;
   }
@@ -3481,7 +3481,7 @@ header.black nav {
     text-align: left;
   }
   .pricing .box2 button {
-    font-size: 18px;
+    font-size: 12px;
     width: 160px;
     height: 49px;
   }
@@ -3773,7 +3773,6 @@ header.black nav {
     margin-top: 50px !important;
     padding: 0 35px;
     width: calc(33% - 20px);
-    background: #0e0e11;
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
     width: auto;
@@ -3805,18 +3804,18 @@ header.black nav {
   .pricing2 .box1-mobile h3 {
     text-align: left;
     font-size: 56.31px;
-    font-family: 'HelveticaNeue', sans-serif !important;
-    font-weight: 100 !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300 !important;
     position: relative;
     margin-top: 8px;
     margin-bottom: 8px;
   }
   .pricing2 .box1-mobile h3 span {
     font-size: 16px;
-    font-family: 'HelveticaNeue', sans-serif !important;
-    font-weight: 100 !important;
-    left: 107px;
-    top: 11px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300 !important;
+    left: 110px;
+    top: 13px;
     position: absolute;
   }
   .pricing2 .box1-mobile p {
@@ -3830,7 +3829,7 @@ header.black nav {
     border: none;
     font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 12px;
     border-style: none;
     width: 159.59px;
     height: 48.83px;
@@ -3894,9 +3893,8 @@ header.black nav {
     margin-top: 50px !important;
     padding: 0 35px;
     width: calc(33% - 20px);
-    background: #0e0e11;
     width: auto;
-    height: 760.31px;
+    height: 780.31px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3929,19 +3927,17 @@ header.black nav {
         align-self: center;
     text-align: center;
     background: #1a1a1a;
-    width: 250px !important;
+    width: 200px !important;
     height: 35px;
     margin-top: -20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 30px;
   }
   .pricing2 .box2-mobile .most-popular h2 {
     text-align: center;
+    font-size: 16px !important;
     font-weight: 700 !important;
-    font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif !important;
-    font-size: 15px !important;
-    font-weight: 700 !important;
-    font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif !important;
+    font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
     color: transparent;
     background: url("img/letter-big.png");
     background-size: cover;
@@ -3962,18 +3958,18 @@ header.black nav {
   .pricing2 .box2-mobile h3 {
     text-align: left;
     font-size: 56.31px;
-    font-family: 'HelveticaNeue', sans-serif !important;
-    font-weight: 100 !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300 !important;
     position: relative;
     margin-top: 8px;
     margin-bottom: 8px;
   }
   .pricing2 .box2-mobile h3 span {
     font-size: 16px;
-    font-family: 'HelveticaNeue', sans-serif !important;
-    font-weight: 100 !important;
-    left: 140px;
-    top: 11px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300 !important;
+    left: 130px;
+    top: 13px;
     position: absolute;
   }
   .pricing2 .box2-mobile p {
@@ -3986,7 +3982,7 @@ header.black nav {
     border: none;
     font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 12px;
     border-style: none;
     width: 159.59px;
     height: 48.83px;
@@ -4070,14 +4066,6 @@ header.black nav {
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0) !important;
     -webkit-mask-composite: xor !important;
     mask-composite: exclude !important;
-  }
-  .box1-mobile:hover {
-    -webkit-filter: drop-shadow(0px 2px 1px #76EA90);
-            filter: drop-shadow(0px 2px 1px #76EA90);
-  }
-  .box2-mobile:hover {
-    -webkit-filter: drop-shadow(0px 2px 1px #76EA90);
-            filter: drop-shadow(0px 2px 1px #76EA90);
   }
 }
 

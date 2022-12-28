@@ -116,7 +116,7 @@
         }
         button{
             border: none;
-            font-size: 18px;
+            font-size: 12px;
             border-style: none;
             width: 176px;
             height: 54px;
@@ -255,7 +255,7 @@
         button{
             font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
             border: none;
-            font-size: 18px;
+            font-size: 12px;
             border-style: none;
             width: 176px;
             height: 54px;
@@ -403,7 +403,7 @@
                 text-align: left;
             }
             button{
-                font-size: 18px;
+                font-size: 12px;
                 width: 160px;
                 height: 49px;
                 
@@ -465,7 +465,7 @@
                 text-align: left;
             }
             button{
-                font-size: 18px;
+                font-size: 12px;
                 width: 160px;
                 height: 49px;
             }
@@ -772,7 +772,6 @@
             margin-top: 50px !important;
             padding: 0 35px;
             width: calc(33% - 20px);
-            background: rgba(14, 14, 17, 1);
             backdrop-filter: blur(5px);
             width: auto;
             height: 760.31px;
@@ -797,8 +796,8 @@
             h3{
                 text-align: left;
                 font-size: 56.31px;
-                font-family: 'HelveticaNeue', sans-serif !important;
-                font-weight: 100 !important;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 300 !important;
                 position: relative;
                 margin-top: 8px;
                 margin-bottom: 8px;
@@ -806,10 +805,10 @@
                 
                 span{
                     font-size: 16px;
-                    font-family: 'HelveticaNeue', sans-serif !important;
-                    font-weight: 100 !important;
-                    left: 107px;
-                    top: 11px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 300 !important;
+                    left: 110px;
+                    top: 13px;
                     position: absolute;
                 }
 
@@ -825,7 +824,7 @@
                 border: none;
                 font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
                 font-weight: 700;
-                font-size: 15px;
+                font-size: 12px;
                 border-style: none;
                 width: 159.59px;
                 height: 48.83px;
@@ -891,9 +890,8 @@
             margin-top: 50px !important;
             padding: 0 35px;
             width: calc(33% - 20px);
-            background: rgba(14, 14, 17, 1);
             width: auto;
-            height: 760.31px;
+            height: 780.31px;
             display: flex;
             flex-direction: column;
             justify-content:center;
@@ -909,11 +907,9 @@
 
                 h2{
                     text-align: center;
+                    font-size: 16px !important;
                     font-weight: 700 !important;
-                    font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif !important;
-                    font-size: 15px !important;
-                    font-weight: 700 !important;
-                    font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif !important;
+                    font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
                     color: transparent;     
                     background: url("img/letter-big.png");
                     background-size: cover;
@@ -928,10 +924,10 @@
                 align-self: center;
                 text-align: center;
                 background: rgba(26, 26, 26, 1);
-                width: 250px !important;
+                width: 200px !important;
                 height: 35px;
                 margin-top: -20px;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
                 border-radius: 30px;
                 
 
@@ -951,8 +947,8 @@
             h3{
                 text-align: left;
                 font-size: 56.31px;
-                font-family: 'HelveticaNeue', sans-serif !important;
-                font-weight: 100 !important;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 300 !important;
                 position: relative;
                 margin-top: 8px;
                 margin-bottom: 8px;
@@ -960,10 +956,10 @@
                 
                 span{
                     font-size: 16px;
-                    font-family: 'HelveticaNeue', sans-serif !important;
-                    font-weight: 100!important;
-                    left: 140px;
-                    top: 11px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 300 !important;
+                    left: 130px;
+                    top: 13px;
                     position: absolute;
                 }
 
@@ -979,7 +975,7 @@
                 border: none;
                 font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
                 font-weight: 700;
-                font-size: 15px;                
+                font-size: 12px;                
                 border-style: none;
                 width: 159.59px;
                 height: 48.83px;
@@ -1069,13 +1065,6 @@
         linear-gradient(#fff 0 0) !important;
         -webkit-mask-composite: xor !important;
                 mask-composite: exclude !important; 
-    }
-
-    .box1-mobile:hover{
-        filter: drop-shadow(0px 2px 1px #76EA90);
-    }
-    .box2-mobile:hover{
-        filter: drop-shadow(0px 2px 1px #76EA90);
     }
 }
 

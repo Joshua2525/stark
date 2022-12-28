@@ -207,6 +207,10 @@
             border-radius: 30px;
             overflow: hidden !important;
 
+            .adjust-no{
+                margin-left: -59px;
+            }
+
 
             .counter-number{
                 text-align: left;
@@ -250,6 +254,11 @@
             height: 150px !important;
             margin-bottom: 10px;
             border-radius: 30px;
+
+            .adjust-no{
+                margin-left: 0px;
+            }
+
             .counter-number{
                 display: flex;
                 align-items: center;

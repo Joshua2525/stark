@@ -209,7 +209,9 @@ header.black nav{
    align-items: center !important;
    justify-content: center !important;
    height: 48px;
-   filter: drop-shadow(0px 0px 0px #76EA90);
+   position: relative;
+   border-radius: 5px ;
+   box-shadow: 0px 0px 9px #76EA90;
 }
 
 .create-btn::before {
@@ -220,7 +222,7 @@ header.black nav{
    text-align: center !important;
    align-items: center !important;
    justify-content: center !important;
-   padding: 4.63px; 
+   padding: 3px; 
    box-shadow: 0px 0px 10px 0px rgba(118, 234, 144, 1) !important;
    border-radius: 5px ;
    background: linear-gradient(94.76deg, #76EA90 0%, #FDFD55 100%),
@@ -349,8 +351,8 @@ header.black nav{
 
    .nav-logo1{
      margin-top: 5px;
-     width: 70px;
-     height: 25px;
+     width: 122.93px;
+     height: 37.53px;
         
    }
    .navbar{

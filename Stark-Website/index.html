@@ -120,79 +120,74 @@
         
     </div>
 
-
     <!--HOME SECTION FOR MOBILE -->
 
-        <div class="home-section2" id="home2">
-            <div class="left-side2"  data-aos="fade-right" data-aos-duration="1500">
-                <p class="content-convert">CONTENT THAT CONVERTS</p>
-                <h1> 10X  YOUR <img class="phone-emoji" src="img/phone-emoji.png" alt=""> SOCIAL </h1>
-                <p class="animate-text">
-                    <span>NETWORK</span>
-                    <span>REACH</span>
-                    <span>CONVERSION</span>
-                    <span>ENGAGEMENT</span>
-                 </p>
-                <div class="button-mobile">
-    
-                    <a href="#pricing">
-                        <button type="button" class="button-mobile-home">
-                           <p>+CREATE</p>  
-                        </button>
-                    </a>
-                    
-                </div>
+    <div class="home-section2" id="home2">
+        <div class="left-side2"  data-aos="fade-right" data-aos-duration="1500">
+            <p class="content-convert">CONTENT THAT CONVERTS</p>
+            <h1> 10X  YOUR <img class="phone-emoji" src="img/phone-emoji.png" alt=""> SOCIAL </h1>
+            <p class="animate-text">
+                <span>NETWORK</span>
+                <span>REACH</span>
+                <span>CONVERSION</span>
+                <span>ENGAGEMENT</span>
+                </p>
+            <div class="button-mobile">
+
+                <a href="#pricing">
+                    <button type="button" class="button-mobile-home">
+                        <p>+CREATE</p>  
+                    </button>
+                </a>
+                
             </div>
-    
-            <div class="iphone-mockup2" data-aos="fade-left" data-aos-duration="1500">
-                <img class="iphone14" src="img/iPhone14-home.png" alt="">
-    
-                <video autoplay muted loop src="img/Andrew Tate Yacht.mp4" type="video/mp4"></video>
-    
-                <img class="call" src="img/Dynamic Island.svg" alt="">
-            </div>
-            
         </div>
-    
-    
-    
-    
-    
-        <script>
-            const txts=document.querySelector(".animate-text").children,
-                  txtsLen=txts.length;
-              let index=0;
-             const textInTimer=3000,
-                   textOutTimer=2800;
-    
-            function animateText() {
-               for(let i=0; i<txtsLen; i++){
-                 txts[i].classList.remove("text-in","text-out");  
-               }
-               txts[index].classList.add("text-in");
-    
-               setTimeout(function(){
-                   txts[index].classList.add("text-out");              
-               },textOutTimer)
-    
-               setTimeout(function(){
-    
-                 if(index == txtsLen-1){
-                     index=0;
-                   }
-                  else{
-                      index++;
-                    }
-                   animateText();
-               },textInTimer); 
+
+        <div class="iphone-mockup2" data-aos="fade-left" data-aos-duration="1500">
+            <img class="iphone14" src="img/iPhone14-home.png" alt="">
+
+            <video autoplay muted loop src="img/Andrew Tate Yacht.mp4" type="video/mp4"></video>
+
+            <img class="call" src="img/Dynamic Island.svg" alt="">
+        </div>
+        
+    </div>
+
+    <!--SCROLL TEXT JS FOR MOBILE-->
+
+    <script>
+        const txts=document.querySelector(".animate-text").children,
+                txtsLen=txts.length;
+            let index=0;
+            const textInTimer=3000,
+                textOutTimer=2800;
+
+        function animateText() {
+            for(let i=0; i<txtsLen; i++){
+                txts[i].classList.remove("text-in","text-out");  
             }
-            
-            window.onload=animateText;
-      
+            txts[index].classList.add("text-in");
+
+            setTimeout(function(){
+                txts[index].classList.add("text-out");              
+            },textOutTimer)
+
+            setTimeout(function(){
+
+                if(index == txtsLen-1){
+                    index=0;
+                }
+                else{
+                    index++;
+                }
+                animateText();
+            },textInTimer); 
+        }
+        
+        window.onload=animateText;
+    
     </script>
     
-
-
     <!--COUNT SECTION-->
 
     <section class="count-section">
@@ -386,21 +381,21 @@
             <div class="feature-box-container" >
         
                 <div class="box-feature" data-aos="fade-down" data-aos-delay="400">
-                    <img class="icon-features" src="img/engagement.png" alt="">
-                    <h1>+ Engagement</h1>
+                    <img class="icon-features" src="img/reach-desktop.png" alt="">
+                    <h1>REACH</h1>
                     <p>Engaging captions proven to increase user retention by +80%. Algorithmically pushing your content’s ranking, reach and engagement.</p>
                 </div>
 
                 <div class="box-feature" data-aos="fade-down" data-aos-delay="100">
-                    <img class="icon-features" src="img/quality.png" alt="">
-                    <h1>Quality</h1>
+                    <img class="icon-features" src="img/quality-desktop.png" alt="">
+                    <h1>QUALITY</h1>
                     <p>Each order will be assigned an editor for full video customization. 
                         Emojis, colors, font, music, and more! </p>
                 </div>
 
                 <div class="box-feature" data-aos="fade-down" data-aos-delay="400">
-                    <img class="icon-features" src="img/effective.png" alt="">
-                    <h1>Effective</h1>
+                    <img class="icon-features" src="img/effective-desktop.png" alt="">
+                    <h1>EFFECTIVE</h1>
                     <p>Social Content that converts.
                         Target an audience and build your Social-Network. 
                         Step 2. Vertically integrate your
@@ -471,11 +466,11 @@
             <div class="pricing-box-container" >
             
                 <div class="box1" data-aos="fade-down" data-aos-delay="250">
-                    <h2>Standard</h2>
+                    <h2>STANDARD</h2>
                     <h3>$55 <span>USD</span> </h3>
                     <p>per month/user</p>
 
-                    <button class="join-btn">Join now</button>
+                    <button class="join-btn">+CREATE</button>
 
                     <div class="line"></div>
                     <p class="essentials">The essentials to get you up and running. </p>
@@ -504,11 +499,11 @@
                     <div class="most-popular">
                         <h2>MOST POPULAR</h2>
                     </div>
-                    <h2 class="premium">Premium</h2>
+                    <h2 class="premium">PREMIUM</h2>
                     <h3>$105 <span>USD</span> </h3>
                     <p>per month/user</p>
 
-                    <button class="join-btn">Join now</button>
+                    <button class="join-btn">+CREATE</button>
 
                     <div class="line"></div>
                     <p class="essentials">For power users and teams looking to take their socials to the next level.  </p>
@@ -534,11 +529,11 @@
                 </div>
 
                 <div class="box1" data-aos="fade-down" data-aos-delay="550">
-                    <h2>Enterpise</h2>
+                    <h2>ENTERPRISE</h2>
                     <h3>$55 <span>USD</span> </h3>
                     <p>per month/user</p>
 
-                    <button class="join-btn">Join now</button>
+                    <button class="join-btn">+CREATE</button>
 
                     <div class="line"></div>
                     <p class="essentials">For teams that need full customization and special requests.  </p>
@@ -572,7 +567,7 @@
                 <div class="most-popular">
                     <h2>MOST POPULAR</h2>
                 </div>
-                <h2 class="premium">Premium</h2>
+                <h2 class="premium">PREMIUM</h2>
                 <h3>$105 <span>USD</span> </h3>
                 <p>per month/user</p>
 
@@ -602,7 +597,7 @@
             </div>
 
             <div class="box1" data-aos="fade-down" data-aos-delay="250">
-                <h2>Standard</h2>
+                <h2>STANDARD</h2>
                 <h3>$55 <span>USD</span> </h3>
                 <p>per month/user</p>
 
@@ -634,7 +629,7 @@
 
 
             <div class="box1" data-aos="fade-down" data-aos-delay="550">
-                <h2>Enterpise</h2>
+                <h2>ENTERPRISE</h2>
                 <h3>$55 <span>USD</span> </h3>
                 <p>per month/user</p>
 
@@ -689,7 +684,7 @@
                                     <div class="most-popular">
                                         <h2>MOST POPULAR</h2>
                                     </div>
-                                    <h2 class="premium">Premium</h2>
+                                    <h2 class="premium">PREMIUM</h2>
                                     <h3>$105 <span>USD</span> </h3>
                                     <p>per month/user</p>
                     
@@ -727,7 +722,7 @@
                         <div class="card-content">
                             <div class="card-content">
                                 <div class="box1-mobile" data-aos="fade-down" data-aos-delay="250">
-                                    <h2>Standard</h2>
+                                    <h2>STANDARD</h2>
                                     <h3>$55 <span>USD</span> </h3>
                                     <p>per month/user</p>
                     
@@ -763,7 +758,7 @@
                     <div class="swiper-slide card1">
                         <div class="card-content">
                             <div class="box1-mobile" data-aos="fade-down" data-aos-delay="550">
-                                <h2>Enterpise</h2>
+                                <h2>ENTERPRISE</h2>
                                 <h3>$55 <span>USD</span> </h3>
                                 <p>per month/user</p>
                 
@@ -974,7 +969,7 @@
                 <!--BOX 1--> 
 
                 <div class="box-team1" data-aos="fade-down" data-aos-delay="100">
-                    <img id="imgcontainer" class="img-container" src="img/con1.png" alt="">
+                    <img id="imgcontainer" class="img-container" src="img/con-mobile.png" alt="">
 
                     <div class="line-name">
                         <img class="line-down" src="img/line-team.png" id="linedown" alt="">
@@ -1168,55 +1163,43 @@
     </section>
 
 
-    <!--CONVERT SECTION--> 
+   
+ <!--CONVERT SECTION--> 
 
-    <div class="convert-section" id="contact">
+<div class="convert-section" id="contact">
     
-        <div class="contact-box" data-aos="flip-down" data-aos-duration="1000">
-            <div class="left-texts">
-                    <h1>Join our community</h1>
-                    
-                    <div class="counter-convert-box">
-                        <div class="convert-box1">
-                            <h2 id="users2"> <span class="pod__item__number js-count2" data-count="999">0</span>k+</h2>
-                            <p>Active Monthly Users</p>
-                        </div>
-
-                        <div class="convert-box-center">
-                            <h2> <span class="pod__item__number js-count2"  data-count="520">0</span>M+</h2>
-                            <p>Users Reached</p>
-                        </div>
-
-                        <div class="convert-box1">
-                            <h2> <span class="pod__item__number js-count2"  data-count="100">0</span>+</h2>
-                            <p>Digital Video Assets</p>
-                        </div>
-                    </div>
-
-                    <div class="button-convert-container">
-                        <a href="#">
-                            <button type="button" class="button-convert1">+Create </button>
-                        </a>
-        
-                        <a href="#">
-                            <button type="button" class="button-convert2">Follow us </button>
-                        </a>
-                    </div>
-              </div>
-
-            <div class="right-texts">
-                <div class="white-paper">
-                    <h2>White-paper</h2>
-                    <p>Read the whitepaper for an in depth
-                        coverage of Stark including roadmap, 
-                        introduction, team, caption content, and more!</p>
-                    <a href="">
-                        <button class="white-btn">White-paper</button>
+    <div class="contact-box" data-aos="flip-down" data-aos-duration="1000">
+                <h1 class="title-convert-desktop">JOIN COMMUNITY</h1>
+                <div class="button-convert-container">
+                    <a href="#">
+                        <button type="button" class="button-convert1">+Create </button>
+                    </a>
+    
+                    <a href="#">
+                        <button type="button" class="button-convert2">Follow Us</button>
                     </a>
                 </div>
-            </div>
-        </div>
+
+                <div class="counter-convert-box">
+                    <div class="convert-box1">
+                        <h2 id="users2"> <span class="pod__item__number js-count2" data-count="999">0</span>k+</h2>
+                        <p>Active Monthly Users</p>
+                    </div>
+
+                    <div class="convert-box1-center">
+                        <h2> <span class="pod__item__number js-count2"  data-count="520">0</span>M+</h2>
+                        <p>Users Reached</p>
+                    </div>
+
+                    <div class="convert-box1">
+                        <h2> <span class="pod__item__number js-count2"  data-count="100">0</span>+</h2>
+                        <p>Digital Video Assets</p>
+                    </div>
+                </div>
+            
+        </div>    
     </div>
+
 
 
      <!--CONVERT SECTION FOR MOBILE--> 

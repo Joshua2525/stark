@@ -82,7 +82,6 @@
 
           button{
               border: none;
-              font-family: 'Poppins', sans-serif;
               font-size: 18px;
               border-style: none;
               width: 170px;
@@ -93,6 +92,7 @@
               
           }
           .button1{
+              font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
               background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
               box-shadow: 0px 0px 15px #76EA90;
               border-radius: 5.60983px;
@@ -100,6 +100,7 @@
               font-weight: 700;
           }
           .button2{
+              font-family: 'Poppins', sans-serif;
               background-color: transparent;
               color: var(--primary-color) !important;
               transition: all .15s ease-in-out;
@@ -240,7 +241,6 @@
 
           button{
               border: none;
-              font-family: 'Poppins', sans-serif;
               font-size: 18px;
               border-style: none;
               width: 170px;

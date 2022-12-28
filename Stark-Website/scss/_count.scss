@@ -21,8 +21,6 @@
             text-align: center;
             width: 250px;
             height: 170px;
-            font-family: 'Poppins', sans-serif !important;
-
 
             h2{
                 margin-bottom: 5px;
@@ -30,6 +28,8 @@
                 color: rgb(0, 0, 0);
                 text-align: left;
                 font-weight: 500;
+                font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
+
 
             }
             p{
@@ -37,9 +37,11 @@
                 text-align: left;
                 font-size: 20.07px;
                 font-weight: 400 !important;
+                font-family: 'HelveticaNeue', sans-serif !important;
+
             }
             span{
-                font-family: 'Poppins', sans-serif;
+                font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
                 font-weight: 500;
             }
         }

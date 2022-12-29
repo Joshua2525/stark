@@ -242,7 +242,7 @@ nav {
 }
 
 header.black nav {
-  background: #4c4c4c;
+  background: black;
   -webkit-backdrop-filter: blur(100px);
           backdrop-filter: blur(100px);
   min-height: 75px;
@@ -321,6 +321,8 @@ header.black nav {
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  outline: none !important;
+  border: none !important;
 }
 
 .create-btn {
@@ -372,11 +374,23 @@ header.black nav {
 }
 
 @media (max-width: 450px) {
+  .top {
+    display: none;
+  }
   .center-nav2 {
     display: block;
   }
   .center-nav {
     display: none !important;
+  }
+  header.black nav {
+    background: black;
+    -webkit-backdrop-filter: blur(100px);
+            backdrop-filter: blur(100px);
+    min-height: 75px;
+    -webkit-transition: all .20s ease-in-out;
+    transition: all .20s ease-in-out;
+    margin-top: 0;
   }
   .center-nav2 {
     margin: 0px !important;
@@ -662,7 +676,7 @@ header.black nav {
     font-size: 10px !important;
   }
   header.black nav {
-    margin-top: -30px;
+    margin-top: 0;
   }
 }
 
@@ -3852,7 +3866,7 @@ header.black nav {
     text-align: left;
     font-size: 56.31px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 300 !important;
+    font-weight: 275 !important;
     position: relative;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -4006,7 +4020,7 @@ header.black nav {
     text-align: left;
     font-size: 56.31px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 300 !important;
+    font-weight: 275 !important;
     position: relative;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -5235,6 +5249,57 @@ header.black nav {
   display: none;
 }
 
+/* Container Tooltip */
+.tooltip {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 80px;
+  cursor: pointer;
+}
+
+/* Style text tooltip */
+.tooltipText {
+  background-color: #fff;
+  color: black;
+  font-family: 'futura-bold', sans-serif;
+  font-weight: 500;
+  position: absolute;
+  bottom: -170%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+/*  Membuat dan style tip*/
+.tooltipText::after {
+  content: '';
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  bottom: 90%;
+  left: 40%;
+  margin-left: 7.8%;
+}
+
+/* Hover text tooltip */
+.tooltip:hover .tooltipText {
+  opacity: 1;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
 @media (max-width: 1800px) {
   .team .team-box-container2 {
     display: none;
@@ -5336,6 +5401,75 @@ header.black nav {
   .team .box-team5 {
     margin: 0px 0px;
     margin-bottom: 60px;
+  }
+  .team .team-container {
+    margin-bottom: 50px;
+  }
+  .tooltipText {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .tooltip {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 80px;
+    cursor: pointer;
+  }
+  /* Style text tooltip */
+  .tooltipText {
+    background-color: #fff;
+    color: black;
+    font-family: 'futura-bold', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    bottom: -170%;
+    margin-left: 100px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  /*  Membuat dan style tip*/
+  .tooltipText::after {
+    content: '';
+    border-width: 0px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    bottom: 90%;
+    left: 100%;
+    margin-left: 7.8%;
+  }
+}
+
+@media (max-width: 491px) {
+  /* Style text tooltip */
+  .tooltipText {
+    background-color: #fff;
+    color: black;
+    font-family: 'futura-bold', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    bottom: -220%;
+    margin-left: 0px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
   }
 }
 
@@ -5506,6 +5640,53 @@ header.black nav {
   .team2 {
     display: block;
   }
+  /* Container Tooltip */
+  .tooltip {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0px;
+    cursor: pointer;
+  }
+  /* Style text tooltip */
+  .tooltipText {
+    background-color: #fff;
+    color: black;
+    font-family: 'futura-bold', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    bottom: -220%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  /*  Membuat dan style tip*/
+  .tooltipText::after {
+    content: '';
+    border-width: 0px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    bottom: 90%;
+    left: 0%;
+    margin-left: 0px;
+  }
+  /* Hover text tooltip */
+  .tooltip:hover .tooltipText {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
   .team2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5607,6 +5788,7 @@ header.black nav {
     color: #fff;
     cursor: pointer;
     margin-top: 20px;
+    margin-bottom: 50px;
   }
   .team2 .box-team-mobile .img-container {
     width: 350px;

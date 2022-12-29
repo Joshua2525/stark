@@ -436,6 +436,51 @@
   display: none;
 }
 
+
+/* Container Tooltip */
+.tooltip {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 80px;
+  cursor: pointer;
+}
+
+/* Style text tooltip */
+.tooltipText {
+  background-color: #fff;
+  color: black;
+  font-family: 'futura-bold', sans-serif;
+  font-weight: 500;
+  position: absolute;
+  bottom: -170%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  transition: all .5s;
+}
+
+/*  Membuat dan style tip*/
+.tooltipText::after {
+  content: '';
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  bottom: 90%;
+  left: 40%;
+  margin-left: 7.8%;
+}
+
+
+/* Hover text tooltip */
+.tooltip:hover .tooltipText{
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
 @media(max-width:1800px){
     .team {
 
@@ -581,8 +626,72 @@
     margin: 0px 0px;
     margin-bottom: 60px;
   }
+  .team .team-container {
+    margin-bottom: 50px;
+  }
+  .tooltipText {
+    font-size: 12px;
+  }
+}
+@media(max-width:1280px){
+  .tooltip {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+    cursor: pointer;
+  }
+  
+  /* Style text tooltip */
+  .tooltipText {
+    background-color: #fff;
+    color: black;
+    font-family: 'futura-bold', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    bottom: -170%;
+    margin-left: 100px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: all .5s;
+  }
+  
+  /*  Membuat dan style tip*/
+  .tooltipText::after {
+    content: '';
+    border-width: 0px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    bottom: 90%;
+    left: 100%;
+    margin-left: 7.8%;
+  }
+  
 }
 
+@media(max-width:491px){
+  
+  /* Style text tooltip */
+  .tooltipText {
+    background-color: #fff;
+    color: black;
+    font-family: 'futura-bold', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    bottom: -220%;
+    margin-left: 0px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: all .5s;
+  }
+
+}
 
 
 @media(max-width:1220px){
@@ -772,6 +881,50 @@
   display: block;
 }
 
+/* Container Tooltip */
+.tooltip {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0px;
+  cursor: pointer;
+}
+/* Style text tooltip */
+.tooltipText {
+  background-color: #fff;
+  color: black;
+  font-family: 'futura-bold', sans-serif;
+  font-weight: 500;
+  position: absolute;
+  bottom: -220%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  transition: all .5s;
+}
+
+/*  Membuat dan style tip*/
+.tooltipText::after {
+  content: '';
+  border-width: 0px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  bottom: 90%;
+  left: 0%;
+  margin-left: 0px;
+}
+
+
+/* Hover text tooltip */
+.tooltip:hover .tooltipText{
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+
 .team2 {
   display: flex;
   height: auto !important;
@@ -836,6 +989,7 @@
       color: #fff;
       cursor: pointer;
       margin-top: 20px;
+      margin-bottom: 50px;
 
       .img-container{
           width: 350px;

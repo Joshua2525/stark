@@ -136,7 +136,7 @@ nav{
 
 }
 header.black nav{
-   background: rgb(76, 76, 76);
+   background: rgb(0, 0, 0);
    backdrop-filter: blur(100px);    
    min-height: 75px;
    transition: all .20s ease-in-out;
@@ -199,8 +199,10 @@ header.black nav{
    background-repeat: no-repeat;
    -webkit-background-clip: text; 
    -webkit-text-fill-color: transparent;
-
+   outline: none !important;
+   border: none !important;
 }
+
 
 .create-btn{
    width: 149px;
@@ -240,11 +242,21 @@ header.black nav{
 }
 
 @media(max-width:450px){
+   .top{
+      display: none;
+   }
    .center-nav2{
       display: block;
    }
    .center-nav{
       display: none !important;
+   }
+   header.black nav{
+      background: rgb(0, 0, 0);
+      backdrop-filter: blur(100px);    
+      min-height: 75px;
+      transition: all .20s ease-in-out;
+      margin-top: 0 ;
    }
    .center-nav2{
          margin: 0px !important;
@@ -521,7 +533,7 @@ header.black nav{
       }
    }
    header.black nav{
-      margin-top: -30px ;
+      margin-top: 0 ;
    }
 }
 

@@ -454,7 +454,7 @@
   font-family: 'futura-bold', sans-serif;
   font-weight: 500;
   position: absolute;
-  bottom: -170%;
+  bottom: -180%;
   padding: 10px 15px;
   border-radius: 5px;
   font-size: 14px;
@@ -465,7 +465,7 @@
 /*  Membuat dan style tip*/
 .tooltipText::after {
   content: '';
-  border-width: 5px;
+  border-width: 0px;
   border-style: solid;
   border-color: #fff transparent transparent transparent;
   position: absolute;

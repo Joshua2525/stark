@@ -3153,7 +3153,6 @@ header.black nav {
       -ms-flex-align: left;
           align-items: left;
   color: #fff;
-  cursor: pointer;
   border-radius: 20px;
   color: #fafafa;
   -webkit-box-shadow: 0px 0px 9px #76EA90;
@@ -3189,22 +3188,40 @@ header.black nav {
 }
 
 .pricing .box1 button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
   border: none;
   font-size: 12px;
   border-style: none;
   width: 176px;
   height: 54px;
-  cursor: pointer;
+  cursor: pointer !important;
   line-height: 27px;
-  font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
+}
+
+.pricing .box1 a {
+  text-decoration: none !important;
 }
 
 .pricing .box1 .join-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: center;
   background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
-  border-radius: 5px;
-  font-weight: 600 !important;
-  margin-top: 50px;
   color: black !important;
+  border-radius: 5px;
+  font-weight: 700 !important;
+  margin-top: 50px;
 }
 
 .pricing .box1 .line {
@@ -3278,7 +3295,6 @@ header.black nav {
       -ms-flex-align: left;
           align-items: left;
   color: #fff;
-  cursor: pointer;
   position: relative;
   border-radius: 20px;
   -webkit-box-shadow: 0px 0px 9px #76EA90;
@@ -3351,17 +3367,35 @@ header.black nav {
 }
 
 .pricing .box2 button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
   border: none;
   font-size: 12px;
   border-style: none;
   width: 176px;
   height: 54px;
-  cursor: pointer;
+  cursor: pointer !important;
   line-height: 27px;
 }
 
+.pricing .box2 a {
+  text-decoration: none !important;
+}
+
 .pricing .box2 .join-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: center;
   background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
   color: black !important;
   border-radius: 5px;
@@ -3424,6 +3458,7 @@ header.black nav {
 .box1::before {
   content: "";
   position: absolute;
+  z-index: -1;
   inset: 0;
   border-radius: 19px;
   padding: 3px;
@@ -3436,6 +3471,7 @@ header.black nav {
 
 .box2::before {
   content: "";
+  z-index: -1;
   position: absolute;
   inset: 0;
   border-radius: 19px;
@@ -3850,7 +3886,6 @@ header.black nav {
         -ms-flex-align: left;
             align-items: left;
     color: #fff;
-    cursor: pointer;
     margin-top: 17px;
     border-radius: 20px;
     color: #fafafa;
@@ -3887,22 +3922,38 @@ header.black nav {
     font-size: 15px;
   }
   .pricing2 .box1-mobile button {
-    border: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
-    font-weight: 700;
+    border: none;
     font-size: 12px;
     border-style: none;
     width: 159.59px;
     height: 48.83px;
-    cursor: pointer;
+    cursor: pointer !important;
     line-height: 27px;
   }
+  .pricing2 .box1-mobile a {
+    text-decoration: none !important;
+  }
   .pricing2 .box1-mobile .join-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    text-align: center;
     background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
-    border-radius: 5px;
-    font-weight: 600 !important;
-    margin-top: 50px;
     color: black !important;
+    border-radius: 5px;
+    font-weight: 700 !important;
+    margin-top: 50px;
   }
   .pricing2 .box1-mobile .line {
     height: 2.88px;
@@ -3970,7 +4021,6 @@ header.black nav {
         -ms-flex-align: left;
             align-items: left;
     color: #fff;
-    cursor: pointer;
     margin-top: -10px;
     border-radius: 20px;
   }
@@ -4040,21 +4090,37 @@ header.black nav {
     width: 100% !important;
   }
   .pricing2 .box2-mobile button {
-    border: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
-    font-weight: 700;
+    border: none;
     font-size: 12px;
     border-style: none;
     width: 159.59px;
     height: 48.83px;
-    cursor: pointer;
+    cursor: pointer !important;
     line-height: 27px;
   }
+  .pricing2 .box2-mobile a {
+    text-decoration: none !important;
+  }
   .pricing2 .box2-mobile .join-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    text-align: center;
     background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
     color: black !important;
     border-radius: 5px;
-    font-weight: 600 !important;
+    font-weight: 700 !important;
     margin-top: 50px;
   }
   .pricing2 .box2-mobile .line {
@@ -4106,6 +4172,7 @@ header.black nav {
   }
   .box1-mobile::before {
     content: "";
+    z-index: -1;
     position: absolute;
     inset: 0;
     border-radius: 19px;
@@ -4118,6 +4185,7 @@ header.black nav {
   }
   .box2-mobile::before {
     content: "";
+    z-index: -1;
     position: absolute;
     inset: 0;
     border-radius: 19px;
@@ -5272,7 +5340,7 @@ header.black nav {
   font-family: 'futura-bold', sans-serif;
   font-weight: 500;
   position: absolute;
-  bottom: -170%;
+  bottom: -180%;
   padding: 10px 15px;
   border-radius: 5px;
   font-size: 14px;
@@ -5284,7 +5352,7 @@ header.black nav {
 /*  Membuat dan style tip*/
 .tooltipText::after {
   content: '';
-  border-width: 5px;
+  border-width: 0px;
   border-style: solid;
   border-color: #fff transparent transparent transparent;
   position: absolute;
@@ -5898,13 +5966,14 @@ header.black nav {
   font-size: 14.70px;
   border-style: none;
   width: 135px;
-  height: 55px;
+  outline: none;
   cursor: pointer;
+  height: 55px;
   margin-right: 23px;
   line-height: 27px;
 }
 
-.convert-section .button-convert-container .button-convert1 {
+.convert-section .button-convert-container .button-convert1-home {
   font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
   background: transparent;
   border-color: black;
@@ -5914,9 +5983,11 @@ header.black nav {
   transition: all .15s ease-in-out;
   border-radius: 30px;
   font-weight: 700;
+  z-index: -1;
+  position: relative;
 }
 
-.convert-section .button-convert-container .button-convert2 {
+.convert-section .button-convert-container .button-convert2-home {
   font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
   background-color: black;
   border: solid 2px white;
@@ -5925,20 +5996,7 @@ header.black nav {
   transition: all .15s ease-in-out;
   border-radius: 30px;
   font-weight: 700;
-}
-
-.convert-section .button-convert-container .button1:hover {
-  -webkit-box-shadow: 0px 0px 20px -8px #eaeaea;
-          box-shadow: 0px 0px 20px -8px #eaeaea;
-  color: black !important;
-}
-
-.convert-section .button-convert-container .button2:hover {
-  background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
-  -webkit-box-shadow: 0px 0px 15px #76EA90;
-          box-shadow: 0px 0px 15px #76EA90;
-  color: #050505 !important;
-  font-weight: 700;
+  position: relative;
 }
 
 .convert-section .contact-box {

@@ -82,7 +82,6 @@
         padding-top: 92px;
         align-items: left;
         color: #fff;
-        cursor: pointer;
         border-radius: 20px;
         color: #fafafa;
         box-shadow: 0px 0px 9px #76EA90;
@@ -115,22 +114,30 @@
             font-size: 18px;            
         }
         button{
+            align-items: center;
+            font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
             border: none;
             font-size: 12px;
             border-style: none;
             width: 176px;
             height: 54px;
-            cursor: pointer;
-            line-height: 27px;
-            font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
-            
+            cursor: pointer !important;
+            line-height: 27px;           
         }
+        a{
+            text-decoration: none !important;
+        } 
         .join-btn{
+            display: flex;
+            justify-content:center;
+            text-align: center;
+            align-items: left;
+            text-align: center;
             background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
-            border-radius: 5px;
-            font-weight: 600 !important;
-            margin-top: 50px;
             color: rgb(0, 0, 0) !important;
+            border-radius: 5px;
+            font-weight: 700 !important;
+            margin-top: 50px;
         }
 
         .line{
@@ -188,7 +195,6 @@
         justify-content:center;
         align-items: left;
         color: #fff;
-        cursor: pointer;
         position: relative;
         border-radius: 20px;
         box-shadow: 0px 0px 9px #76EA90;
@@ -253,16 +259,25 @@
         
         }
         button{
+            align-items: center;
             font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
             border: none;
             font-size: 12px;
             border-style: none;
             width: 176px;
             height: 54px;
-            cursor: pointer;
-            line-height: 27px;            
+            cursor: pointer !important;
+            line-height: 27px;           
         }
+        a{
+            text-decoration: none !important;
+        } 
         .join-btn{
+            display: flex;
+            justify-content:center;
+            text-align: center;
+            align-items: left;
+            text-align: center;
             background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
             color: rgb(0, 0, 0) !important;
             border-radius: 5px;
@@ -321,6 +336,7 @@
 .box1::before {
     content: "";
     position: absolute;
+    z-index: -1;
     inset: 0;
     border-radius: 19px; 
     padding: 3px; 
@@ -335,6 +351,7 @@
 
 .box2::before {
     content: "";
+    z-index: -1;
     position: absolute;
     inset: 0;
     border-radius: 19px; 
@@ -780,7 +797,6 @@
             padding-top: 57.5px;
             align-items: left;
             color: #fff;
-            cursor: pointer;
             margin-top: 17px;
             border-radius: 20px;
             color: #fafafa;
@@ -821,24 +837,31 @@
                 font-size: 15px;           
             }
             button{
-                border: none;
+                align-items: center;
                 font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
-                font-weight: 700;
+                border: none;
                 font-size: 12px;
                 border-style: none;
                 width: 159.59px;
                 height: 48.83px;
-                cursor: pointer;
-                line-height: 27px;
-                
+                cursor: pointer !important;
+                line-height: 27px;           
             }
+            a{
+                text-decoration: none !important;
+            } 
             .join-btn{
+                display: flex;
+                justify-content:center;
+                text-align: center;
+                align-items: left;
+                text-align: center;
                 background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
-                border-radius: 5px;
-                font-weight: 600 !important;
-                margin-top: 50px;
                 color: rgb(0, 0, 0) !important;
-            }
+                border-radius: 5px;
+                font-weight: 700 !important;
+                margin-top: 50px;
+            }    
 
             .line{
                 height: 2.88px ;
@@ -897,7 +920,6 @@
             justify-content:center;
             align-items: left;
             color: #fff;
-            cursor: pointer;
             margin-top: -10px;
             border-radius: 20px;
 
@@ -972,23 +994,32 @@
             
             }
             button{
-                border: none;
+                align-items: center;
                 font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
-                font-weight: 700;
-                font-size: 12px;                
+                border: none;
+                font-size: 12px;
                 border-style: none;
                 width: 159.59px;
                 height: 48.83px;
-                cursor: pointer;
-                line-height: 27px;            
+                cursor: pointer !important;
+                line-height: 27px;           
             }
+            a{
+                text-decoration: none !important;
+            } 
             .join-btn{
+                display: flex;
+                justify-content:center;
+                text-align: center;
+                align-items: left;
+                text-align: center;
                 background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
                 color: rgb(0, 0, 0) !important;
                 border-radius: 5px;
-                font-weight: 600 !important;
+                font-weight: 700 !important;
                 margin-top: 50px;
             }
+    
 
             .line{
                 height: 2.88px ;
@@ -1041,6 +1072,7 @@
 
     .box1-mobile::before {
         content: "";
+        z-index: -1;
         position: absolute;
         inset: 0;
         border-radius: 19px; 
@@ -1055,6 +1087,7 @@
 
     .box2-mobile::before {
         content: "";
+        z-index: -1;
         position: absolute;
         inset: 0;
         border-radius: 19px; 

@@ -147,3 +147,21 @@
     }
     }
 }
+
+
+@media(max-width:440px){
+    .custom_package{
+        
+    .package_box{
+        width: 350px;
+        box-shadow: 0px 0px 0px #76EA90;
+        p{
+            width: 150px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+    }
+    }
+}

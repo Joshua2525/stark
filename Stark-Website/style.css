@@ -9076,4 +9076,18 @@ footer {
     width: 200px;
   }
 }
+
+@media (max-width: 440px) {
+  .custom_package .package_box {
+    width: 350px;
+    -webkit-box-shadow: 0px 0px 0px #76EA90;
+            box-shadow: 0px 0px 0px #76EA90;
+  }
+  .custom_package .package_box p {
+    width: 150px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

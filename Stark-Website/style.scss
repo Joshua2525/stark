@@ -63,6 +63,10 @@ body{
     font-family: 'HelveticaNeue';
     src: url(helveticaneue.ttf);
 }
+@font-face {
+    font-family: 'Akira';
+    src: url(Akira_Expanded_Demo.ttf);
+}
 
 
 
@@ -113,3 +117,4 @@ body{
 @import "scss/footer";
 @import "scss/terms";
 @import "scss/private-policy";
+@import "scss/custom-package";

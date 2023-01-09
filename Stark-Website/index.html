@@ -463,9 +463,19 @@
                     <p data-aos="fade-left" data-aos-duration="1500">Payment optimization for all teams and creators.</p>
                 </div>
             </div>
+            <div class="container-btn">
+                <input type="radio" name="s" id="beginner" checked>
+                <input type="radio" name="s" id="expert">
+            
+                <div class="beginner-expert">
+                <div class="slider-btn"></div>
+                <label onclick="monthly()" class="beginner" for="beginner">Monthly</label>
+                <label onclick="yearly()" class="expert" for="expert">Yearly</label>
+                </div>
+            </div>
 
 
-            <div class="pricing-box-container" >
+            <div class="pricing-box-container" id="monthly" >
             
                 <div class="box1" data-aos="fade-down" data-aos-delay="250">
                     <h2>STANDARD</h2>
@@ -534,9 +544,9 @@
                     </ul>
                 </div>
 
-                <div class="box1" data-aos="fade-down" data-aos-delay="550">
+                <div class="box3" data-aos="fade-down" data-aos-delay="550">
                     <h2>ENTERPRISE</h2>
-                    <h3>$55 <span>USD</span> </h3>
+                    <h3>$249 <span class="">USD</span> </h3>
                     <p>per month/user</p>
 
                     <a href="#">
@@ -567,111 +577,119 @@
                 </div>
             </div>
 
-        <!-- PRICING BOX FOR MOBILE SIZE (HTML) -->
+            <!--YEARLYYYY-->
 
-        <div class="pricing-box-container2" >
+            <div class="pricing-box-container" id="yearly">
+            
+                <div class="box1" data-aos="fade-down" data-aos-delay="250">
+                    <h2>STANDARD</h2>
+                    <div class="pricing-usd">
+                        <h3 class="price-box">$660</h3>
+                        <p>USD</p>
+                    </div>
+                    <p>per month/user</p>
 
-            <div class="box2" data-aos="fade-down" data-aos-delay="400">
-                <div class="most-popular">
-                    <h2>MOST POPULAR</h2>
+                    <a href="#">
+                        <button class="join-btn">+CREATE</button>
+                    </a>
+
+                    <div class="line"></div>
+                    <p class="essentials">The essentials to get you up and running. </p>
+
+                    <ul>
+                        <li>
+                            <i class="fa fa-check"></i>
+                            <p>3 Videos edited by Stark team</p> 
+                        </li>
+                        <li>
+                            <i class="fa fa-check"></i>
+                            <p>Full video customization - Assigned Editor</p> 
+                        </li>
+                        <li>
+                            <i class="fa fa-check"></i>
+                            <p>Content Strategy</p> 
+                        </li>
+                        <li>
+                            <i class="fa fa-check"></i>
+                            <p>Discord Community Access</p> 
+                        </li>
+                    </ul>
                 </div>
-                <h2 class="premium">PREMIUM</h2>
-                <h3>$105 <span>USD</span> </h3>
-                <p>per month/user</p>
 
-                <a href="#">
-                    <button class="join-btn">+CREATE</button>
-                </a>
+                <div class="box2" data-aos="fade-down" data-aos-delay="400">
+                    <div class="most-popular">
+                        <h2>MOST POPULAR</h2>
+                    </div>
+                    <h2 class="premium">PREMIUM</h2>
+                    <div class="pricing-usd">
+                        <h3 class="price-box">$1260</h3>
+                        <p>USD</p>
+                    </div>
+                    <p>per month/user</p>
+
+                    <a href="#">
+                        <button class="join-btn">+CREATE</button>
+                    </a>
                     
-                <div class="line"></div>
-                <p class="essentials">The essentials to get you up and running. </p>
+                    <div class="line"></div>
+                    <p class="essentials">For power users and teams looking to take their socials to the next level.  </p>
 
-                <ul>
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <p>10 (Caption Videos) edited by Stark team</p> 
-                    </li>
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <p>Full video customization - Assigned Editor</p> 
-                    </li>
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <p>Content Strategy</p> 
-                    </li>
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <p>Discord Community Access</p> 
-                    </li>
-                </ul>
+                    <ul>
+                        <li>
+                            <i class="fa fa-check"></i>
+                            <p>10 (Caption Videos) edited by Stark team</p> 
+                        </li>
+                        <li>
+                            <i class="fa fa-check"></i>
+                            <p>Full video customization - Assigned Editor</p> 
+                        </li>
+                        <li>
+                            <i class="fa fa-check"></i>
+                            <p>Content Strategy</p> 
+                        </li>
+                        <li>
+                            <i class="fa fa-check"></i>
+                            <p>Discord Community Access</p> 
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box3" data-aos="fade-down" data-aos-delay="550">
+                    <h2>ENTERPRISE</h2>
+                    <div class="pricing-usd">
+                        <h3 class="price-box">$2988</h3>
+                        <p>USD</p>
+                    </div>
+                    <p>per month/user</p>
+
+                    <a href="#">
+                        <button class="join-btn">+CREATE</button>
+                    </a>
+
+                    <div class="line"></div>
+                    <p class="essentials">For teams that need full customization and special requests.  </p>
+
+                    <ul>
+                        <li>
+                            <i class="fa fa-check"></i>
+                            <p>10 (Caption Videos) edited by Stark team</p> 
+                        </li>
+                        <li>
+                            <i class="fa fa-check"></i>
+                            <p>Full video customization - Assigned Editor</p> 
+                        </li>
+                        <li>
+                            <i class="fa fa-check"></i>
+                            <p>Content Strategy</p> 
+                        </li>
+                        <li>
+                            <i class="fa fa-check"></i>
+                            <p>Discord Community Access</p> 
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="box1" data-aos="fade-down" data-aos-delay="250">
-                <h2>STANDARD</h2>
-                <h3>$55 <span>USD</span> </h3>
-                <p>per month/user</p>
-
-                <a href="#">
-                    <button class="join-btn">+CREATE</button>
-                </a>
-                
-                <div class="line"></div>
-                <p class="essentials">The essentials to get you up and running. </p>
-
-                <ul>
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <p>3 (Caption Videos) edited by Stark team</p> 
-                    </li>
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <p>Full video customization - Assigned Editor</p> 
-                    </li>
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <p>Content Strategy</p> 
-                    </li>
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <p>Discord Community Access</p> 
-                    </li>
-                </ul>
-
-            </div>
-
-
-            <div class="box1" data-aos="fade-down" data-aos-delay="550">
-                <h2>ENTERPRISE</h2>
-                <h3>$55 <span>USD</span> </h3>
-                <p>per month/user</p>
-                
-                <a href="#">
-                    <button class="join-btn">+CREATE</button>
-                </a>
-                
-                <div class="line"></div>
-                <p class="essentials">The essentials to get you up and running. </p>
-
-                <ul>
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <p>3 (Caption Videos) edited by Stark team</p> 
-                    </li>
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <p>Full video customization - Assigned Editor</p> 
-                    </li>
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <p>Content Strategy</p> 
-                    </li>
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <p>Discord Community Access</p> 
-                    </li>
-                </ul>
-            </div>
-        </div>
        </div>
     </section>
 
@@ -681,9 +699,18 @@
         <div class="pricing-container2">
     
             <h1 class="title-pricing" data-aos="fade-right" data-aos-duration="1500">PRICING</h1>     
+            <div class="container-btn1">
+                <input type="radio" name="s1" id="beginner1" checked>
+                <input type="radio" name="s1" id="expert1">
+            
+                <div class="beginner-expert1">
+                <div class="slider-btn1"></div>
+                <label onclick="monthly1()" class="beginner1" for="beginner1">Monthly</label>
+                <label onclick="yearly1()" class="expert1" for="expert1">Yearly</label>
+                </div>
+            </div>
 
-
-            <div class="pricing-box-container2" >
+            <div class="pricing-box-container2" id="monthly1" >
 
                 <div class="swiper mySwiper2 container">
 
@@ -775,9 +802,150 @@
             
                     <div class="swiper-slide card1">
                         <div class="card-content">
-                            <div class="box1-mobile" data-aos="fade-down" data-aos-delay="550">
+                            <div class="box3-mobile" data-aos="fade-down" data-aos-delay="550">
                                 <h2>ENTERPRISE</h2>
-                                <h3>$55 <span>USD</span> </h3>
+                                <h3>$249 <span>USD</span> </h3>
+                                <p>per month/user</p>
+                
+                                <a href="#">
+                                    <button class="join-btn">+CREATE</button>
+                                </a>
+                                                
+                                <div class="line"></div>
+                                <p class="essentials">The essentials to get you up and running. </p>
+                
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-check"></i>
+                                        <p>3 (Caption Videos) edited by Stark team</p> 
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i>
+                                        <p>Full video customization - Assigned Editor</p> 
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i>
+                                        <p>Content Strategy</p> 
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i>
+                                        <p>Discord Community Access</p> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
+
+
+            <div class="pricing-box-container2" id="yearly1">
+
+                <div class="swiper mySwiper2 container">
+
+                    <div class="swiper-wrapper content">
+
+                    <div class="swiper-slide card1">
+
+                        <div class="card-content">
+                            <div class="card-content">
+
+                                <div class="box2-mobile" data-aos="fade-down" data-aos-delay="400">
+                                    <div class="most-popular">
+                                        <h2>MOST POPULAR</h2>
+                                    </div>
+                                    <h2 class="premium">PREMIUM</h2>
+                                    <div class="pricing-usd">
+                                        <h3 class="price-box">$1260</h3>
+                                        <p>USD</p>
+                                    </div>
+                                    <p>per month/user</p>
+                    
+                                    <a href="#">
+                                        <button class="join-btn">+CREATE</button>
+                                    </a>
+                                                        
+                                    <div class="line"></div>
+                                    <p class="essentials">For power users and teams looking to take their socials to the next level. </p>
+                    
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-check"></i>
+                                            <p>10 (Caption Videos) edited by Stark team</p> 
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check"></i>
+                                            <p>Full video customization - Assigned Editor</p> 
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check"></i>
+                                            <p>Content Strategy</p> 
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check"></i>
+                                            <p>Discord Community Access</p> 
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+            
+                    <div class="swiper-slide card1">
+                        <div class="card-content">
+                            <div class="card-content">
+                                <div class="box1-mobile" data-aos="fade-down" data-aos-delay="250">
+                                    <h2>STANDARD</h2>
+                                    <div class="pricing-usd">
+                                        <h3 class="price-box">$660</h3>
+                                        <p>USD</p>
+                                    </div>
+                                    <p>per month/user</p>
+                    
+                                    <a href="#">
+                                        <button class="join-btn">+CREATE</button>
+                                    </a>
+                                                        
+                                    <div class="line"></div>
+                                    <p class="essentials">The essentials to get you up and running. </p>
+                    
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-check"></i>
+                                            <p>3 (Caption Videos) edited by Stark team</p> 
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check"></i>
+                                            <p>Full video customization - Assigned Editor</p> 
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check"></i>
+                                            <p>Content Strategy</p> 
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check"></i>
+                                            <p>Discord Community Access</p> 
+                                        </li>
+                                    </ul>
+                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide card1">
+                        <div class="card-content">
+                            <div class="box3-mobile" data-aos="fade-down" data-aos-delay="550">
+                                <h2>ENTERPRISE</h2>
+                                <div class="pricing-usd">
+                                    <h3 class="price-box">$2988</h3>
+                                    <p>USD</p>
+                                </div>
                                 <p>per month/user</p>
                 
                                 <a href="#">
@@ -816,6 +984,29 @@
 
             
         </div>
+    </section>
+
+    <section class="custom_package">
+        <div class="package_box">
+            <div class="left-package">
+
+                <div class="custom_radius">
+                    <h2>custom</h2>
+                </div>
+                
+                <h1 class="custom1">CUSTOM PACKAGE</h1>
+                <h1 class="custom2">CUSTOM</h1>
+                <p>Have a bigger idea? We will execute.</p>
+            
+            </div>
+
+            <div class="right-package">
+                <a href="#">
+                    <button class="contact-btn">CONTACT US</button>
+                </a>
+            </div>
+        </div>
+
     </section>
 
 
@@ -1400,6 +1591,43 @@
         </div>
     </footer>
 
+
+    <!--JS FOR MONTHLY AND YEARLY-->
+
+    <script>
+        function monthly(){
+
+            document.getElementById('yearly').style.display="none";
+            document.getElementById('monthly').style.display="flex";
+            
+        }
+    </script>
+
+    <script>
+        function monthly1(){
+
+            document.getElementById('yearly1').style.display="none";
+            document.getElementById('monthly1').style.display="flex";
+            
+        }
+    </script>
+
+    <script>
+        function yearly(){
+
+            document.getElementById('yearly').style.display="flex";
+            document.getElementById('monthly').style.display="none";
+        }
+    </script>
+
+    <script>
+        function yearly1(){
+
+            document.getElementById('yearly1').style.display="flex";
+            document.getElementById('monthly1').style.display="none";
+            
+        }
+    </script>
 
 
 

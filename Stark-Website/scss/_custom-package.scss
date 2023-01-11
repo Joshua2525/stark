@@ -148,6 +148,11 @@
     }
 }
 
+@media(max-width:430px){
+    .custom_package .package_box .custom_radius {
+        padding: 0px 17px;
+    }
+}
 
 @media(max-width:440px){
     .custom_package{

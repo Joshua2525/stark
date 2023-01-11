@@ -1274,7 +1274,7 @@
             }
             button{
                 align-items: center;
-                font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
+                font-family: 'Akira', sans-serif !important;
                 border: none;
                 font-size: 12px;
                 border-style: none;
@@ -1294,7 +1294,7 @@
                 text-align: center;
                 background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
                 color: rgb(0, 0, 0) !important;
-                border-radius: 5px;
+                border-radius: 10px;
                 font-weight: 700 !important;
                 margin-top: 50px;
             }    
@@ -1450,7 +1450,7 @@
             }
             button{
                 align-items: center;
-                font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
+                font-family: 'Akira', sans-serif !important;
                 border: none;
                 font-size: 12px;
                 border-style: none;
@@ -1470,7 +1470,7 @@
                 text-align: center;
                 background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
                 color: rgb(0, 0, 0) !important;
-                border-radius: 5px;
+                border-radius: 10px;
                 font-weight: 700 !important;
                 margin-top: 50px;
             }
@@ -1595,7 +1595,7 @@
             }
             button{
                 align-items: center;
-                font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
+                font-family: 'Akira', sans-serif !important;
                 border: none;
                 font-size: 12px;
                 border-style: none;
@@ -1615,7 +1615,7 @@
                 text-align: center;
                 background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
                 color: rgb(0, 0, 0) !important;
-                border-radius: 5px;
+                border-radius: 10px;
                 font-weight: 700 !important;
                 margin-top: 50px;
             }    
@@ -1852,6 +1852,7 @@ h3{
     }
 
 }
+
 p{
     font-size: 15px !important;            
 }
@@ -1872,6 +1873,10 @@ button{
         }
     }
 }
+.pricing2 .box2-mobile .most-popular{
+    margin-top: -155px;
+}
+
 }
 
 
@@ -1902,4 +1907,7 @@ button{
     }
    }
  }
+ .pricing2 .box2-mobile .most-popular{
+    margin-top: -145px;
+}
 }

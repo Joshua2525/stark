@@ -152,6 +152,9 @@
     .custom_package .package_box .custom_radius {
         padding: 0px 17px;
     }
+    .custom_package .package_box .contact-btn{
+        margin-top: 10px;
+    }
 }
 
 @media(max-width:440px){
@@ -167,6 +170,6 @@
             margin-bottom: 10px;
         }
 
-    }
+       }
     }
 }

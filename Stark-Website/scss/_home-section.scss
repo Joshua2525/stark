@@ -5,10 +5,6 @@
 .home-section{
   width: 100%;
   height: 900px;
-  background-image: url("img/bg-stark.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,20 +14,20 @@
   .left-side{
       margin: 0;
       margin-top: 100px;
-      margin-right: 170px;
+      margin-right: 20px;
 
       h1{
         font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif !important;
         font-weight: 700 !important;
         max-width: 100%;
-          font-size: 115px;
-          color: var(--primary-color);
+        font-size: 113px;
+        color: var(--primary-color);
       }
 
       span{
         font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
           font-weight: 700 !important;
-          font-size: 115px;
+          font-size: 113px;
           object-fit: cover !important;
       }
       span{
@@ -101,11 +97,17 @@
           }
           .button1{
               font-family: 'HelveticaNeue LT 93 BlackEx', sans-serif;
-              background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
-              box-shadow: 0px 0px 15px #76EA90;
+              position: relative;
               border-radius: 5.60983px;
+              background-color: transparent;
               color: rgb(0, 0, 0) !important;
               font-weight: 700 !important;
+              color: transparent;     
+              background: url("img/letter-big.png");
+              background-size: cover;
+              background-repeat: repeat;
+              -webkit-background-clip: text; 
+              -webkit-text-fill-color: transparent;
           }
           .button2{
               font-family: 'Poppins', sans-serif;
@@ -117,8 +119,8 @@
 
           }
           .button1:hover {
-              box-shadow: 0px 0px 20px -8px #eaeaea;
-              color: rgb(0, 0, 0) !important;
+            box-shadow: 0px 0px 15px #76EA90;
+            color: rgb(0, 0, 0) !important;
           }
           .button2:hover {
               background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
@@ -171,6 +173,26 @@
 
 .home-section2{
   display: none;
+}
+
+.button1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  display: flex !important;
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 3px; 
+  box-shadow: 0px 0px 10px 0px rgba(118, 234, 144, 1) !important;
+  border-radius: 5px ;
+  background: linear-gradient(94.76deg, #76EA90 0%, #FDFD55 100%),
+  linear-gradient(0deg, rgba(118, 234, 144, 0), rgba(118, 234, 144, 0));   
+  -webkit-mask: 
+  linear-gradient(#fff 0 0) content-box, 
+  linear-gradient(#fff 0 0) !important;
+  -webkit-mask-composite: xor !important;
+          mask-composite: exclude !important; 
 }
 
 
@@ -247,7 +269,7 @@
           display: flex;
           flex-direction: row;
           align-items: center;
-          margin-top: 20px;
+          margin-top: 50px;
 
           button{
               border: none;
@@ -261,10 +283,8 @@
               
           }
           .button1{
-              background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
-              box-shadow: 0px 0px 15px #76EA90;
               border-radius: 5.60983px;
-              color: rgb(0, 0, 0) !important;
+              color: rgb(255, 255, 255) !important;
               font-weight: 700;
           }
           .button2{
@@ -273,17 +293,6 @@
               transition: all .15s ease-in-out;
               border-radius: 5.60983px;
               font-weight: 500;
-
-          }
-          .button1:hover {
-              box-shadow: 0px 0px 20px -8px #eaeaea;
-              color: rgb(0, 0, 0) !important;
-          }
-          .button2:hover {
-              background: linear-gradient(97.63deg, #76EA90 0%, #FDFD55 100.18%);
-              box-shadow: 0px 0px 15px #76EA90;
-              color: rgb(5, 5, 5) !important;
-              font-weight: 700;
           }
       }
   }
@@ -302,7 +311,6 @@
      
       video{
           position: absolute;
-          
           // height: 98%;
           // width: 95%;
           height: 692.56px;

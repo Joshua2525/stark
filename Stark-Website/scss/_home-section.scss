@@ -233,6 +233,7 @@
           animation: spin_words 6s infinite;
       }
       .scroller {
+        margin-top: 20px;
           height: 1.2em;
           line-height: 1.2em;
           width: 100%;
@@ -249,13 +250,13 @@
             top: 0;
           }
           25% {
-            top: -1.2em;
+            top: -1.1em;
           }
           50% {
-            top: -2.3em;
+            top: -2.2em;
           }
           65% {
-            top: -2.4em;
+            top: -2.3em;
           }
           75% {
             top: -3.5em;
